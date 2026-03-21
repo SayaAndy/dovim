@@ -60,6 +60,9 @@ body>nav {
     overflow-y: auto;
     user-select: none;
     background-color: rgb(var(--movim-background));
+    background-image: var(--movim-background-texture);
+    background-size: 128px;
+    background-blend-mode: multiply;
     box-shadow: var(--elevation-3);
 
     padding: 1rem 0;
@@ -230,10 +233,12 @@ main>div:first-child:nth-last-child(2)+div {
     overflow-y: auto;
     box-shadow: var(--elevation-2);
     background-color: rgb(var(--movim-background-main));
+    background-image: var(--movim-background-texture);
+    background-size: 128px;
+    background-blend-mode: multiply;
 }
 
 @media screen and (max-width: 1024px) {
-
     nav.on_desktop~main,
     nav~main.enabled {
         width: 100%;
@@ -339,6 +344,9 @@ span.avatar {
     display: block;
     max-width: 100%;
     background-color: rgb(var(--movim-background-main));
+    background-image: var(--movim-background-texture);
+    background-size: 128px;
+    background-blend-mode: multiply;
     animation: fadein 0.2s;
     line-height: 100%;
 }
@@ -371,6 +379,11 @@ img.avatar:not([src=""])+.placeholder {
 
 .placeholder>i:first-child {
     font-size: 14rem;
+    opacity: 0.3;
+}
+
+.placeholder>svg:first-child {
+    width: 14rem;
     opacity: 0.3;
 }
 

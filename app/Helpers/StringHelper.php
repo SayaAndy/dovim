@@ -323,7 +323,7 @@ function isLongitude(float $longitude): bool
  */
 function stringToColor(?string $string = null): string
 {
-    if ($string == null) return 'dorange';
+    if ($string == null) return 'green';
 
     // Get the Hue angle from the XEP definition
     $arr = unpack('C*', hex2bin(hash('sha1', $string)));
@@ -352,27 +352,27 @@ function hueToPalette(float $hueAngle)
 function palette(bool $withBlack = false): array
 {
     $palette = [
-        'dorange'   => '#FF5722',
-        'orange'    => '#FF9800',
-        'amber'     => '#FFC107',
-        'yellow'    => '#FFEB3B',
-        'lime'      => '#CDDC39',
-        'lgreen'    => '#8BC34A',
-        'green'     => '#4CAF50',
-        'teal'      => '#009688',
-        'cyan'      => '#00BCD4',
-        'lblue'     => '#03A9F4',
-        'blue'      => '#2196F3',
-        'indigo'    => '#3F51B5',
-        'dpurple'   => '#673AB7',
-        'purple'    => '#9C27B0',
-        'pink'      => '#E91E63',
-        'red'       => '#F44336',
+        'dorange'   => '#C40909',
+        'orange'    => '#D75F5F',
+        'amber'     => '#ED9337',
+        'yellow'    => '#F3E430',
+        'lime'      => '#A2F298',
+        'lgreen'    => '#5FD7A7',
+        'green'     => '#10A778',
+        'teal'      => '#20A5BA',
+        'cyan'      => '#4FB8CC',
+        'lblue'     => '#B6D6FD',
+        'blue'      => '#20BBFC',
+        'indigo'    => '#5067E8',
+        'dpurple'   => '#523C79',
+        'purple'    => '#6855DE',
+        'pink'      => '#FB007A',
+        'red'       => '#E32791',
     ];
 
     if ($withBlack) return $palette + [
-        'black'     => '#000000',
-        'gray'      => '#9E9E9E',
+        'black'     => '#212121',
+        'gray'      => '#C8C8C8',
     ];
 
     return $palette;

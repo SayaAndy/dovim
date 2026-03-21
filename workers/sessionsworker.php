@@ -38,7 +38,7 @@ function logOut($log = '', string $type = 'system', ?string $sid = null)
 }
 
 $wsConnector = new \Ratchet\Client\Connector($loop);
-$wsConnector('ws://127.0.0.1:' . config('daemon.port'), [], [
+$wsConnector('ws://' . config('daemon.interface') . ':' . config('daemon.port'), [], [
     'MOVIM_WORKER_ID' => getenv('wid'),
     'MOVIM_DAEMON_KEY' => getenv('key')
 ])->then(function (Ratchet\Client\WebSocket $socket) use (&$linkersManager) {

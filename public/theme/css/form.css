@@ -238,6 +238,12 @@ form > div .checkbox > input[type="checkbox"] + label i {
     font-size: 1.75rem;
 }
 
+form > div .checkbox > input[type="checkbox"] + label svg {
+    vertical-align: middle;
+    color: rgba(var(--movim-font), 0.5);
+    width: 1.75rem;
+}
+
 form > div .checkbox:hover > input[type="checkbox"] + label {
     cursor: pointer;
     box-shadow: 0 0 0 1.75rem rgba(var(--movim-font), 0.05);
@@ -252,7 +258,8 @@ form > div .checkbox > input[type="checkbox"]:checked + label {
     background-color: white;
 }
 
-form > div .checkbox > input[type="checkbox"]:checked + label i {
+form > div .checkbox > input[type="checkbox"]:checked + label i,
+form > div .checkbox > input[type="checkbox"]:checked + label svg {
     color: var(--movim-accent);
 }
 
@@ -437,11 +444,13 @@ body > div.drawer:not(:empty):not(.empty) ~ main .button.action {
 }
 
 .button.action,
-.button.action > i {
+.button.action > i,
+.button.action > svg {
     transition: all 0.4s ease 0s;
 }
 
-.button.action.active > i {
+.button.action.active > i,
+.button.action.active > svg {
     transform: rotate(45deg);
 }
 
@@ -457,6 +466,10 @@ li.action div.action .button {
 .button:not(.action) i {
     font-size: 2.5rem;
     margin: 0 0.25rem;
+}
+
+.button:not(.action) svg {
+    width: 2.5rem;
 }
 
 .snackbar#status_websocket:not(.hide) ~ main > aside ~ * .button.action {

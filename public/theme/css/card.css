@@ -21,7 +21,8 @@
     filter: blur(0.4rem);
 }
 
-.card i.main {
+.card i.main,
+.card svg.main {
     position: absolute;
     font-size: 18rem;
     opacity: 0.2;
@@ -35,7 +36,9 @@
 }
 
 .card li.block.color {
-    background-image: linear-gradient(rgba(0, 0, 0, 0.5));
+    background-image: linear-gradient(rgba(0, 0, 0, 0.5)), var(--movim-background-texture);
+    background-size: 100%, 128px;
+    background-blend-mode: normal, multiply;
 }
 
 .card > .block:not(.subheader):not(.simple) {

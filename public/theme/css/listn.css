@@ -77,7 +77,7 @@ ul.list.active.all>li:hover:not(.color),
 ul.list>li.active:hover:not(.color),
 ul.list.active>li.active:not(.subheader):not(.color),
 ul.tabs>li:hover {
-    background-color: rgba(var(--movim-element-action), 0.1);
+    background-color: rgba(var(--movim-element-action), 0.25);
 }
 
 ul.list>li>span.active:hover {
@@ -92,7 +92,7 @@ ul.list>li>span.bubble.active:hover {
 ul.list>li>span:not(.bubble).active:hover,
 ul.list>li>div.bubble:not(.file):hover {
     cursor: pointer;
-    background-color: rgba(var(--movim-element-action), 0.1);
+    background-color: rgba(var(--movim-element-action), 0.25);
 }
 
 /* Clicked list items */
@@ -100,7 +100,7 @@ ul.list>li>div.bubble:not(.file):hover {
 ul.list.active>li:active:not(.subheader):not(.color),
 ul.list.active.all>li:active:not(.color),
 ul.tabs>li:active:not(.color) {
-    background-color: rgba(var(--movim-element-action), 0.2);
+    background-color: rgba(var(--movim-element-action), 0.5);
 }
 
 
@@ -111,7 +111,7 @@ ul.list>li>span.bubble.active:active {
 ul.list>li>span:not(.bubble).active:active,
 ul.list>li>div.bubble:not(.file):active {
     cursor: pointer;
-    background-color: rgba(var(--movim-element-action), 0.2);
+    background-color: rgba(var(--movim-element-action), 0.5);
     font-variation-settings: 'FILL' 1;
 }
 
@@ -592,7 +592,8 @@ ul.list li>div.bubble:not(.file) p {
     margin-right: 1rem;
 }
 
-ul.list li>div.bubble:not(.file) p:has(i.icon) {
+ul.list li>div.bubble:not(.file) p:has(i.icon),
+ul.list li>div.bubble:not(.file) p:has(svg.icon) {
     white-space: inherit;
 }
 
@@ -634,7 +635,8 @@ ul li.oppose div.bubble.file div.audio_player {
     padding-right: 1.5rem;
 }
 
-ul.list li>div.bubble p i.icon {
+ul.list li>div.bubble p i.icon,
+ul.list li>div.bubble p svg.icon {
     margin-right: 0.25rem;
 }
 
@@ -657,12 +659,12 @@ ul.list li>div.bubble:not(.file):before {
 
 ul.list li>div.bubble:not(.file):hover:before,
 ul li.oppose div.bubble:not(.file):hover:before {
-    background-color: rgba(var(--movim-element-action), 0.1);
+    background-color: rgba(var(--movim-element-action), 0.25);
 }
 
 ul.list li>div.bubble:not(.file):active:before,
 ul li.oppose div.bubble:not(.file):active:before {
-    background-color: rgba(var(--movim-element-action), 0.2);
+    background-color: rgba(var(--movim-element-action), 0.5);
 }
 
 ul li.oppose div.bubble:not(.file):before {

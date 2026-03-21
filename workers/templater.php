@@ -46,7 +46,7 @@ $server->listen(new SocketServer($path));
  * Authenticated Websocket to the main Daemon
  */
 $wsConnector = new \Ratchet\Client\Connector($loop);
-$wsConnector('ws://127.0.0.1:' . config('daemon.port'), [], [
+$wsConnector('ws://' . config('daemon.interface') . ':' . config('daemon.port'), [], [
     'MOVIM_DAEMON_KEY' => getenv('key'),
     'MOVIM_TEMPLATER' => 'templater',
 ])->then(function (Ratchet\Client\WebSocket $socket) use (&$wsTemplaterSocket) {

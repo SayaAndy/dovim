@@ -1,43 +1,49 @@
-FROM docker.io/serversideup/php:8.4-fpm-nginx-alpine3.21
+FROM alpine:3.23 AS base
 
-USER root
+SHELL ["/bin/sh", "-c"]
+ENV LANG=C.UTF-8
 
-# S6
-COPY ./etc/s6-overlay/s6-rc.d/movim-migrations/ /etc/s6-overlay/s6-rc.d/movim-migrations/
-COPY ./etc/s6-overlay/s6-rc.d/movim-daemon/ /etc/s6-overlay/s6-rc.d/movim-daemon/
-RUN touch /etc/s6-overlay/s6-rc.d/user/contents.d/movim-migrations
-RUN touch /etc/s6-overlay/s6-rc.d/user/contents.d/movim-daemon
+RUN set -eux; \
+    apk update \
+    && apk add --no-cache \
+      ca-certificates less vim \
+      tzdata libatomic wget make xz git nginx \
+      python3 py3-requests \
+      unzip imagemagick-dev jpeg-dev libpng-dev libwebp-dev libpq-dev libzip-dev \
+      composer php84-fpm php84-pdo php84-curl php84-mbstring php84-gd php84-pgsql php84-xml php84-dev php84-pear php84-pecl-imagick php84-zip php84-phar php84-iconv php84-dom php84-xmlwriter php84-simplexml php84-tokenizer php84-openssl php84-session php84-ctype php84-fileinfo php84-gmp \
+    && ln -sf /usr/sbin/php-fpm84 /usr/sbin/php-fpm
 
-# nginx websocket
-COPY /etc/nginx/conf.d/movim-websocket.conf /etc/nginx/server-opts.d/
+COPY assets/movim.ini /etc/php/conf.d/movim.ini
 
-# PHP
-RUN install-php-extensions imagick gd
+RUN mkdir -p /etc/php84/conf.d /etc/php84/php-fpm.d \
+    && ln -sf /etc/php/conf.d/movim.ini /etc/php84/conf.d/movim.ini \
+    && rm -f /etc/php84/php-fpm.d/*.conf \
+    && ln -sf /etc/php/pool.d/movim.conf /etc/php84/php-fpm.d/movim.conf
+COPY assets/movim-fpm.conf /etc/php/pool.d/movim.conf
 
-# Movim
+COPY assets/entrypoint.sh /usr/local/bin/entrypoint.sh
+RUN chmod +x /usr/local/bin/entrypoint.sh
 
-ENV SSL_MODE=full
-ENV PHP_OPCACHE_ENABLE=1
-ENV DAEMON_INTERFACE=127.0.0.1
-ENV DAEMON_PORT=8083
-ENV NGINX_WEBROOT=/var/www/html/public
-
-ADD . /var/www/html
-WORKDIR /var/www/html
-
-RUN cd /var/www/html
-RUN composer install
-# Ensure that the host .env is not copied
-RUN rm -rf /var/www/.env
-# Setup some directories
-RUN rm -rf cache; \
-    mkdir cache; \
-    chown -R www-data:www-data cache; \
-    rm -rf public/cache; \
-    mkdir public/cache; \
-    chown -R www-data:www-data public/cache; \
-    rm -rf log; \
-    mkdir log; \
-    chown -R www-data:www-data log/
+RUN addgroup -S www-data 2>/dev/null || true \
+    && adduser -S -G www-data www-data 2>/dev/null || true \
+    && mkdir -p /var/www \
+    && chown -R www-data:www-data /var/www \
+    && mkdir -p /usr/local/share/movim \
+    && chown www-data:www-data /usr/local/share/movim
 
 USER www-data
+WORKDIR /usr/local/share/movim
+
+FROM base AS movim
+
+COPY . /usr/local/share/movim
+USER root
+RUN chown -R www-data:www-data /usr/local/share/movim
+USER www-data
+
+RUN composer install \
+    && mkdir -p cache log public/cache
+
+USER root
+EXPOSE 8080
+ENTRYPOINT /usr/local/bin/entrypoint.sh

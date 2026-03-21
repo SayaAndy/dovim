@@ -20,14 +20,14 @@ use React\Dns\Model\Message;
 use React\Dns\Resolver\ResolverInterface;
 use React\Socket\Connection;
 use React\Socket\Connector;
-use React\Socket\HappyEyeBallsConnector;
+use React\Socket\UnixConnector;
 
 use function React\Promise\Timer\timeout;
 
 class Linker
 {
     private Parser $parser;
-    private ?HappyEyeBallsConnector $connector = null;
+    private ?UnixConnector $connector = null;
     private ?Connection $connection = null;
     private ?string $host = null;
     public ?User $user = null;
@@ -99,31 +99,20 @@ class Linker
     public function register(string $host)
     {
         $this->host = $host;
-        $results = [];
+        $directTLSSocket = false;
+        $socket = 'unix:///var/run/ejabberd/c2s_notls.sock';
 
-        timeout($this->dns->resolveAll('_xmpps-client._tcp.' . $host, Message::TYPE_SRV), 3.0)
-            ->then(
-                function ($resolved) use (&$results) {
-                    $results['directtls'] = $resolved;
-                    $this->handleClientDNS($results);
-                },
-                function ($rejected) use (&$results) {
-                    $results['directtls'] = false;
-                    $this->handleClientDNS($results);
-                }
-            );
+        logOut(colorize('Connect to ' . $socket . ', peer_name: ' . $host, 'blue'), sid: $this->sessionId);
 
-        timeout($this->dns->resolveAll('_xmpp-client._tcp.' . $host, Message::TYPE_SRV), 3.0)
-            ->then(
-                function ($resolved) use (&$results) {
-                    $results['starttls'] = $resolved;
-                    $this->handleClientDNS($results);
-                },
-                function ($rejected) use (&$results) {
-                    $results['starttls'] = false;
-                    $this->handleClientDNS($results);
-                }
-            );
+        $this->connector = new UnixConnector();
+
+        $this->connector->connect($socket)->then(
+            fn($connection) => $this->xmppBehaviour($connection),
+            function (\Exception $error) {
+                logOut(colorize($error->getMessage(), 'red'), sid: $this->sessionId);
+                Wrapper::getInstance()->iterate('connection_error', (new Packet)->pack($error->getMessage()), sessionId: $this->sessionId);
+            }
+        );
     }
 
     public function connected(): bool
@@ -214,65 +203,21 @@ class Linker
 
     private function handleClientDNS(array $results)
     {
-        if (count($results) > 1) {
-            $port = 5222;
-            $directTLSSocket = false;
-            $host = null;
+        $directTLSSocket = false;
+        $host = $this->host;
+        $socket = 'unix://var/run/ejabberd/c2s_notls.sock';
 
-            if (
-                $results['directtls'] !== false && $results['directtls'][0]['target'] !== '.'
-                && $results['starttls'] !== false && $results['starttls'][0]['target'] !== '.'
-            ) {
-                if ($results['starttls'][0]['priority'] < $results['directtls'][0]['priority']) {
-                    $host = $results['starttls'][0]['target'];
-                    $port = $results['starttls'][0]['port'];
-                    logOut(colorize('Picked STARTTLS', 'blue'), sid: $this->sessionId);
-                } else {
-                    $host = $results['directtls'][0]['target'];
-                    $port = $results['directtls'][0]['port'];
-                    $directTLSSocket = true;
-                    logOut(colorize('Picked DirectTLS', 'blue'), sid: $this->sessionId);
-                }
-            } elseif ($results['directtls'] !== false && $results['directtls'][0]['target'] !== '.') {
-                $host = $results['directtls'][0]['target'];
-                $port = $results['directtls'][0]['port'];
-                $directTLSSocket = true;
-                logOut(colorize('Picked DirectTLS', 'blue'), sid: $this->sessionId);
-            } elseif ($results['starttls'] !== false && $results['starttls'][0]['target'] !== '.') {
-                $host = $results['starttls'][0]['target'];
-                $port = $results['starttls'][0]['port'];
-                logOut(colorize('Picked STARTTLS', 'blue'), sid: $this->sessionId);
-            } else {
-                // No SRV, we fallback to the default host
-                $host = $this->host;
+        logOut(colorize('Connect to ' . $socket . ', peer_name: ' . $host, 'blue'), sid: $this->sessionId);
+
+        $this->connector = new UnixConnector();
+
+        $this->connector->connect($socket)->then(
+            fn($connection) => $this->xmppBehaviour($connection),
+            function (\Exception $error) {
+                logOut(colorize($error->getMessage(), 'red'), sid: $this->sessionId);
+                Wrapper::getInstance()->iterate('connection_error', (new Packet)->pack($error->getMessage()), sessionId: $this->sessionId);
             }
-
-            $socket = $directTLSSocket ? 'tls://' : 'tcp://';
-            $socket .= $host . ':' . $port;
-
-            logOut(colorize('Connect to ' . $socket . ', peer_name: ' . $host, 'blue'), sid: $this->sessionId);
-
-            $this->connector = new HappyEyeBallsConnector(
-                null,
-                new Connector([
-                    'timeout' => 5.0,
-                    'tls' => [
-                        'SNI_enabled' => true,
-                        'allow_self_signed' => false,
-                        'peer_name' => $this->host
-                    ]
-                ]),
-                $this->dns
-            );
-
-            $this->connector->connect($socket)->then(
-                fn($connection) => $this->xmppBehaviour($connection),
-                function (\Exception $error) {
-                    logOut(colorize($error->getMessage(), 'red'), sid: $this->sessionId);
-                    Wrapper::getInstance()->iterate('connection_error', (new Packet)->pack($error->getMessage()), sessionId: $this->sessionId);
-                }
-            );
-        }
+        );
     }
 
     private function enableEncryption($connection)

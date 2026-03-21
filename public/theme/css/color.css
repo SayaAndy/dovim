@@ -2,11 +2,12 @@
 
 body {
     --movim-background-main: 255, 255, 255;
-    --movim-background: 238, 238, 238;
-    --movim-gray: 35, 35, 35;
-    --movim-font: 0, 0, 0;
-    --movim-header-font: 200, 200, 200;
-    --movim-element-action: 153, 153, 153;
+    --movim-background: 241, 241, 241;
+    --movim-gray: 66, 66, 66;
+    --movim-font: 66, 66, 66;
+    --movim-header-font: 198, 198, 198;
+    --movim-element-action: 182, 214, 253;
+    --movim-background-texture: url("data:image/webp;base64,UklGRi4BAABXRUJQVlA4ICIBAABQCQCdASqAAIAAPm02lUmkIqIkIImIgA2JaW3rMFmGDAOKLAoJtP591ByFR74Tun2DP+Lygpfsz5FH7+cKgxi2Islfd03i5AJdXUfU0SDc8SXYAAD++hlzeYAJWQEF8ZdkJdlcA+5btZg0FMGaso8SHoBph0qAOQysElJ5C5SJFNoKIV1J550UyL7Y9Gh0/c/uzLnBmr8lvz7k1WeA81H4S5ViU/wBqa7aM1m8D9rDtrk8cSTqx+xWF6MS8UfZGSsks6CT/igtgv6syFN9uNA3LjnjiCJKYOvFcMkX+jB2578GWVo3nyLaM1QNPYCxn3TiUbnf7U0MdD2NsBpg1+Jd1wu6yW/U+goN+IQS6Nt4RMWltVcZHlxrneKJi0SobO0AAA==");
     scrollbar-color: rgba(var(--movim-font), 0.2) transparent;
 }
 
@@ -14,21 +15,21 @@ body {
 sections are therefore copy pasted */
 
 body.nightmode {
-    --movim-background-main: 20, 26, 33;
-    --movim-background: 25, 32, 40;
+    --movim-background-main: 26, 26, 26;
+    --movim-background: 33, 33, 33;
     --movim-gray: var(--movim-background-main);
-    --movim-font: 255, 255, 255;
-    --movim-element-action: 74, 86, 99;
+    --movim-font: 229, 229, 230;
+    --movim-element-action: 84, 84, 84;
     scrollbar-color: rgba(var(--movim-font), 0.1) transparent;
 }
 
 @media (prefers-color-scheme: dark) {
     body {
-        --movim-background-main: 20, 26, 33;
-        --movim-background: 25, 32, 40;
+        --movim-background-main: 26, 26, 26;
+        --movim-background: 33, 33, 33;
         --movim-gray: var(--movim-background-main);
-        --movim-font: 255, 255, 255;
-        --movim-element-action: 74, 86, 99;
+        --movim-font: 229, 229, 230;
+        --movim-element-action: 84, 84, 84;
         scrollbar-color: rgba(var(--movim-font), 0.1) transparent;
     }
 }
@@ -68,6 +69,9 @@ table tr th {
 body,
 #drawer .card > .block:not(.subheader):not(.simple):not(.color) {
     background-color: rgb(var(--movim-background));
+    background-image: var(--movim-background-texture);
+    background-size: 128px;
+    background-blend-mode: multiply;
 }
 
 .drawer,
@@ -75,6 +79,9 @@ body,
 ul > li.date > div > p,
 .card > .block:not(.subheader):not(.simple):not(.color) {
     background-color: rgb(var(--movim-background-main));
+    background-image: var(--movim-background-texture);
+    background-size: 128px;
+    background-blend-mode: multiply;
 }
 
 main > header a,
@@ -92,6 +99,9 @@ form > div .checkbox > input[type="checkbox"]:checked:before,
 form > div .radio > input[type="radio"]:checked + label {
     border-color: var(--movim-accent);
     background-color: var(--movim-accent);
+    background-image: var(--movim-background-texture);
+    background-size: 128px;
+    background-blend-mode: multiply;
     color: white;
 }
 
@@ -102,6 +112,9 @@ span.icon span.counter:not(.alt) {
 span.icon span.counter.alt {
     color: var(--movim-font);
     background-color: rgb(var(--movim-background-main));
+    background-image: var(--movim-background-texture);
+    background-size: 128px;
+    background-blend-mode: multiply;
 }
 
 /* Elements */
@@ -129,7 +142,14 @@ ul li div > p > span.moderator,
 .button.black,  .icon.black , span.resource.black    { color: var(--p-black); }
 .button.gray,   .icon.gray  , span.resource.gray     { color: var(--p-gray); }
 
-.color          { color: white; background-color: var(--movim-accent); border-color: var(--movim-accent) }
+.color {
+    color: white;
+    background-color: var(--movim-accent);
+    border-color: var(--movim-accent);
+    background-image: var(--movim-background-texture);
+    background-size: 128px;
+    background-blend-mode: multiply;
+}
 .color.gray     { color: white; background-color: var(--p-gray); border-color: var(--p-gray) }
 .color.dorange  { color: white; background-color: var(--p-dorange); border-color: var(--p-dorange) }
 .color.orange   { color: white; background-color: var(--p-orange); border-color: var(--p-orange) }

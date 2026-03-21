@@ -24,13 +24,16 @@ body[dir="rtl"]>nav ul.list li .primary~*:not(.primary):not(.control):not(.bubbl
 
 /* Navigation */
 
-ul.navigation li>span.primary>i {
+ul.navigation li>span.primary>i,
+ul.navigation li>span.primary>svg {
     transition: opacity 0.15s ease;
     opacity: 0.5;
 }
 
 ul.navigation li.active>span.primary>i,
-ul.navigation li:not(.active):hover>span.primary>i {
+ul.navigation li:not(.active):hover>span.primary>i,
+ul.navigation li.active>span.primary>svg,
+ul.navigation li:not(.active):hover>span.primary>svg {
     opacity: 1;
 }
 
@@ -57,7 +60,7 @@ ul.list.active.navigation li.active:not(.subheader):before {
     content: '';
     width: 5.5rem;
     height: calc(100% - 1rem);
-    background-color: rgba(var(--movim-element-action), 0.1);
+    background-color: rgba(var(--movim-element-action), 0.5);
     position: absolute;
     top: 0.5rem;
     left: 0.5rem;
@@ -68,7 +71,7 @@ ul.list.active.navigation li.active:not(.subheader):before {
 
 ul.list.active.navigation li:active:not(.subheader):before,
 ul.list.active.navigation li.active:active:not(.subheader):before {
-    background-color: rgba(var(--movim-element-action), 0.2);
+    background-color: rgba(var(--movim-element-action), 0.4);
 }
 
 ul.navigation li {
