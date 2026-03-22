@@ -8,7 +8,6 @@ RUN set -eux; \
     && apk add --no-cache \
       ca-certificates less vim \
       tzdata libatomic wget make xz git nginx \
-      python3 py3-requests \
       unzip imagemagick-dev jpeg-dev libpng-dev libwebp-dev libpq-dev libzip-dev \
       composer php84-fpm php84-pdo php84-curl php84-mbstring php84-gd php84-pgsql php84-xml php84-dev php84-pear php84-pecl-imagick php84-zip php84-phar php84-iconv php84-dom php84-xmlwriter php84-simplexml php84-tokenizer php84-openssl php84-session php84-ctype php84-fileinfo php84-gmp \
     && ln -sf /usr/sbin/php-fpm84 /usr/sbin/php-fpm
@@ -36,11 +35,21 @@ WORKDIR /usr/local/share/movim
 
 FROM base AS movim
 
+ARG STREAMLINEHQ_API_KEY
+
 COPY . /usr/local/share/movim
 USER root
 RUN chown -R www-data:www-data /usr/local/share/movim
-USER www-data
+RUN apk update \
+    && apk add --no-cache python3 py3-requests
 
+USER www-data
+RUN STREAMLINEHQ_API_KEY=${STREAMLINEHQ_API_KEY} python3 assets/integrate-streamline-freehand.py
+
+USER root
+RUN apk del python3 py3-requests
+
+USER www-data
 RUN composer install \
     && mkdir -p cache log public/cache
 
