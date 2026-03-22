@@ -117,7 +117,7 @@ class Base
     {
         $path = CACHE_PATH . 'streamlinehq/' . $materialId . '.svg';
         if (file_exists($path)) {
-            return file_get_contents($path);
+            return htmlspecialchars(file_get_contents($path));
         }
 
         return htmlspecialchars($materialId);

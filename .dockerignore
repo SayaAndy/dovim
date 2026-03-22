@@ -1,2 +1,49 @@
+# Vendor directory (if dependencies are installed during the Docker build)
+/vendor
+
+# Environment variables and sensitive files
+.env
+.env.local
+.env.*.local
+storage/*.key # Example for Laravel specific keys
+
+# Version control
+.git
+.gitignore
+.gitattributes
+.gitmodules
+
+# IDE, CI and OS-specific files
+.idea/
+.vscode/
+.claude/
+.github/
+.DS_Store
+Thumbs.db
+
+# Documentation and tests (if not needed in the final runtime image)
+/docs
+/tests
+
+# Build artifacts and logs
+var/ # Common Symfony cache/log directory
+web/assets/
+npm-debug.log
+yarn-error.log
+**/*.log
+**/*.cache
+
+# Other development-only files
+composer.lock # Keep this if you need consistent installs, otherwise ignore
+package.json
+package-lock.json
+node_modules # If you have frontend assets
+
+# Docker specific files
+Dockerfile
+docker-compose*.yaml
+
+# Archives
 *.tar
 *.tar.gz
+*.tgz

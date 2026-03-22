@@ -7,3 +7,6 @@
 *~
 /composer.phar
 .env
+*.tar.gz
+*.tar
+*.tgz

@@ -7,13 +7,14 @@ movim_daemon() {
 }
 
 download_streamlinehq_svg() {
-	if [ -n "${STREAMLINEHQ_API_KEY:-}" ]; then
-		bash "/usr/local/bin/download-streamlinehq-svg.bash"
+	if [[ -n "$STREAMLINEHQ_API_KEY" ]]; then
+		bash "/scripts/download-streamlinehq-svg.bash"
+		unset STREAMLINEHQ_API_KEY
 	fi
 }
 
 system_services() {
-	php-fpm &
+	php-fpm -D
 }
 
 update_volume_permissions() {
