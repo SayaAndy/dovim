@@ -91,7 +91,7 @@
     </li>
     <li>
         <span class="primary icon color bubble blue">
-            <i class="material-symbols">help</i>
+            {$c->svgIcon("Help-Question-Circle--Streamline-Freehand")}
         </span>
         <span class="control icon gray">
             <i class="material-symbols">chevron_right</i>

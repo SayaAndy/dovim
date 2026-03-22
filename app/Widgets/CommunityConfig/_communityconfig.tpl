@@ -81,7 +81,7 @@
                 </li>
                 <li>
                     <span class="primary icon gray">
-                        <i class="material-symbols">view_agenda</i>
+                        {$c->svgIcon("Network--Streamline-Freehand")}
                     </span>
                     <span class="control">
                         <div class="radio">

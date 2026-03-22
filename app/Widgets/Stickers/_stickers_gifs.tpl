@@ -2,7 +2,7 @@
     <div class="masonry first"></div>
     <div class="masonry second"></div>
     <div class="placeholder">
-        <i class="material-symbols">search</i>
+        {$c->svgIcon("Search-Magnifier--Streamline-Freehand")}
         <h1>{$c->__('sticker.gif_title')}</h1>
         <h4>{$c->__('sticker.gif_text')}</h4>
     </div>

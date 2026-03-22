@@ -1,6 +1,6 @@
 <section>
     <div class="placeholder">
-        <i class="material-symbols">exit_to_app</i>
+        {$c->svgIcon("Safety-Exit-Door--Streamline-Freehand")}
         <h4>{$c->__('status.logout_confirm')}</h4>
     </div>
 </section>

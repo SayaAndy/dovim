@@ -5,7 +5,7 @@
                 {if="$info"}
                     <img src="{$info->getPicture(placeholder: $info->name)}">
                 {else}
-                    <i class="material-symbols">communities</i>
+                    {$c->svgIcon("Share-Circles--Streamline-Freehand")}
                 {/if}
             </span>
             <span class="primary icon bubble">

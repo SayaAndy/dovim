@@ -16,7 +16,7 @@
             {loop="$pushSubscriptions"}
                 <li>
                     <span class="primary icon {if="$value->self"}green{else}gray{/if}">
-                        <i class="material-symbols">notifications</i>
+                        {$c->svgIcon("Alert-Alarm-Bell--Streamline-Freehand")}
                     </span>
                     <span class="control">
                         <div class="checkbox">
@@ -47,7 +47,7 @@
 </form>
 {else}
 <div class="placeholder">
-    <i class="material-symbols">notifications</i>
+    {$c->svgIcon("Alert-Alarm-Bell--Streamline-Freehand")}
     <h1>{$c->__('notificationconfig.push_subscriptions')}</h1>
 </div>
 {/if}

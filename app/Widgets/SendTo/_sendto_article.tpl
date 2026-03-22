@@ -41,7 +41,7 @@
                 </span>
                 <span class="control icon active gray divided"
                     onclick="MovimUtils.reload('{$c->route('publish', [$c->me->id, 'urn:xmpp:microblog:0', '', $post->server, $post->node, $post->nodeid])}'); Drawer.clear()">
-                    <i class="material-symbols">post_add</i>
+                    {$c->svgIcon("Send-Email-Pop-Up--Streamline-Freehand")}
                 </span>
                 <div>
                     <p class="line">{$me->truename}</p>
@@ -59,7 +59,7 @@
         {if="$subscriptions->isEmpty()"}
             <ul class="thick">
                 <div class="placeholder">
-                    <i class="material-symbols">bookmarks</i>
+                    {$c->svgIcon("Book-Library-Shelf-1--Streamline-Freehand")}
                 </li>
             </ul>
         {else}
@@ -78,7 +78,7 @@
                         </span>
                     {/if}
                     <span class="control icon active gray divided" onclick="MovimUtils.reload('{$c->route('publish', [$value->server, $value->node, '', $post->server, $post->node, $post->nodeid])}'); Drawer.clear()">
-                        <i class="material-symbols">post_add</i>
+                        {$c->svgIcon("Send-Email-Pop-Up--Streamline-Freehand")}
                     </span>
                     <div>
                         <p class="line">

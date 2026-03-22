@@ -11,7 +11,7 @@
             <li onclick="MovimUtils.reload('{$c->route('chat', [$related->server,'room'])}')"
                 class="block large active">
                 <span class="primary icon bubble gray">
-                    <i class="material-symbols">forum</i>
+                    {$c->svgIcon("Conversation-Question-Warning-3--Streamline-Freehand")}
                 </span>
 
                 <span class="control icon gray">
@@ -40,7 +40,7 @@
 
         <li class="block large">
             <span class="primary icon gray">
-                <i class="material-symbols">globe</i>
+                {$c->svgIcon("Worldwide-Web-Network-Www--Streamline-Freehand")}
             </span>
             <span class="control icon active" onclick="Preview.copyToClipboard('{$c->route('community', [$info->server, $info->node])}')">
                 <i class="material-symbols">content_copy</i>
@@ -52,7 +52,7 @@
         </li>
         <li class="block large">
             <span class="primary icon orange">
-                <i class="material-symbols">rss_feed</i>
+                {$c->svgIcon("Wireless-Signal-Rss-Feed--Streamline-Freehand")}
             </span>
             <span class="control icon active" onclick="Preview.copyToClipboard('{$c->route('feed', [$info->server, $info->node])}')">
                 <i class="material-symbols">content_copy</i>

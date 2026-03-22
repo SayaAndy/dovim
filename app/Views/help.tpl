@@ -18,7 +18,7 @@
             <ul class="list middle">
                 <li>
                     <span id="menu" class="primary icon gray">
-                        <i class="material-symbols">help</i>
+                        {$c->svgIcon("Help-Question-Circle--Streamline-Freehand")}
                     </span>
                     <div>
                         <p><?php echo __('page.help'); ?></p>

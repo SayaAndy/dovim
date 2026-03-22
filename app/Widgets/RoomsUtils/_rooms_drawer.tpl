@@ -87,7 +87,7 @@
         {if="$conference->info->description"}
             <li>
                 <span class="primary icon gray">
-                    <i class="material-symbols">short_text</i>
+                    {$c->svgIcon("Messages-Bubble-Menu--Streamline-Freehand")}
                 </span>
                 <div>
                     <p class="line">
@@ -105,7 +105,7 @@
         {if="$conference->info && $conference->info->mucpublic"}
             <li>
                 <span class="primary icon gray">
-                    <i class="material-symbols">explore</i>
+                    {$c->svgIcon("View-Binocular--Streamline-Freehand")}
                 </span>
                 <div>
                     <p class="line">{$c->__('room.public_muc')}</p>
@@ -195,7 +195,7 @@
         {else}
             <li>
                 <span class="primary icon gray">
-                    <i class="material-symbols">notifications</i>
+                    {$c->svgIcon("Alert-Alarm-Bell--Streamline-Freehand")}
                 </span>
                 <span class="control icon gray active"
                       onclick="RoomsUtils_ajaxAdd('{$room|echapJS}'); Drawer.clear()">
@@ -264,7 +264,7 @@
                             <span class="control icon active gray divided" onclick="
                                 RoomsUtils_ajaxConfigureUser('{$conference->conference|echapJS}', '{$value->jid|echapJS}');
                                 Drawer.clear();">
-                                <i class="material-symbols">manage_accounts</i>
+                                {$c->svgIcon("Settings-Cog--Streamline-Freehand")}
                             </span>
                         {/if}
                         <div>

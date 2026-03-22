@@ -1,5 +1,5 @@
 <div class="placeholder">
-    <i class="material-symbols">communities</i>
+    {$c->svgIcon("Share-Circles--Streamline-Freehand")}
 
     {if="$subscription && $subscription->info"}
         <h1>

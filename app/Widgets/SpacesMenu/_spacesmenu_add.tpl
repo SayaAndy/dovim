@@ -6,7 +6,7 @@
             <ul class="list">
                 <li>
                     <span class="primary icon gray">
-                        <i class="material-symbols">communities</i>
+                        {$c->svgIcon("Share-Circles--Streamline-Freehand")}
                     </span>
                     <div>
                         <input name="uri" placeholder="xmpp:server.com?;node=key" required/>
@@ -24,7 +24,7 @@
         <ul class="list active">
             <li class onclick="SpacesMenu_ajaxCreate()">
                 <span class="primary icon gray">
-                    <i class="material-symbols">add</i>
+                    {$c->svgIcon("Add-Sign-Bold--Streamline-Freehand")}
                 </span>
                 <span class="control icon">
                     <i class="material-symbols">chevron_forward</i>

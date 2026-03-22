@@ -12,7 +12,7 @@
             <span class="chip active" data-filter="all" onclick="Rooms.toggleShowAll()">{$c->__('rooms_filter.all')}</span>
             <span class="chip active" data-filter="connected" onclick="Rooms.toggleShowAll()">{$c->__('rooms_filter.connected')}</span>
             <span class="control icon active gray" onclick="Rooms.toggleEdit()">
-                <i class="material-symbols">rule</i>
+                {$c->svgIcon("Filter--Streamline-Freehand")}
             </span>
         </li>
     </ul>

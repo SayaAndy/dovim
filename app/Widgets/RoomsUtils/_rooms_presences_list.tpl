@@ -43,7 +43,7 @@
                 <span class="control icon active gray divided" onclick="
                     RoomsUtils_ajaxConfigureUser('{$conference->conference|echapJS}', '{$value->mucjid|echapJS}');
                     Drawer.clear();">
-                    <i class="material-symbols">manage_accounts</i>
+                    {$c->svgIcon("Settings-Cog--Streamline-Freehand")}
                 </span>
             {/if}
         {/if}

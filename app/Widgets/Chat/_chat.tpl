@@ -18,7 +18,7 @@
                 <h4 style="margin-bottom: 1rem;">{$c->__('chat.first_messages_text')}</h4>
                 <h4>
                     <button class="button color" onclick="Notifications_ajaxAddAsk('{$jid|echapJS}')">
-                        <i class="material-symbols">add</i> {$c->__('chat.first_messages_add')}
+                        {$c->svgIcon("Add-Sign-Bold--Streamline-Freehand")} {$c->__('chat.first_messages_add')}
                     </button>
                     <button class="button flat" onclick="ChatActions_ajaxBlock('{$jid|echapJS}'); Notifications_ajaxRefuse('{$jid|echapJS}');">
                         {$c->__('chat.first_messages_block')}
@@ -69,12 +69,12 @@
             </span>
             {if="$c->me->hasUpload()"}
                 <span class="attach control icon" onclick="Chat.toggleAttach()">
-                    <i class="material-symbols">add_circle</i>
+                    {$c->svgIcon("Add-Sign-Bold--Streamline-Freehand")}
                 </span>
                 <ul class="list active actions">
                     <li onclick="Chat.toggleAttach(); Snap.init()">
                         <span class="control icon gray">
-                            <i class="material-symbols">camera_alt</i>
+                            {$c->svgIcon("Camera-Mode-Photo--Streamline-Freehand")}
                         </span>
                         <div>
                             <p class="line">Snap</p>
@@ -82,7 +82,7 @@
                     </li>
                     <li onclick="Chat.toggleAttach(); Draw_ajaxHttpGet()">
                         <span class="control icon gray">
-                            <i class="material-symbols">gesture</i>
+                            {$c->svgIcon("Design-Process-Draw-Pen--Streamline-Freehand")}
                         </span>
                         <div>
                             <p class="line">{$c->__('draw.title')}</p>
@@ -101,7 +101,7 @@
             <span title="{$c->__('button.submit')}"
                 class="send control icon gray"
                   onclick="Chat.sendMessage()">
-                <i class="material-symbols">send</i>
+                {$c->svgIcon("Send-Email-Fly--Streamline-Freehand")}
             </span>
             <form>
                 <div>

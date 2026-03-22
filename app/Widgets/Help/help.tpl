@@ -25,7 +25,7 @@
         </li>
         <li class="block">
             <span class="primary icon gray">
-                <i class="material-symbols">forum</i>
+                {$c->svgIcon("Conversation-Question-Warning-3--Streamline-Freehand")}
             </span>
             <div>
                 <p>{$c->__('faq.chatrooms_title')}</p>
@@ -36,7 +36,7 @@
         </li>
         <li class="block">
             <span class="primary icon gray">
-                <i class="material-symbols">search</i>
+                {$c->svgIcon("Search-Magnifier--Streamline-Freehand")}
             </span>
             <div>
                 <p>{$c->__('faq.find_contacts_title')}</p>

@@ -19,10 +19,10 @@
     <ul class="list thick active">
         <li onclick="MovimWebsocket.init()">
             <span class="primary icon gray spin">
-                <i class="material-symbols">progress_activity</i>
+                {$c->svgIcon("Loading-Spinning-Star--Streamline-Freehand")}
             </span>
             <span class="primary icon gray">
-                <i class="material-symbols">cloud_sync</i>
+                {$c->svgIcon("Cloud-Loading-1--Streamline-Freehand")}
             </span>
             <div>
                 <p class="line two">

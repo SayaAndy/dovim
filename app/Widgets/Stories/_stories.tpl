@@ -2,7 +2,7 @@
     <ul class="list card shadow flex gallery active" style="{if="$stories->count()"}grid-template-columns: 0.5fr repeat({$stories->count()}, 1fr);{/if}">
         <li class="block story add" onclick="PublishStories_ajaxOpen()">
             <div>
-                <p><i class="material-symbols">add_circle</i></p>
+                <p>{$c->svgIcon("Add-Sign-Bold--Streamline-Freehand")}</p>
             </div>
         </li>
         {loop="$stories"}

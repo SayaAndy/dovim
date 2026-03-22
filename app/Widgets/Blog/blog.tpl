@@ -25,7 +25,7 @@
                                 target="_blank"
                                 title="Atom"
                             >
-                                <i class="material-symbols">rss_feed</i>
+                                {$c->svgIcon("Wireless-Signal-Rss-Feed--Streamline-Freehand")}
                             </a>
                         </span>
                         <div>
@@ -84,13 +84,13 @@
                             target="_blank"
                             title="Atom"
                         >
-                            <i class="material-symbols">rss_feed</i>
+                            {$c->svgIcon("Wireless-Signal-Rss-Feed--Streamline-Freehand")}
                         </a>
                     </span>
                     <div>
                         <a class="button oppose color gray" title="{$c->__('communityheader.follow')}"
                             href="xmpp:{$server}?pubsub;action=subscribe;node={$node}">
-                            <i class="material-symbols">add</i> <span class="on_desktop">{$c->__('communityheader.follow')}</span>
+                            {$c->svgIcon("Add-Sign-Bold--Streamline-Freehand")} <span class="on_desktop">{$c->__('communityheader.follow')}</span>
                         </a>
                         <p>
                             <a href="{$c->route('community', [$server, $node])}">

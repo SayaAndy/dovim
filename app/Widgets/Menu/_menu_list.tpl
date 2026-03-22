@@ -64,13 +64,13 @@
 
     <ul class="thick active divided spaced" id="menu_wrapper">
         <div class="placeholder">
-            <i class="material-symbols">article</i>
+            {$c->svgIcon("Newspaper-Fold--Streamline-Freehand")}
             <h1>{$c->__('menu.empty_title')}</h1>
             <h4>{$c->__('menu.empty')}</h4>
             <h4>
                 <br />
                 <a class="button color green" href="{$c->route('explore')}">
-                    <i class="material-symbols">explore</i>
+                    {$c->svgIcon("View-Binocular--Streamline-Freehand")}
                     {$c->__('button.discover')}
                 </a>
             </h4>

@@ -84,7 +84,7 @@
                     {/if}
                     {$count = $post->user_views_count}
                     {if="$count > 2"}
-                        • {$count} <i class="material-symbols">visibility</i>
+                        • {$count} {$c->svgIcon("View-Eye-1--Streamline-Freehand")}
                     {/if}
                 </p>
                 {if="$post->isBrief()"}
@@ -103,7 +103,7 @@
         {/if}
         <section dir="{if="$post->isRTL()"}rtl{else}ltr{/if}">
             <label class="spoiler" for="spoiler_{$post->nodeid|cleanupId}">
-                <i class="material-symbols">visibility</i>
+                {$c->svgIcon("View-Eye-1--Streamline-Freehand")}
             </label>
             <div>
                 {if="$post->embeds->count() > 0"}
@@ -132,7 +132,7 @@
         {/if}
         <section {if="!$post->isShort()"}class="limited"{/if} dir="{if="$post->isRTL()"}rtl{else}ltr{/if}">
             <label class="spoiler" for="spoiler_{$post->nodeid|cleanupId}">
-                <i class="material-symbols">visibility</i>
+                {$c->svgIcon("View-Eye-1--Streamline-Freehand")}
             </label>
             <div>
                 {if="$post->embeds->count() > 0"}
@@ -218,7 +218,7 @@
                             class="button narrow icon flat gray"
                             onclick="SendTo_ajaxSendContact('{$post->getRef()}')"
                             href="#">
-                            <i class="material-symbols">send</i>
+                            {$c->svgIcon("Send-Email-Fly--Streamline-Freehand")}
                         </a>
                         {if="$post->openlink"}
                             <a  title="{$c->__('post.public_url')}"

@@ -212,7 +212,7 @@
             {if="$conference->presence->mucrole == 'moderator'"}
                 <li onclick="RoomsUtils_ajaxGetSubject('{$jid|echapJS}')">
                     <span class="primary icon gray">
-                        <i class="material-symbols">short_text</i>
+                        {$c->svgIcon("Messages-Bubble-Menu--Streamline-Freehand")}
                     </span>
                     <div>
                         <p>{$c->__('chatroom.subject')}</p>

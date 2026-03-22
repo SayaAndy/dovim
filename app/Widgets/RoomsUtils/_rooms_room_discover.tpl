@@ -53,7 +53,7 @@
                 <ul class="list">
                     <li>
                         <span class="control icon divided gray active" >
-                            <i class="material-symbols">search</i>
+                            {$c->svgIcon("Search-Magnifier--Streamline-Freehand")}
                         </span>
                         <div>
                             <input

@@ -41,7 +41,7 @@
                     <p class="desc line center"></p>
                 </div>
                 <span class="primary active bubble color icon green">
-                    <i class="material-symbols">gesture</i>
+                    {$c->svgIcon("Design-Process-Draw-Pen--Streamline-Freehand")}
                 </span>
             </li>
         </div>

@@ -42,7 +42,7 @@
                 <p>
                     {$count = $story->user_views_count}
                     {if="$count > 2"}
-                        {$count} <i class="material-symbols">visibility</i> •
+                        {$count} {$c->svgIcon("View-Eye-1--Streamline-Freehand")} •
                     {/if}
 
                     {$c->prepareDate($story->published, true)}
@@ -59,7 +59,7 @@
         {if="!$story->isMine($c->me) && $story->contact"}
         <li class="comment">
             <span class="control icon active" onclick="StoriesViewer.sendComment({$story->id})">
-                <i class="material-symbols">send</i>
+                {$c->svgIcon("Send-Email-Fly--Streamline-Freehand")}
             </span>
             <form name="storycomment" onsubmit="return false;">
                 <div>

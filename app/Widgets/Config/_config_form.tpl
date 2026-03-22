@@ -22,7 +22,7 @@
             </li>
             <li>
                 <span class="primary icon gray">
-                    <i class="material-symbols">forum</i>
+                    {$c->svgIcon("Conversation-Question-Warning-3--Streamline-Freehand")}
                 </span>
                 <span class="control">
                     <div class="checkbox">
@@ -83,7 +83,7 @@
         <ul class="list middle">
             <li>
                 <span class="primary icon gray">
-                    <i class="material-symbols">forum</i>
+                    {$c->svgIcon("Conversation-Question-Warning-3--Streamline-Freehand")}
                 </span>
                 <span class="control">
                     <div class="checkbox">

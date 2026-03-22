@@ -118,7 +118,7 @@
             </li>
             <li>
                 <span class="primary icon gray">
-                    <i class="material-symbols">chat</i>
+                    {$c->svgIcon("Messages-Bubble-Square-Text--Streamline-Freehand")}
                 </span>
                 <span class="control">
                     <div class="checkbox">
@@ -198,7 +198,7 @@
             </li>
             <li>
                 <span class="primary icon gray">
-                    <i class="material-symbols">help</i>
+                    {$c->svgIcon("Help-Question-Circle--Streamline-Freehand")}
                 </span>
                 <div>
                     <textarea type="text" name="info" id="info"

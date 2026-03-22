@@ -17,7 +17,7 @@
             <ul class="list">
                 <li>
                     <span class="primary icon gray">
-                        <i class="material-symbols">assignment_ind</i>
+                        {$c->svgIcon("Messages-People-Person-Bubble-Square-2--Streamline-Freehand")}
                     </span>
                     <div>
                         <div class="select">

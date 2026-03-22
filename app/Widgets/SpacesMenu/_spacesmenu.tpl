@@ -17,7 +17,7 @@
         </span>
 
         <span class="control icon gray">
-            <i class="material-symbols">communities</i>
+            {$c->svgIcon("Share-Circles--Streamline-Freehand")}
         </span>
         <div>
             <p class="line">
@@ -33,7 +33,7 @@
 
 <li onclick="SpacesMenu_ajaxAdd()">
     <span class="primary icon bubble space_add">
-        <i class="material-symbols">add</i>
+        {$c->svgIcon("Add-Sign-Bold--Streamline-Freehand")}
     </span>
     <div>
         <p class="line">{$c->__('spacesmenu.create_space_title')}</p>

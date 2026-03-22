@@ -18,7 +18,7 @@
             <ul class="list middle">
                 <li>
                     <span id="menu" class="primary icon gray" >
-                        <i class="material-symbols">manage_accounts</i>
+                        {$c->svgIcon("Settings-Cog--Streamline-Freehand")}
                     </span>
                     <div>
                         <p><?php echo __('page.administration'); ?></p>

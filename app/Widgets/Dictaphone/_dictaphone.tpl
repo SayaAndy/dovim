@@ -8,7 +8,7 @@
                 <i class="material-symbols">play_arrow</i>
             </span>
             <span id="audio_upload" class="control icon active">
-                <i class="material-symbols">send</i>
+                {$c->svgIcon("Send-Email-Fly--Streamline-Freehand")}
             </span>
             <div>
                 <p class="rec icon red"></p>

@@ -16,7 +16,7 @@
             <i class="material-symbols">publish</i>
         </button>
         <button id="snapdraw" class="button action color transparent">
-            <i class="material-symbols">gesture</i>
+            {$c->svgIcon("Design-Process-Draw-Pen--Streamline-Freehand")}
         </button>
         <button id="snapwait" class="button action color gray">
             <i class="material-symbols">more_horiz</i>

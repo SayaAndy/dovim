@@ -99,7 +99,7 @@
     <ul class="list thick">
         <li>
             <span class="primary icon blue">
-                <i class="material-symbols">help</i>
+                {$c->svgIcon("Help-Question-Circle--Streamline-Freehand")}
             </span>
             <div>
                 <p>{$c->__('search.no_contacts_title')}</p>

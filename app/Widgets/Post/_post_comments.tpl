@@ -62,7 +62,7 @@
                         onclick="SendTo_ajaxSendContact('{$post->getRef()}')"
                         href="#"
                     >
-                        <i class="material-symbols">send</i>
+                        {$c->svgIcon("Send-Email-Fly--Streamline-Freehand")}
                     </a>
                 </p>
             </div>
@@ -74,7 +74,7 @@
                 <i class="material-symbols">add_comment</i>
             </span>
             <span class="control icon gray active" onclick="Post_ajaxPublishComment(MovimUtils.formToJson('comment'),'{$post->server}', '{$post->node}', '{$post->nodeid}'); this.classList.add('disabled');">
-                <i class="material-symbols">send</i>
+                {$c->svgIcon("Send-Email-Fly--Streamline-Freehand")}
             </span>
             <form name="comment">
                 <div>

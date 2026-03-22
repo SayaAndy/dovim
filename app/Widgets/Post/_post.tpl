@@ -126,7 +126,7 @@
                     {/if}
                     {$count = $post->user_views_count}
                     {if="$count > 2"}
-                         • {$count} <i class="material-symbols">visibility</i>
+                         • {$count} {$c->svgIcon("View-Eye-1--Streamline-Freehand")}
                     {/if}
                 </p>
                 {if="$post->isBrief()"}
@@ -261,7 +261,7 @@
                     {/if}
                     onclick="Preview_ajaxHttpShow('{$value->href}')"
                 >
-                    <i class="material-symbols">visibility</i>
+                    {$c->svgIcon("View-Eye-1--Streamline-Freehand")}
                 </li>
             {/loop}
         </ul>

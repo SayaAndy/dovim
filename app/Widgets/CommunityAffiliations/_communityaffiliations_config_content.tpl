@@ -46,7 +46,7 @@
                     <p>{$c->__('button.add')}</p>
                 </div>
                 <span onclick="CommunityAffiliations.update('addaffiliation')" class="chip active color green">
-                    <i class="material-symbols">add</i>
+                    {$c->svgIcon("Add-Sign-Bold--Streamline-Freehand")}
                     {$c->__('button.add')}
                 </span>
             </li>
@@ -68,7 +68,7 @@
             </li>
             <li>
                 <span class="primary icon">
-                    <i class="material-symbols">assignment_ind</i>
+                    {$c->svgIcon("Messages-People-Person-Bubble-Square-2--Streamline-Freehand")}
                 </span>
                 <div>
                     <div class="select">

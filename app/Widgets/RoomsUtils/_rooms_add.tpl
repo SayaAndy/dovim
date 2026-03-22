@@ -101,7 +101,7 @@
                 {if="!$create"}
                     <li>
                         <span class="primary icon gray">
-                            <i class="material-symbols">short_text</i>
+                            {$c->svgIcon("Messages-Bubble-Menu--Streamline-Freehand")}
                         </span>
                         <div>
                             <input

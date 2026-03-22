@@ -6,7 +6,7 @@
     <ul class="list thick">
         <li>
             <span class="primary icon gray">
-                <i class="material-symbols">communities</i>
+                {$c->svgIcon("Share-Circles--Streamline-Freehand")}
             </span>
             <div>
                 <p>

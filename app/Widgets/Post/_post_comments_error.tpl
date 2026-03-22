@@ -26,7 +26,7 @@
         </li>
         <li  class="block" onclick="SendTo_ajaxSendContact('{$post->getRef()}')">
             <span class="primary icon gray">
-                <i class="material-symbols">send</i>
+                {$c->svgIcon("Send-Email-Fly--Streamline-Freehand")}
             </span>
             <div>
                 <p>

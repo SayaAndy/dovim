@@ -63,7 +63,7 @@
             </li>
             <li>
                 <span class="primary icon spin">
-                    <i class="material-symbols">progress_activity</i>
+                    {$c->svgIcon("Loading-Spinning-Star--Streamline-Freehand")}
                 </span>
                 <div>
                     <p class="line">{$c->__('story.uploading')}</p>

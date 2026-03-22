@@ -127,7 +127,7 @@
     {if="$contact->isPublic()"}
         <li onclick="MovimUtils.reload('{$contact->getBlogUrl()}')">
             <span class="primary icon gray">
-                <i class="material-symbols">globe</i>
+                {$c->svgIcon("Worldwide-Web-Network-Www--Streamline-Freehand")}
             </span>
             <span class="control icon">
                 <i class="material-symbols">chevron_right</i>
@@ -139,7 +139,7 @@
         </li>
         <li class="block large">
             <span class="primary icon orange">
-                <i class="material-symbols">rss_feed</i>
+                {$c->svgIcon("Wireless-Signal-Rss-Feed--Streamline-Freehand")}
             </span>
             <span class="control icon active" onclick="Preview.copyToClipboard('{$contact->getSyndicationUrl()}')">
                 <i class="material-symbols">content_copy</i>
@@ -160,7 +160,7 @@
                 <p class="all">{$c->__('general.private_account_text')}</p>
                 <p>
                     <a class="button oppose color transparent" onclick="MovimUtils.reload('{$c->route('configuration')}')" >
-                        <i class="material-symbols">tune</i> {$c->__('page.configuration')}
+                        {$c->svgIcon("Controls-Sliders-Vertical--Streamline-Freehand")} {$c->__('page.configuration')}
                     </a>
                 </p>
             </div>

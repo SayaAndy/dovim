@@ -5,7 +5,7 @@
                 <img src="{$subscription->info->getPicture(placeholder: $subscription->info->name)}">
             </span>
             <span class="control icon gray active" onclick="SpaceInfo_ajaxGetConfig('{$subscription->server}', '{$subscription->node}')">
-                <i class="material-symbols">tune</i>
+                {$c->svgIcon("Controls-Sliders-Vertical--Streamline-Freehand")}
             </span>
         {else}
             <span class="primary icon bubble space">
@@ -39,7 +39,7 @@
                 <i class="material-symbols">person_edit</i>
             </span>
             <span title="{$c->__('spaceinfo.add_room_title')}" class="control icon gray active" onclick="SpaceRooms_ajaxAdd('{$subscription->server}', '{$subscription->node}')">
-                <i class="material-symbols">add</i>
+                {$c->svgIcon("Add-Sign-Bold--Streamline-Freehand")}
             </span>
             <span class="control icon gray active" onclick="MovimUtils.reloadThis()">
                 <i class="material-symbols">check</i>

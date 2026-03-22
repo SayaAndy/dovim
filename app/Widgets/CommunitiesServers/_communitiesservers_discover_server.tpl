@@ -4,7 +4,7 @@
     <ul class="list thick">
         <li class="block large">
             <span class="primary icon">
-                <i class="material-symbols">search</i>
+                {$c->svgIcon("Search-Magnifier--Streamline-Freehand")}
             </span>
             <form name="communitiesservers_discover_server">
                 <div>

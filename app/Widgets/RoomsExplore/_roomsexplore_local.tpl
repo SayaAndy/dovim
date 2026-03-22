@@ -22,7 +22,7 @@
             {else}
                 <span class="control icon gray active divided"
                     onclick="Drawer.clear(); RoomsUtils_ajaxAdd('{$value->server}', '{$value->name}')">
-                    <i class="material-symbols">add</i>
+                    {$c->svgIcon("Add-Sign-Bold--Streamline-Freehand")}
                 </span>
             {/if}
             <div>
@@ -46,7 +46,7 @@
     {/loop}
 {else}
     <div class="placeholder">
-        <i class="material-symbols">explore</i>
+        {$c->svgIcon("View-Binocular--Streamline-Freehand")}
         <h1>{$c->__('roomsexplore.no_local')}</h1>
     </div>
 {/if}

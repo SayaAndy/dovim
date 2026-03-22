@@ -12,7 +12,7 @@
 
                 <span class="control icon active white divided" onclick="Presence_ajaxAskLogout(); Drawer.clear('menu')"
                     title="{$c->__('status.disconnect')}">
-                    <i class="material-symbols">exit_to_app</i>
+                    {$c->svgIcon("Safety-Exit-Door--Streamline-Freehand")}
                 </span>
                 <div>
                     <p class="line">{$contact->truename}</p>
@@ -27,7 +27,7 @@
             onclick="MovimUtils.reload('{$c->route('contact', $c->me->id)}')"
         >
             <span class="primary icon gray">
-                <i class="material-symbols">news</i>
+                {$c->svgIcon("Taking-Pictures-Man--Streamline-Freehand")}
             </span>
             <span class="control icon gray">
                 <i class="material-symbols">chevron_right</i>
@@ -41,7 +41,7 @@
                 title="{$c->__('communityaffiliation.subscriptions')}"
             >
                 <span class="primary icon gray">
-                    <i class="material-symbols">bookmarks</i>
+                    {$c->svgIcon("Book-Library-Shelf-1--Streamline-Freehand")}
                 </span>
                 <span class="control icon gray">
                     <i class="material-symbols">chevron_right</i>
@@ -57,7 +57,7 @@
         <li onclick="MovimUtils.reload('{$c->route('configuration')}')"
             title="{$c->__('page.configuration')}">
             <span class="primary icon gray">
-                <i class="material-symbols">tune</i>
+                {$c->svgIcon("Controls-Sliders-Vertical--Streamline-Freehand")}
             </span>
             <span class="control icon gray">
                 <i class="material-symbols">chevron_right</i>
@@ -70,7 +70,7 @@
             <li onclick="MovimUtils.reload('{$c->route('admin')}')"
                 title="{$c->__('page.administration')}">
                 <span class="primary icon gray">
-                    <i class="material-symbols">manage_accounts</i>
+                    {$c->svgIcon("Settings-Cog--Streamline-Freehand")}
                 </span>
                 <span class="control icon gray">
                     <i class="material-symbols">chevron_right</i>
@@ -85,7 +85,7 @@
             title="{$c->__('page.help')}"
         >
             <span class="primary icon gray">
-                <i class="material-symbols">help</i>
+                {$c->svgIcon("Help-Question-Circle--Streamline-Freehand")}
             </span>
             <span class="control icon gray">
                 <i class="material-symbols">chevron_right</i>

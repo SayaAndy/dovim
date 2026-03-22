@@ -7,7 +7,7 @@
             <i class="material-symbols"></i>
         </span>
         <!--<span class="control icon active gray" onclick="SendTo_ajaxSend('{$value->jid|echapJS}', false, '{$uri}')">
-            <i class="material-symbols">send</i>
+            {$c->svgIcon("Send-Email-Fly--Streamline-Freehand")}
         </span>-->
         <div>
             <p class="line">

@@ -5,7 +5,7 @@
             title="{$c->__('page.news')}"
         >
             <span class="primary icon">
-                <i class="material-symbols">newsmode</i>
+                {$c->svgIcon("Newspaper-Fold--Streamline-Freehand")}
                 <span data-key="news" class="counter"></span>
             </span>
             <div>
@@ -17,7 +17,7 @@
             class="on_desktop {if="$page == 'explore' || $page == 'community'"}active{/if}"
             title="{$c->__('page.explore')}"
         >
-            <span class="primary icon"><i class="material-symbols">explore</i></span>
+            <span class="primary icon">{$c->svgIcon("View-Binocular--Streamline-Freehand")}</span>
             <div>
                 <p>{$c->__('page.explore')}</p>
             </div>
@@ -28,7 +28,7 @@
             class="on_desktop publish_something"
             title="{$c->__('post.publish_something')}"
         >
-            <span class="primary icon"><i class="material-symbols">note_stack_add</i></span>
+            <span class="primary icon">{$c->svgIcon("Notes-Hand--Streamline-Freehand")}</span>
             <div>
                 <p>{$c->__('post.publish_something')}</p>
             </div>
@@ -41,7 +41,7 @@
         title="{$c->__('button.search')}"
     >
         <span class="primary icon">
-            <i class="material-symbols">search</i>
+            {$c->svgIcon("Search-Magnifier--Streamline-Freehand")}
         </span>
         <div>
             <p>{$c->__('button.search')}</p>
@@ -52,7 +52,7 @@
         title="{$c->__('notifs.title')}"
     >
         <span class="primary icon">
-            <i class="material-symbols">notifications</i>
+            {$c->svgIcon("Alert-Alarm-Bell--Streamline-Freehand")}
             <span class="counter notifications"></span>
         </span>
         <div>

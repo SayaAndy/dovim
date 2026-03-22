@@ -1,7 +1,7 @@
 <ul class="list thick spaced empty">
     <li>
         <span class="primary icon green">
-            <i class="material-symbols">people_outline</i>
+            {$c->svgIcon("Collaboration-Team-Chat--Streamline-Freehand")}
         </span>
         <div>
             <p>{$c->__('rooms.empty_text1')}</p>

@@ -4,7 +4,7 @@
             <li class="block color" onclick="RoomsExplore_ajaxSearch();">
                 <i class="main material-symbols">chat</i>
                 <span class="primary icon">
-                    <i class="material-symbols">groups</i>
+                    {$c->svgIcon("Business-Management-Agreement--Streamline-Freehand")}
                 </span>
                 <div>
                     <p class="line two">
@@ -16,7 +16,7 @@
             <li class="block" onclick="RoomsUtils_ajaxAdd(false, null, true); Drawer.clear()">
                 <i class="main material-symbols">star</i>
                 <span class="primary icon transparent">
-                    <i class="material-symbols">group_add</i>
+                    {$c->svgIcon("Meeting-Presentation--Streamline-Freehand")}
                 </span>
                 <div>
                     <p class="line two">
@@ -34,7 +34,7 @@
 
     <div id="results">
         <div class="placeholder">
-            <i class="material-symbols">search</i>
+            {$c->svgIcon("Search-Magnifier--Streamline-Freehand")}
             <h4>{$c->__('input.open_me_using')} <span class="chip outline">Ctrl</span> + <span class="chip outline">M</span></h4>
         </div>
     </div>
