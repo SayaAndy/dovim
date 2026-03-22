@@ -6,10 +6,10 @@ ENV LANG=C.UTF-8
 RUN set -eux; \
     apk update \
     && apk add --no-cache \
-      ca-certificates less vim \
+      ca-certificates less bash vim \
       tzdata libatomic wget make xz git nginx \
       unzip imagemagick-dev jpeg-dev libpng-dev libwebp-dev libpq-dev libzip-dev \
-      composer php84-fpm php84-pdo php84-curl php84-mbstring php84-gd php84-pgsql php84-xml php84-dev php84-pear php84-pecl-imagick php84-zip php84-phar php84-iconv php84-dom php84-xmlwriter php84-simplexml php84-tokenizer php84-openssl php84-session php84-ctype php84-fileinfo php84-gmp \
+      composer php84-fpm php84-pdo php84-pdo_pgsql php84-opcache php84-curl php84-mbstring php84-gd php84-pgsql php84-xml php84-dev php84-pear php84-pecl-imagick php84-zip php84-phar php84-iconv php84-dom php84-xmlwriter php84-simplexml php84-tokenizer php84-openssl php84-session php84-ctype php84-fileinfo php84-gmp \
     && ln -sf /usr/sbin/php-fpm84 /usr/sbin/php-fpm
 
 COPY assets/movim.ini /etc/php/conf.d/movim.ini

@@ -7,7 +7,7 @@ movim_daemon() {
 }
 
 system_services() {
-	service "$(basename "$(find /etc/init.d -type f -name "php*-fpm")")" start
+	php-fpm &
 }
 
 update_volume_permissions() {
