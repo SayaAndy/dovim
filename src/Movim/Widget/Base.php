@@ -113,6 +113,16 @@ class Base
         unset($this->_view);
     }
 
+    public function svgIcon(string $materialId, string ...$classes): string
+    {
+        $path = CACHE_PATH . 'streamlinehq/' . $materialId . '.svg';
+        if (file_exists($path)) {
+            return file_get_contents($path);
+        }
+
+        return htmlspecialchars($materialId);
+    }
+
     public function __(...$args)
     {
         if ($this->sessionId) {

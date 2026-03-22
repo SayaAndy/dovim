@@ -6,6 +6,12 @@ movim_daemon() {
 		&& php daemon.php start
 }
 
+download_streamlinehq_svg() {
+	if [ -n "${STREAMLINEHQ_API_KEY:-}" ]; then
+		bash "/usr/local/bin/download-streamlinehq-svg.bash"
+	fi
+}
+
 system_services() {
 	php-fpm &
 }
@@ -21,5 +27,6 @@ if [ "$(id -u)" -eq 0 ]; then
 	update_volume_permissions
 	su -l www-data -s /bin/bash "$0"
 else
+	download_streamlinehq_svg
 	movim_daemon
 fi
