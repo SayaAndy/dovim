@@ -15,10 +15,13 @@ done < "$(dirname $(realpath "$0"))/streamlinehq-replace-map.csv"
 
 echo "$(date +'%Y-%m-%dT%H:%M:%S%z'):DEBUG:initialized streamlinehq replace map"
 
+gnugrep () { [ "$(uname)" = "Linux" ] && grep $@ || ggrep $@ ; }
+gnused () { [ "$(uname)" = "Linux" ] && sed $@ || gsed $@ ; }
+
 for rootdir in $TEMPLATE_GLOB_BASES; do
     IFS=
     find "$rootdir" -name "*.tpl" -type f -print0 | while read -r -d $'\0' file; do
-        (ggrep -Po '(?<=<i class="material-symbols">)\S+?(?=<\/i>)' "$file" || true) | while read -r iicon; do
+        (gnugrep -Po '(?<=<i class="material-symbols">)\S+?(?=<\/i>)' "$file" || true) | while read -r iicon; do
             if [[ -z $iicon ]]; then
                 continue
             fi
@@ -28,7 +31,7 @@ for rootdir in $TEMPLATE_GLOB_BASES; do
             fi
             sicon="${streamlinehq_replace_map["${iicon}"]}"
             echo "$(date +'%Y-%m-%dT%H:%M:%S%z'):DEBUG:file=$file:iicon=$iicon:sicon=$sicon:replacing"
-            gsed -i -e "\
+            gnused -i -e "\
 0,\
 /<i class=\"material-symbols\">${iicon}<\/i>\
 /s\

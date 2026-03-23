@@ -372,7 +372,7 @@
         {if="!$contact->isFromMuc()"}
             <li onclick="MovimUtils.reload('{$c->route('contact', $contact->id)}')">
                 <span class="primary icon gray">
-                    <i class="material-symbols">person</i>
+                    {$c->svgIcon("Composition-Man--Streamline-Freehand")}
                 </span>
                 <div>
                     <p class="line">{$c->__('chat.profile')}</p>

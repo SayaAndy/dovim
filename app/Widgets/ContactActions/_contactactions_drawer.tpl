@@ -14,7 +14,7 @@
                 {/if}
                 {if="!$contact->isFromMuc()"}
                     <span class="control icon active" onclick="MovimUtils.reload('{$c->route('contact', $contact->id)}'); Drawer.clear();">
-                        <i class="material-symbols">person</i>
+                        {$c->svgIcon("Composition-Man--Streamline-Freehand")}
                     </span>
                 {/if}
                 {if="!$contact->isContact($c->me->id)"}

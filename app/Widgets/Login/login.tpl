@@ -138,7 +138,7 @@
                                 </span>
                             {else}
                                 <span class="primary icon bubble small color {$value->id|stringToColor}">
-                                    <i class="material-symbols">person</i>
+                                    {$c->svgIcon("Composition-Man--Streamline-Freehand")}
                                 </span>
                             {/if}
                             <div>

@@ -16,7 +16,7 @@
     {if="isset($post)"}
         <li  class="block" onclick="SendTo.shareArticle('{$post->getRef()}')">
             <span class="primary icon gray">
-                <i class="material-symbols">share</i>
+                {$c->svgIcon("Share-Circles--Streamline-Freehand")}
             </span>
             <div>
                 <p>
@@ -37,7 +37,7 @@
     {else}
         <li class="block" onclick="Post.share()">
             <span class="primary icon gray">
-                <i class="material-symbols">share</i>
+                {$c->svgIcon("Share-Circles--Streamline-Freehand")}
             </span>
             <div>
                 <p>

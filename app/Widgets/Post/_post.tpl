@@ -52,7 +52,7 @@
                 {else}
                     <span class="icon primary bubble color {$post->color}">
                         <a href="#" onclick="Post_ajaxGetContact('{$post->aid}')">
-                            <i class="material-symbols">person</i>
+                            {$c->svgIcon("Composition-Man--Streamline-Freehand")}
                         </a>
                     </span>
                 {/if}

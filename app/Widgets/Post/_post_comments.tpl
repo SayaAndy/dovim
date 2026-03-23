@@ -54,7 +54,7 @@
                         onclick="SendTo.shareArticle('{$post->getRef()}')"
                         href="#"
                     >
-                        <i class="material-symbols">share</i>
+                        {$c->svgIcon("Share-Circles--Streamline-Freehand")}
                     </a>
                     <a
                         title="{$c->__('button.send_to')}"
@@ -125,10 +125,10 @@
             {else}
                 <span class="primary icon bubble {if="$value->aid"}color {$value->aid|stringToColor}{/if} small">
                     {if="$public"}
-                        <i class="material-symbols">person</i>
+                        {$c->svgIcon("Composition-Man--Streamline-Freehand")}
                     {else}
                         <a href="{$c->route('contact', $value->aid)}">
-                            <i class="material-symbols">person</i>
+                            {$c->svgIcon("Composition-Man--Streamline-Freehand")}
                         </a>
                     {/if}
                 </span>

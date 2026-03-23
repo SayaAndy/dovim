@@ -21,7 +21,7 @@
             </span>
             {/if}
             <span class="control icon active" onclick="StoriesViewer.pause(); SendTo_ajaxSendContact('{$story->getRef()}')">
-                <i class="material-symbols">share</i>
+                {$c->svgIcon("Share-Circles--Streamline-Freehand")}
             </span>
             <span class="control icon pause toggleable" onclick="StoriesViewer.start()">
                 <i class="material-symbols fill">play_arrow</i>

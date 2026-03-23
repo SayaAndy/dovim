@@ -9,7 +9,7 @@
     <ul class="list">
         <li class="block large">
             <span class="primary icon gray">
-                <i class="material-symbols">person</i>
+                {$c->svgIcon("Composition-Man--Streamline-Freehand")}
             </span>
             <div>
                 <p class="line">

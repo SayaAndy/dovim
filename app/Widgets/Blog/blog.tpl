@@ -14,7 +14,7 @@
                 <ul class="list thick">
                     <li>
                         <span class="primary icon on_desktop active" onclick="MovimUtils.redirect('{$contact->getBlogUrl()}')">
-                            <i class="material-symbols">person</i>
+                            {$c->svgIcon("Composition-Man--Streamline-Freehand")}
                         </span>
                         <span class="primary icon bubble on_mobile">
                             <img src="{$contact->getPicture(\Movim\ImageSize::M)}">

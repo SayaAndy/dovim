@@ -16,7 +16,7 @@
         <ul class="list middle">
             <li>
                 <span class="primary icon bubble gray">
-                    <i class="material-symbols">share</i>
+                    {$c->svgIcon("Share-Circles--Streamline-Freehand")}
                 </span>
                 <span class="control icon active gray divided" onclick="SendTo_ajaxOsShare({$post->id})">
                     <i class="material-symbols">ios_share</i>

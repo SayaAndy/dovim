@@ -29,7 +29,7 @@
                 <p class="line">{$c->__('hello.share_title')}</p>
                 <p class="all">{$c->__('hello.share_text')}</p>
                 <p>
-                    <a class="button oppose color transparent" onclick="return false;" href="javascript:(function(){location.href='{$c->route('share', '\'+btoa(location.href);')}})();"><i class="material-symbols">share</i> {$c->__('button.share')}</a>
+                    <a class="button oppose color transparent" onclick="return false;" href="javascript:(function(){location.href='{$c->route('share', '\'+btoa(location.href);')}})();">{$c->svgIcon("Share-Circles--Streamline-Freehand")} {$c->__('button.share')}</a>
                 </p>
             </div>
         </li>

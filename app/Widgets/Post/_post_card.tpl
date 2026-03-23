@@ -12,7 +12,7 @@
                     </span>
                 {else}
                     <span class="primary icon bubble color {$post->aid|stringToColor}">
-                        <i class="material-symbols">person</i>
+                        {$c->svgIcon("Composition-Man--Streamline-Freehand")}
                     </span>
                 {/if}
             {else}
@@ -211,7 +211,7 @@
                             class="button narrow icon flat gray"
                             onclick="SendTo.shareArticle('{$post->getRef()}')"
                             href="#">
-                            <i class="material-symbols">share</i>
+                            {$c->svgIcon("Share-Circles--Streamline-Freehand")}
                         </a>
                         <a
                             title="{$c->__('button.send_to')}"
