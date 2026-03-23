@@ -333,9 +333,11 @@ form > div textarea[readonly] {
 .button,
 input[type=button] {
     -webkit-appearance:none; /* iOS */
+    display: flex;
+    justify-content: center;
+    margin-inline: auto;
     min-width: 5rem;
     text-align: center;
-    display: inline-block;
     box-sizing: border-box;
     font-size: 2rem;
     font-weight: 500;

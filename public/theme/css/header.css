@@ -1,6 +1,7 @@
 header.big {
     background-size: cover, cover;
     background-position: center center;
+    background-blend-mode: normal;
     width: 100%;
     max-width: 100%;
     color: white;

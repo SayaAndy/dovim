@@ -1,9 +1,9 @@
-<header class="big top color" style="background-image: url({$me->getBanner()})">
+<header class="big top color" style="background-image: url({$me->getBanner()}); background-blend-mode: normal;">
     <ul class="list thick">
         <li class="block">
             <span
                 class="primary icon bubble color {$me->color}"
-                style="background-image: url({$me->getPicture()})">
+                style="background-image: url({$me->getPicture()}); background-blend-mode: normal;">
             </span>
             <div>
                 <a class="button color transparent active" onclick="Avatar_ajaxGetForm()" title="{$c->__('avatar.change')}">

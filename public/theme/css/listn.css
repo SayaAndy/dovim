@@ -301,6 +301,11 @@ ul.list>li>div>p:not(:first-of-type):not(.brief) {
     font-size: 1.75rem;
 }
 
+ul.list>li>div>p:not(:first-of-type):not(.brief)>svg {
+    height: 4rem;
+    vertical-align: middle;
+}
+
 ul.list>*>li>div>p:not(.all),
 ul.list>li>div>p:not(.all) {
     max-height: 7.5rem;
@@ -503,6 +508,10 @@ ul.tabs>li>* {
 
 ul.tabs>li>*>i {
     font-size: 2.5rem;
+}
+
+ul.tabs>li>*>svg {
+    width: 2.5rem;
 }
 
 ul.tabs.narrow>li {
@@ -718,6 +727,10 @@ ul.list.controls>li {
 
 ul.list.controls i {
     text-shadow: 0 0 3rem black;
+}
+
+ul.list.controls svg {
+    filter: drop-shadow(0 0 3rem black);
 }
 
 /* Icon */

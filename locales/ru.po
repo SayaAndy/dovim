@@ -17,6 +17,7 @@
 # yanislavb <its@dark0ff.ru>, 2017
 # yanislavb <its@dark0ff.ru>, 2017
 # Yurt Page, 2025
+# Saya Andy <saya.andy@posteo.com>, 2026
 #. #-#-#-#-#  locales.po (PACKAGE VERSION)  #-#-#-#-#
 #. extracted from ../app/Widgets/About/locales.ini
 #. #-#-#-#-#  locales.po (PACKAGE VERSION)  #-#-#-#-#
@@ -141,7 +142,7 @@ msgstr ""
 "Report-Msgid-Bugs-To: \n"
 "POT-Creation-Date: 2026-03-05 17:25+0200\n"
 "PO-Revision-Date: 2015-06-24 09:45+0000\n"
-"Last-Translator: Yurt Page, 2025\n"
+"Last-Translator: Saya Andy <saya.andy@posteo.com>, 2026\n"
 "Language-Team: Russian (http://app.transifex.com/movim/movim/language/ru/)\n"
 "Language: ru\n"
 "MIME-Version: 1.0\n"
@@ -184,11 +185,11 @@ msgstr "Movim — основанная на XMPP платформа для ко�
 
 #: [about]sourcecode_title
 msgid "Sourcecode"
-msgstr ""
+msgstr "Исходный код"
 
 #: [about]sourcecode_text
 msgid "Checkout the sourcecode on the Github repository"
-msgstr ""
+msgstr "Мы публикуем исходный код в Github-репозиторий"
 
 #: [account]title [page]account
 msgid "Account"
@@ -196,11 +197,11 @@ msgstr "Учётная запись"
 
 #: [account]account_management
 msgid "Account management"
-msgstr "Управление учёткой"
+msgstr "Управление учётной записью"
 
 #: [account]password_change_title
 msgid "Change my password"
-msgstr "Изменить мой пароль"
+msgstr "Сменить пароль"
 
 #: [account]password [credentials]password [form]password [input]password
 msgid "Password"
@@ -208,19 +209,19 @@ msgstr "Пароль"
 
 #: [account]password_confirmation
 msgid "Password confirmation"
-msgstr "Подтверждение пароля"
+msgstr "Пароль заново"
 
 #: [account]password_changed
 msgid "The password has been updated"
-msgstr "Пароль был изменен"
+msgstr "Пароль был изменён"
 
 #: [account]password_not_same
 msgid "The provided passwords are not the same"
-msgstr "Введенные пароли не совпадают"
+msgstr "Введённые пароли не совпадают"
 
 #: [account]delete
 msgid "Delete your account"
-msgstr "Удалить мою учётную запись"
+msgstr "Удалить свою учётную запись"
 
 #: [account]delete_text
 msgid "You will delete your XMPP account and all the relative information linked to it (profile, contacts, and publications)."
@@ -232,7 +233,7 @@ msgstr "Введите Ваше полное имя"
 
 #: [account]delete_text_error
 msgid "Please provide a valid username."
-msgstr "Пожалуйста введите действующую учётную запись"
+msgstr "Пожалуйста, введите действующую учётную запись."
 
 #: [account]gateway_title
 msgid "Gateways"
@@ -240,15 +241,15 @@ msgstr "Шлюзы"
 
 #: [account]clear
 msgid "Leave this instance"
-msgstr "Покинуть этот инстанс"
+msgstr "Покинуть этот сервер"
 
 #: [account]clear_text
 msgid "You will delete all the relative information linked to your account on this Movim instance (profile, contacts, and publications)."
-msgstr "При этом будет удалена вся соответствующая информация, связанная с вашей учётной записью в этом сервере Movim (профиль, контакты и публикации)."
+msgstr "При этом будет удалена вся сопутствующая информация, связанная с вашей учётной записью на этом сервере Movim (профиль, контакты и публикации)."
 
 #: [account]clear_text_confirm
 msgid "This action will not delete your account but will disconnect you from Movim."
-msgstr "Это действие не приведет к удалению вашей учётной записи, но отключит вас от Movim."
+msgstr "Это действие не приведет к полному удалению вашей учётной записи, но отключит Вас от Movim."
 
 #: [account]delete_bundle_title
 msgid "OMEMO Key deletion"
@@ -256,7 +257,7 @@ msgstr "Удаление ключа OMEMO"
 
 #: [account]delete_bundle_text
 msgid "You are going to destroy the following OMEMO key. Your contacts will not be able to encrypt messages using that key anymore. This action cannot be reverted. Are you sure?"
-msgstr "Вы собираетесь уничтожить следующий ключ OMEMO. Ваши контакты больше не смогут шифровать сообщения с помощью этого ключа. Это действие необратимо. Вы уверены?"
+msgstr "Вы собираетесь уничтожить данный ключ OMEMO. Ваши контакты больше не смогут шифровать сообщения с помощью этого ключа. Это действие необратимо. Вы уверены?"
 
 #: [adhoc]title
 msgid "Actions"
@@ -304,11 +305,11 @@ msgstr "Детализация лога"
 
 #: [general]join_title
 msgid "Your instance is public?"
-msgstr "Ваш сервер публичен?"
+msgstr "Ваш сервер общедоступен?"
 
 #: [general]join_text
 msgid "Register your instance on join.movim.eu and join the Movim federation!"
-msgstr "Зарегистрируйте свой сервер на join.movim.eu и присоединитесь к федерации Movim!"
+msgstr "Зарегистрируйте свой сервер на join.movim.eu и присоединяйтесь к федерации Movim!"
 
 #: [restrictsuggestions]title
 msgid "Restrict suggestions"
@@ -316,7 +317,7 @@ msgstr "Предотвращать подсказки"
 
 #: [restrictsuggestions]text
 msgid "Only suggest chatrooms, Communities, and other contents that are available on the user's XMPP server and related services"
-msgstr "Предлагайте только те чаты, сообщества и всё другое, которые доступны на XMPP-сервере пользователя и связанных с ним сервисах."
+msgstr "Предлагать только те чаты, сообщества и остальное, которые доступны на XMPP-сервере пользователя и связанных с ним сервисах."
 
 #: [chatonly]title
 msgid "Chat only"
@@ -324,7 +325,7 @@ msgstr "Только чат"
 
 #: [chatonly]text
 msgid "Disable all the social feature (Communities, Blog…) and keep only the chat ones"
-msgstr "Отключите все социальные функции (сообщества, блог и т.д.) и оставить только чат."
+msgstr "Отключить все социальные функции (сообщества, блог и т.д.) и оставить только чаты."
 
 #: [credentials]title
 msgid "Administration Credential"
@@ -377,7 +378,7 @@ msgstr "Общее описание этого сервера"
 
 #: [information]banner
 msgid "Main banner"
-msgstr "Главный банер"
+msgstr "Главный баннер"
 
 #: [information]banner_info
 msgid "Ensure that the picture is not too large and can be reached from any webpages"
@@ -498,19 +499,19 @@ msgstr "Ещё нет фото"
 
 #: [banner]change
 msgid "Change my banner"
-msgstr "Изменить мой банер"
+msgstr "Сменить свой баннер"
 
 #: [banner]updated
 msgid "Banner Updated"
-msgstr "Банер обновлён"
+msgstr "Баннер обновлён"
 
 #: [banner]not_updated
 msgid "Banner Not Updated"
-msgstr "Банер не обновлён"
+msgstr "Баннер не обновлён"
 
 #: [banner]missing
 msgid "No banner yet"
-msgstr "Ещё нет банера"
+msgstr "Пока без баннера"
 
 #: [blocked]title
 msgid "Blocked"
@@ -862,15 +863,15 @@ msgstr "сделано %s сделано сессий"
 
 #: [chats]empty_title
 msgid "No chats yet…"
-msgstr "Нет чатов..."
+msgstr "Пока без чатов..."
 
 #: [chats]empty
 msgid "Start a new conversation by clicking on the %s button."
-msgstr "Для начала нового разговора нажмите на кнопку %s."
+msgstr "Чтобы начать разговор, нажмите на кнопку %s."
 
 #: [chats]add
 msgid "Chat with a contact"
-msgstr "Пообщаться с контактом"
+msgstr "Связаться с контактом"
 
 #: [chats]me
 msgid "Me"
@@ -898,7 +899,7 @@ msgstr "Контакты"
 
 #: [communities]empty_text
 msgid "Discover, follow and share"
-msgstr "Изучайте новое, подписывайтесь и делитесь"
+msgstr "Открывайте новое, подписывайтесь и делитесь"
 
 #: [communities]counter
 msgid "%s communities"
@@ -914,7 +915,7 @@ msgstr "Сервера сообществ"
 
 #: [communities]servers_text
 msgid "Discover the Communities by servers"
-msgstr "Ищите себе сообщества по серверам"
+msgstr "Находите себе сообщества на разных серверах"
 
 #: [communities]disco
 msgid "Communities server discovered"
@@ -926,7 +927,7 @@ msgstr "Такого сервера не существует"
 
 #: [communitiesinteresting]about
 msgid "Communities you might like"
-msgstr "Сообщества что могут вам быть интересны"
+msgstr "Сообщества, что могут вам быть интересны"
 
 #: [communitiesserver]created
 msgid "Community created successfully"
@@ -946,7 +947,7 @@ msgstr "Название группы"
 
 #: [communitiesserver]name_example
 msgid "My Little Pony - Fan Club"
-msgstr "My Little Pony - Фан Клуб"
+msgstr "Харлем: Мы в Узбекистане"
 
 #: [communitiesserver]name_error
 msgid "Please provide a valid community name (4 characters minimum)"
@@ -954,7 +955,7 @@ msgstr "Пожалуйста, введите правильное имя соо�
 
 #: [communitiesserver]no_creation
 msgid "You cannot create a new community on this server"
-msgstr "Вы не можете создать сообщества на этом сервере."
+msgstr "Вы не можете создавать сообщества на этом сервере."
 
 #: [communitiesserver]disco_error
 msgid "Issue when trying to discover the items"
@@ -982,7 +983,7 @@ msgstr "Публичные подписки"
 
 #: [communityaffiliation]subscriptions_text
 msgid "My Communities subscriptions"
-msgstr "Подписки на мои сообщества"
+msgstr "Мои подписки на сообщества"
 
 #: [communityaffiliation]deleted
 msgid "Community deleted successfully"
@@ -994,11 +995,11 @@ msgstr "Удалить это сообщество"
 
 #: [communityaffiliation]delete_text
 msgid "You are going to delete the following community. Please confirm your action."
-msgstr "Вы собираетесь удалить это сообщество. Пожалуйста, подтвердите Ваши намерения."
+msgstr "Вы подтверждаете, что собираетесь удалить это сообщество?"
 
 #: [communityaffiliation]delete_clean_text
 msgid "It seems that this community doesn’t exists anymore. Do you want to remove it from your subscriptions?"
-msgstr "Похоже, этого сообщества больше не существует. Вы хотите удалить его из своих подписок?"
+msgstr "Похоже, этого сообщества больше не существует. Хотите удалить его из подписок?"
 
 #: [communityaffiliation]delete_error
 msgid "Error during the node deletion"
@@ -1035,11 +1036,11 @@ msgstr "Публично"
 
 #: [communityconfig]publish_model_open_text
 msgid "Everyone can publish"
-msgstr "Каждый может публиковать"
+msgstr "Разрешено постить всем"
 
 #: [communityconfig]publish_model_publishers_text
 msgid "The publishers can publish"
-msgstr "Редакторы могут публиковать"
+msgstr "Разрешено постить редакторам"
 
 #: [communityconfig]publish_model_subscribers_title
 msgid "Subscribers"
@@ -1047,7 +1048,7 @@ msgstr "Подписчики"
 
 #: [communityconfig]publish_model_subscribers_text
 msgid "The subscribers can publish"
-msgstr "Подписчики могут публиковать"
+msgstr "Разрешено постить подписчикам"
 
 #: [communityconfig]type
 msgid "Community type"
@@ -1083,11 +1084,11 @@ msgstr "Публичная страница"
 
 #: [communitydata]publishmodel_publishers
 msgid "Only publishers can publish"
-msgstr "Только публиканты могут публиковать"
+msgstr "Только редакторы могут постить"
 
 #: [communitydata]publishmodel_subscribers
 msgid "Only subscribers can publish"
-msgstr "Только подписчики могут публиковать"
+msgstr "Только подписчики могут постить"
 
 #: [communityheader]follow
 msgid "Follow"
@@ -1111,23 +1112,23 @@ msgstr "Подписки отключены для этого сообществ
 
 #: [communityheader]label_label
 msgid "Give a label for this community"
-msgstr "Дайте название этому сообществу"
+msgstr "Назовите сообщество"
 
 #: [communityheader]label_placeholder
 msgid "My Community Name"
-msgstr "Мое имя сообщества"
+msgstr "Имя моего сообщества"
 
 #: [communityheader]share_follow
 msgid "Share this follow to everyone"
-msgstr "Поделится со всеми этой подпиской"
+msgstr "Поделиться этой подпиской со всеми"
 
 #: [communityheader]share_follow_text
 msgid "It will appear on your profile"
-msgstr "Оно будет отражено в Вашем профиле"
+msgstr "Это будет показываться в Вашем профиле"
 
 #: [communityheader]unfollow_text
 msgid "You are going to unfollow this community"
-msgstr "Вы собираетесь отписаться от этого сообщества."
+msgstr "Вы собираетесь отписаться от этого сообщества"
 
 #: [communityheader]sure [delete]title
 msgid "Are you sure?"
@@ -1135,39 +1136,39 @@ msgstr "Вы уверены?"
 
 #: [communityposts]empty_me_text
 msgid "No publication yet? Write your first post to make people discover your profile"
-msgstr "Пока нет публикаций? Напишите свою первую запись, чтобы люди нашли ваш профиль"
+msgstr "Ещё не постите? Пишите посты, чтобы люди находили Ваш профиль"
 
 #: [communityposts]empty_me_button
 msgid "Publish my first post"
-msgstr "Написать мою первую запись"
+msgstr "Опубликовать свой первый пост"
 
 #: [communityposts]presencerequired
 msgid "Private account"
-msgstr "Личный приватный профиль"
+msgstr "Закрытый профиль"
 
 #: [communityposts]presencerequired_text
 msgid "Ask %s to be in your contacts to see the publications"
-msgstr "Попросите %s добавить вас в свои контакты, чтобы он мог видеть публикации"
+msgstr "Попросите %s добавить Вас в свои контакты, чтобы Вы могли видеть его посты"
 
 #: [communityposts]subscribe_presencerequired
 msgid "Send an invitation request before following the contact"
-msgstr "Отправить запрос на приглашение, прежде чем подписаться на контакт."
+msgstr "Прежде чем подписаться на контакт, отправьте запрос на приглашение"
 
 #: [communityposts]subscribe_unsupported
 msgid "You can't follow the contact at the moment"
-msgstr "В данный момент вы не можете подписаться на этот контакт."
+msgstr "Вы не можете подписаться на этот контакт на данный момент"
 
 #: [communitysubscriptions]subscriptions
 msgid "Subscribed Communities"
-msgstr "Подписные сообщества"
+msgstr "Подписки"
 
 #: [communitysubscriptions]empty_title
 msgid "Hello"
-msgstr "Здравствуйте"
+msgstr "Приветствуем!"
 
 #: [communitysubscriptions]empty_text1
 msgid "Here you will be able to manage all your subscriptions."
-msgstr "Здесь вы можете управлять своими подписками"
+msgstr "Здесь вы можете управлять своими подписками."
 
 #: [communitysubscriptions]empty_text2
 msgid "You don’t have any community subscriptions yet."
@@ -1211,11 +1212,11 @@ msgstr "Расширенные настройки"
 
 #: [config]nsfw
 msgid "Display adult content"
-msgstr "Отображать контент \"для взрослых\""
+msgstr "Отображать NSFW-контент"
 
 #: [config]nsfw_text
 msgid "Will allow you to read the posts tagged with the #nsfw tag"
-msgstr "Это разрешит вам читать посты с тегом #nsfw"
+msgstr "Данная настройка включит отображение постов с тэгом #nsfw"
 
 #: [config]omemoenabled
 msgid "Use OMEMO"
@@ -1231,23 +1232,23 @@ msgstr "Ночной режим"
 
 #: [config]night_mode_text
 msgid "Use dark colors to rest your eyes"
-msgstr "Тёмные цвета дадут отдохнуть вашим глазам"
+msgstr "Тёмные цвета дадут отдохнуть глазам"
 
 #: [config]night_mode_detected
 msgid "Your browser is already telling Movim to use the Night Mode by default"
-msgstr "Ваш браузер уже по умолчанию указывает Movim использовать ночной режим."
+msgstr "В Вашем браузере уже по умолчанию включён ночной режим"
 
 #: [config]chatmain
 msgid "Main chat page"
-msgstr "Главная страница - чаты"
+msgstr "Главная страница - Чаты"
 
 #: [config]chatmain_text
 msgid "Set the chat page to the default when opening Movim"
-msgstr "Установить страницу чата по умолчанию при открытии Movim"
+msgstr "Установить страницу с чатами по умолчанию при открытии Movim"
 
 #: [config]mam_text
 msgid "Server-side chat messages archiving preferences"
-msgstr "Настройки архивирования сообщений чата на стороне сервера"
+msgstr "Настройки архивирования сообщений из чатов на стороне сервера"
 
 #: [config]mam_always
 msgid "Always"
@@ -1259,11 +1260,11 @@ msgstr "Никогда"
 
 #: [config]mam_saved
 msgid "Archiving preferences saved"
-msgstr "Архивные настройки сохранены"
+msgstr "Настройки архивирования сохранены"
 
 #: [config]blog_text
 msgid "Personal blog confidentiality"
-msgstr "Конфиденциальность личного блога"
+msgstr "Видимость личного блога"
 
 #: [config]blog_open_title
 msgid "Public blog"
@@ -1275,15 +1276,15 @@ msgstr "Доступно всем пользователям сети"
 
 #: [config]blog_presence_title
 msgid "Private blog"
-msgstr "Личный приватный блог"
+msgstr "Закрытый блог"
 
 #: [config]blog_presence_text
 msgid "Restricted to your subscribers only"
-msgstr "Ограничено только для ваших подписщиков"
+msgstr "Только для подписчиков"
 
 #: [config]blog_saved
 msgid "Personal blog confidentiality saved"
-msgstr "Сохранены настройки конфиденциальность личного блога"
+msgstr "Сохранены настройки видимости личного блога"
 
 #: [config]confidentiality
 msgid "Confidentiality"
@@ -1307,7 +1308,7 @@ msgstr "Будьте осторожны"
 
 #: [config]change_nickname_text
 msgid "Changing your nickname will change your public blog, feed, and articles URLs"
-msgstr "Изменение вашего псевдонима повлияет на адрес ссылки вашего публичного блога, ленты новостей и статей"
+msgstr "Смена псевдонима повлияет на адреса Вашего публичного блога, ленты новостей и статей"
 
 #: [confirm]title
 msgid "Confirmation of authentication"
@@ -1359,7 +1360,7 @@ msgstr "Обращение"
 
 #: [general]pronouns_example
 msgid "he/she/they/…"
-msgstr "ты, вы, сударь, госпожа, товарищ, гражданин, доктор"
+msgstr "он/его, она/её, сударь, госпожа, товарищ, гражданин, доктор"
 
 #: [general]nickname [chatrooms]nickname
 msgid "Nickname"
@@ -1567,11 +1568,11 @@ msgstr "Избранное пока не добавлено, проверьте 
 
 #: [faq]title
 msgid "Frequently Asked Questions"
-msgstr "Часто Задаваемые Вопросы (FAQ)"
+msgstr "Часто задаваемые вопросы (FAQ)"
 
 #: [faq]permission_title
 msgid "What does the permission setting do?"
-msgstr "Что делает настройка разрешений?"
+msgstr "Как работают разрешения?"
 
 #: [faq]permission_text
 msgid "By default the content is only available to your contacts. You can make your profile and publications public by enabling the related setting."
@@ -1704,43 +1705,43 @@ msgstr ""
 
 #: [connection]socket_connected
 msgid "Connected to the server"
-msgstr "Подключено к серверу"
+msgstr "Вы подключились к серверу"
 
 #: [connection]authenticated
 msgid "Authenticated to the server"
-msgstr "Аутентификацировано на сервере"
+msgstr "Вы вошли на сервер"
 
 #: [form]username
 msgid "My address"
-msgstr "Мой адрес"
+msgstr "Адрес"
 
 #: [form]whitelist_info
 msgid "Login with accounts from these servers"
-msgstr "Войти через учётки от этих серверов"
+msgstr "Войдите с учёткой от этих серверов"
 
 #: [form]connect_info
 msgid "Login using any XMPP account or create a new one"
 msgstr "Войдите в систему, используя любую учётную запись XMPP, или создайте новую"
 
-#: [form]connected [rooms_filter]connected
+#: [form]connected
 msgid "Connected"
 msgstr "Соединение установлено"
 
 #: [form]population
 msgid "Population"
-msgstr "Население"
+msgstr "Участники"
 
 #: [form]invite_chatroom
 msgid "%s invited you to join a chatroom"
-msgstr "%s пригласил вас в комнату"
+msgstr "%s пригласил Вас в чат"
 
 #: [form]pod_admins
 msgid "Administrated by"
-msgstr "Администрируется от"
+msgstr "Администрируется"
 
 #: [about_movim]info
 msgid "Movim is a federated blogging and chat platform."
-msgstr "Movim — это федеративная платформа для ведения блогов и обсуждений."
+msgstr "Movim — это федеративная платформа для ведения блогов и чатов."
 
 #: [about_movim]website
 msgid "Visit the project official website %s."
@@ -1748,15 +1749,15 @@ msgstr "Посетите официальный сайт проекта %s."
 
 #: [menu]empty_title
 msgid "No news yet…"
-msgstr "Пока нет новостей"
+msgstr "Пока без новостей..."
 
 #: [menu]empty
 msgid "Welcome to your news feed, here you will see all the posts published by your contacts and in the communities you have subscribed."
-msgstr "Добро пожаловать в вашу новостную ленту! Здесь вы увидите все публикации, размещённые вашими контактами и в сообществах, на которые вы подписаны."
+msgstr "Это Ваша новостная лента! Здесь будут все посты, размещённые Вашими контактами и подписками."
 
 #: [menu]mine
 msgid "My publications"
-msgstr "Мои публикации"
+msgstr "Мои посты"
 
 #: [menu]add_post
 msgid "Write a new post…"
@@ -1764,11 +1765,11 @@ msgstr "Написать новый пост..."
 
 #: [notification]request_title
 msgid "Notifications request"
-msgstr "Запрос уведомлений"
+msgstr "Запрос на уведомления"
 
 #: [notification]request_info
 msgid "Movim requires your approval to display notifications"
-msgstr "Для отображения уведомлений Movim требуется ваше разрешение"
+msgstr "Для отображения уведомлений Movim требуется разрешение от Вас"
 
 #: [notification]request_info2
 msgid "This authorization can be revoked at any time"
@@ -1793,7 +1794,7 @@ msgstr "Уведомления"
 
 #: [notificationconfig]push_subscriptions
 msgid "Push notifications"
-msgstr "Пуш уведомления"
+msgstr "Push-уведомления"
 
 #: [notificationconfig]push_subscriptions_text
 msgid "Movim will send push notifications to the following registered devices"
@@ -1801,15 +1802,15 @@ msgstr "Movim будет отправлять push-уведомления на �
 
 #: [notificationconfig]push_enabled
 msgid "Push notifications enabled for this device"
-msgstr "Пуш-уведомления включены для этого устройства"
+msgstr "Push-уведомления включены для этого устройства"
 
 #: [notificationconfig]push_disabled
 msgid "Push notifications disabled for this device"
-msgstr "Пуш-уведомления отключены для этого устройства"
+msgstr "Push-уведомления отключены для этого устройства"
 
 #: [notificationconfig]unknown_browser
 msgid "Unknown browser"
-msgstr "Неизвестный обозреватель"
+msgstr "Неизвестный браузер"
 
 #: [notificationconfig]unknown_platform
 msgid "Unknown platform"
@@ -1817,7 +1818,7 @@ msgstr "Неизвестная платформа"
 
 #: [invitations]received
 msgid "Received Invitations"
-msgstr "Полученые приглашения"
+msgstr "Полученные приглашения"
 
 #: [invitations]adds_you
 msgid "%s wants to add you"
@@ -2003,7 +2004,7 @@ msgstr "Для связи"
 
 #: [hello]share_title
 msgid "Universal share button"
-msgstr "Кнопка \"Поделиться\""
+msgstr "Кнопка 'Поделиться'"
 
 #: [hello]share_text
 msgid "Bookmark or drag and drop the following button in your toolbar and use it on all the pages you want to share on Movim"
@@ -2015,11 +2016,11 @@ msgstr "Поделиться в Movim"
 
 #: [hello]enter_title
 msgid "Oh! Hello!"
-msgstr "Ох! Здравствуйте!"
+msgstr "О! Здравствуйте!"
 
 #: [hello]enter_paragraph
 msgid "It seems that you are new here! Welcome to Movim!"
-msgstr "Похоже, вы только присоединились! Добро пожаловать на Movim!"
+msgstr "Похоже, Вы тут новенький! Добро пожаловать в Movim!"
 
 #: [hello]menu_title
 msgid "Check the Menu"
@@ -2031,16 +2032,16 @@ msgstr "Все основные возможности Movim доступны т
 
 #: [hello]profile_title
 msgid "Looks like you didn’t complete your profile yet"
-msgstr "Выглядит словно вы не заполнили свой профиль"
+msgstr Вам стоит заполнить свой профиль"
 
 #: [hello]profile_paragraph
 msgid "You can go in the Configuration page to describe yourself and put a nice picture"
-msgstr "Вы можете заполнить профиль на странице \"Конфигурация\""
+msgstr "Сделать это можно на странице 'Конфигурация'"
 
 #: [status]visit_blog
 #, fuzzy
 msgid "Visit my blog"
-msgstr "Посетить публичный блог"
+msgstr "Мой блог"
 
 #: [status]disconnect
 msgid "Disconnect"
@@ -2052,7 +2053,7 @@ msgstr "Присутствие"
 
 #: [status]logout_confirm
 msgid "Do you really want to log out?"
-msgstr "Вы действительно хотите выйти? "
+msgstr "Вы действительно хотите выйти?"
 
 #: [preview]link_copied
 msgid "Link copied to clipboard"
@@ -2068,23 +2069,23 @@ msgstr "Сводка"
 
 #: [publish]post_title [page]post
 msgid "Post"
-msgstr "Запис"
+msgstr "Пост"
 
 #: [publish]post
 msgid "Write a post"
-msgstr "Напишите пост"
+msgstr "Написать пост"
 
 #: [publish]add_link
 msgid "Add a link"
-msgstr "Добавьте ссылку"
+msgstr "Добавить ссылку"
 
 #: [publish]add_snap
 msgid "Take a picture"
-msgstr "Сфотографировать "
+msgstr "Сделать снимок"
 
 #: [publish]no_title
 msgid "Please provide a title"
-msgstr "Заголовок"
+msgstr "Заполните заголовок"
 
 #: [publish]no_picture
 msgid "At least one picture is required"
@@ -2100,15 +2101,15 @@ msgstr "Добавить файл или картинку"
 
 #: [publish]no_publication
 msgid "You cannot publish a post here"
-msgstr "Вы не можете публиковать записи здесь"
+msgstr "Вы не можете публиковаться здесь"
 
 #: [publish]new
 msgid "New post"
-msgstr "Новая запись"
+msgstr "Новый пост"
 
 #: [publish]title
 msgid "Post title"
-msgstr "Заголовок записи"
+msgstr "Заголовок поста"
 
 #: [publish]content
 msgid "Markdown content"
@@ -2116,11 +2117,11 @@ msgstr "Текст в формате Markdown"
 
 #: [publish]valid_url
 msgid "Please enter a valid URL"
-msgstr "Введите правильный URL"
+msgstr "Введите правильную ссылку"
 
 #: [publish]content_text
 msgid "You can format your content using Markdown"
-msgstr "Вы можете использовать форматирование Markdown"
+msgstr "Тут включена Markdown-разметка"
 
 #: [publish]draft_saved
 msgid "Draft saved"
@@ -2136,15 +2137,15 @@ msgstr "Добавьте #метки в заголовок или текст, ч
 
 #: [publish]publish_error_forbidden
 msgid "You are not authorized to publish there"
-msgstr "Вам не разрешено публиковать тут"
+msgstr "Вам не разрешено публиковаться тут"
 
 #: [publish]publish_error_payload_to_big
 msgid "Your post is too big to be published"
-msgstr "Эта запись слишком большая чтобы её опубликовать"
+msgstr "Этот пост слишком большой для публикации"
 
 #: [publish]too_long
 msgid "Your text is too long, %s characters max"
-msgstr "Ваш текст слишком длинный, позволено до %s символов"
+msgstr "Ваш текст слишком длинный, разрешено максимум %s символов"
 
 #: [publish]blog_presence
 msgid "Your blog is only accessible to your subscribers. You can make it accessible to anyone in the settings page."
@@ -2156,11 +2157,11 @@ msgstr "Это медиа будет встроено"
 
 #: [publish]web_title
 msgid "Create a public HTTP URL from this publication"
-msgstr "Сделать общедоступный HTTP-адрес для публикации."
+msgstr "Сделать общедоступный HTTP-адрес для публикации"
 
 #: [publish]web_text
 msgid "This will allow anyone outside Movim to have access to your publication"
-msgstr "Это позволит любому, кто не работает в Movim, получить доступ к вашей публикации"
+msgstr "По этому адресу любой, кого нет в Movim, может просмотреть Вашу публикацию"
 
 #: [publishhelp]title [page]help
 msgid "Help"
@@ -2244,43 +2245,43 @@ msgstr "Регистрация запрещена"
 
 #: [rooms]create
 msgid "Create a chatroom"
-msgstr "Создать чат-комнату"
+msgstr "Создать чат"
 
 #: [rooms]edit
 msgid "Edit a chatroom"
-msgstr "Изменить комнату"
+msgstr "Настроить чат"
 
 #: [rooms]join
 msgid "Join a chatroom"
-msgstr "Присоединится к чат-комнате"
+msgstr "Присоединиться к чату"
 
 #: [rooms]join_custom
 msgid "Join a custom chatroom"
-msgstr "Присоединится к чат-комнате по адресу"
+msgstr "Присоединиться к чату по адресу"
 
 #: [rooms]empty_text1
 msgid "You don’t have any chatroom yet."
-msgstr "У вас пока нет чат-комнат."
+msgstr "Вы пока не подключены ни к одному чату"
 
 #: [rooms]empty_text2
 msgid "Add one by clicking on the add button."
-msgstr "Добавьте с помощью кнопки \"Добавить\""
+msgstr "Подключайтесь через кнопку поиска."
 
 #: [rooms]type_room
 msgid "Type of chatroom"
-msgstr "Тип чат-комнаты"
+msgstr "Тип чата"
 
 #: [rooms]default_room
 msgid "Standard chatroom"
-msgstr "Обычная чат-комната"
+msgstr "Обычный чат"
 
 #: [rooms]gateway_room
 msgid "Gateway chatroom"
-msgstr "Чат-комната для шлюза"
+msgstr "Шлюзовый чат"
 
 #: [rooms]show_all
 msgid "Show all chatrooms"
-msgstr "Показать все чат-комнаты"
+msgstr "Показать все чаты"
 
 #: [rooms]hide_disconnected
 msgid "Hide disconnected chatrooms"
@@ -2288,11 +2289,11 @@ msgstr "Скрыть отключенные чаты"
 
 #: [rooms]destroy_title
 msgid "Destroy the chatroom"
-msgstr "Удалить эту чат-комнату"
+msgstr "Удалить этот чат"
 
 #: [rooms]destroy_text
 msgid "Are you sure you want to permanently destroy the following chatroom?"
-msgstr "Вы уверены, что хотите навсегда удалить эту чат-комнату?"
+msgstr "Вы собираетесь удалить этот чат. Вы уверены?"
 
 #: [rooms]explore_placeholder
 msgid "Name or description"
@@ -2302,17 +2303,21 @@ msgstr "Имя или описание"
 msgid "A registration is required before using the service"
 msgstr "Для использования сервиса необходима регистрация"
 
+#: [rooms_filter]connected
+msgid "Connected"
+msgstr "Связанные"
+
 #: [chatrooms]autojoin
 msgid "Join this chatroom on login"
-msgstr "Присоединятся к чату при входе"
+msgstr "Автоматически подключать к чату"
 
 #: [chatrooms]bad_id
 msgid "Bad Chatroom Address"
-msgstr "Плохой адрес чат-комнаты"
+msgstr "Плохой адрес чата"
 
 #: [chatrooms]bad_nickname
 msgid "Please enter a valid nickname (2 to 40 characters)"
-msgstr "Пожалуйста, введите допустимый псевдоним (от 2 до 40 символов)."
+msgstr "Просим от Вас допустимый псевдоним (2-40 символов)"
 
 #: [chatrooms]banned
 msgid "Banned"
@@ -2328,11 +2333,11 @@ msgstr "Присоединился к чату"
 
 #: [chatrooms]created
 msgid "Chatroom created"
-msgstr "Чат-комната создана"
+msgstr "Чат создан"
 
 #: [chatrooms]destroyed
 msgid "Chatroom destroyed"
-msgstr "Чат-комната удалена"
+msgstr "Чат удалён"
 
 #: [chatrooms]disconnected
 msgid "Left the chatroom"
@@ -2344,28 +2349,28 @@ msgstr "Имя не задано"
 
 #: [chatrooms]forbidden
 msgid "You are not allowed to join this chatroom"
-msgstr "Вам не позволено присоединится в этот чат"
+msgstr "Вам запрещено подключаться к этому чату"
 
 #: [chatrooms]id
 msgid "Chatroom Address"
-msgstr "Адрес чат-комнаты"
+msgstr "Адрес чата"
 
 #: [chatrooms]itemnotfound
 msgid "The chatroom doesn’t exist"
-msgstr "Этот чат не существует"
+msgstr "Этого чата не существует"
 
 #: [chatrooms]jidmalformed
 msgid "Your nickname is not valid"
-msgstr "Ваш псевдоним неправильный"
+msgstr "Ваш псевдоним не подходит"
 
 #: [chatrooms]members
 msgctxt "[chatrooms]members"
 msgid "Members"
-msgstr "Члены"
+msgstr "Участники"
 
 #: [chatrooms]name_placeholder
 msgid "My Favorite Room"
-msgstr "Мои любимые комнаты"
+msgstr "Мои избранные комнаты"
 
 #: [chatrooms]notacceptable
 msgid "Not acceptable"
@@ -2373,7 +2378,7 @@ msgstr "Не принимается"
 
 #: [chatrooms]notallowed
 msgid "You are not allowed to create a chatroom there"
-msgstr "Вам запрещено создавать там чат-комнаты."
+msgstr "Вам запрещено создавать там чат"
 
 #: [chatrooms]notauthorized
 msgid "A password is required"
@@ -2385,35 +2390,35 @@ msgstr "Закрепить этот чат"
 
 #: [chatrooms]registrationrequired
 msgid "Chatroom cannot be joined, registration required"
-msgstr "Невозможно войти в комнату, необходима регистрация"
+msgstr "Чтобы войти в этот чат, необходима регистрация"
 
 #: [chatrooms]remoteservernotfound
 msgid "The remote server for this chatroom doesn’t exist"
-msgstr "Отдалённый сервер для этого чата не существует"
+msgstr "Сервер с этим чатом не найден"
 
 #: [chatrooms]remoteservertimeout
 msgid "Connection to remote server timed out"
-msgstr "Время ожидания подключения к удалённому серверу истекло"
+msgstr "Удалённый сервер не ответил за нужное время"
 
 #: [chatrooms]remove_text
 msgid "You are going to permanently leave the following chatroom. Please confirm your action."
-msgstr "Вы навсегда покинете данный чат. Пожалуйста, подтвердите своё действие."
+msgstr "Вы собираетесь покинуть данный чат. Вы уверены?"
 
 #: [chatrooms]remove_title
 msgid "Permanently leave a chatroom"
-msgstr "Навсегда покинуть чат"
+msgstr "Покинуть чат"
 
 #: [chatrooms]rooms
 msgid "Rooms"
-msgstr ""
+msgstr "Комнаты"
 
 #: [chatrooms]serviceunavailable
 msgid "The chatroom participant limit has been reached"
-msgstr "Достигнуто ограничение участников чата."
+msgstr "Достигнуто ограничение числа участников чата."
 
 #: [chatrooms]title
 msgid "Chatrooms"
-msgstr "Комнаты"
+msgstr "Чаты"
 
 #: [chatrooms]users
 msgctxt "[chatrooms]users"
@@ -2614,11 +2619,11 @@ msgstr "Показать все контакты"
 
 #: [sendto]attach
 msgid "Attach to a blog publication"
-msgstr "Приложить к публикации блога"
+msgstr "Прикрепить к посту блога"
 
 #: [sendto]share
 msgid "Share in a new publication"
-msgstr "Поделитесь в новой публикации"
+msgstr "Поделитесь в своём новом посте"
 
 #: [sendto]selected
 msgid "contacts selected"
@@ -2626,23 +2631,23 @@ msgstr "контактов выбрано"
 
 #: [sendto]pick
 msgid "Pick the contacts you want to share this content with"
-msgstr "Выберите контакты, с которыми вы хотите поделиться этой публикацией"
+msgstr "Выберите контакты, с которыми Вы хотите поделиться публикацией"
 
 #: [sendto]shared_with
 msgid "Post shared"
-msgstr "Поделится постом"
+msgstr "Поделиться постом"
 
 #: [sendto]shared_contacts
 msgid "Post shared with %s contacts"
-msgstr "Поделились записью с %s контактами"
+msgstr "Запись отправлена %s контактам"
 
 #: [sendto]more_contacts
 msgid "More contacts"
-msgstr "ещё контакты"
+msgstr "Ещё контакты"
 
 #: [sendto]os_share
 msgid "Share outside Movim"
-msgstr "Поделится во вне Movim"
+msgstr "Поделиться из-вне Movim"
 
 #: [sendto]sharing_post
 msgid "Post shared using Movim"
@@ -2655,58 +2660,58 @@ msgstr "Момент опубликован через Movim"
 #: [spaceinfo]config_title
 #, fuzzy
 msgid "Space configuration"
-msgstr "Настройки сохранены"
+msgstr "Настройки чата"
 
 #: [spaceinfo]config_saved
 #, fuzzy
 msgid "Space configuration saved"
-msgstr "Настройки сохранены"
+msgstr "Настройки чата сохранены"
 
 #: [spaceinfo]config_error
 #, fuzzy
 msgid "Space configuration error"
-msgstr "Расширенные настройки"
+msgstr "Ошибка в настройке чата"
 
 #: [spaceinfo]destroy_title
 #, fuzzy
 msgid "Destroy the space"
-msgstr "Удалить эту чат-комнату"
+msgstr "Удалить чат"
 
 #: [spaceinfo]destroy_text
 msgid "You are going to destroy the following Space, all the chatrooms within it will also be destroyed"
-msgstr ""
+msgstr "Если Вы удалите этот чат, все его комнаты так же будут очищены"
 
 #: [spaceinfo]invite_title
 #, fuzzy
 msgid "Invite new contacts"
-msgstr "Пригласить контакт"
+msgstr "Пригласить других"
 
 #: [spaceinfo]invite_text
 msgid "A moderator will have to approve the join request"
-msgstr ""
+msgstr "Модератору необходимо подтвердить вашу заявку присоединиться"
 
 #: [spaceinfo]invite_uri_title
 #, fuzzy
 msgid "Send an invitation key to your contacts"
-msgstr "Отправить запрос на приглашение, прежде чем подписаться на контакт."
+msgstr "Отправить приглашение своим контактам"
 
 #: [spaceinfo]leave_title [spacesmenu]leave_title
 #, fuzzy
 msgid "Leave the space"
-msgstr "Покинуть этот инстанс"
+msgstr "Покинуть чат"
 
 #: [spaceinfo]add_room_title
 #, fuzzy
 msgid "Add a room"
-msgstr "Добавить комментарий"
+msgstr "Добавить комнату"
 
 #: [spaceinfo]pending_approvals
 msgid "%s subscriptions requests are waiting for your approval"
-msgstr ""
+msgstr "%s заявок на присоединение к чату"
 
 #: [spaceinfo]pending_request
 msgid "%s is waiting for your approval to join the space"
-msgstr ""
+msgstr "%s хочет присоединиться к чату"
 
 #: [spaceinfo]pending_action
 msgid "Manage the request"
@@ -2719,58 +2724,58 @@ msgstr "Закрепить этот чат"
 
 #: [spaceinfo]owner_cannot_leave
 msgid "An owner cannot leave his own Space"
-msgstr ""
+msgstr "Владельцу запрещено покидать свой чат"
 
 #: [spaceinfo]affiliation_none
 #, fuzzy
 msgid "Remove from the space"
-msgstr "Покинуть этот инстанс"
+msgstr "Покинуть чат"
 
 #: [spacesmenu]create_space_title
 #, fuzzy
 msgid "Create a Space"
-msgstr "Создайте новую учётную запись"
+msgstr "Новый чат"
 
 #: [spacesmenu]invite_space_title
 msgid "You got an invite?"
-msgstr ""
+msgstr "Есть приглашение?"
 
 #: [spacesmenu]space_title
 msgid "Space title"
-msgstr ""
+msgstr "Название чата"
 
 #: [spacesmenu]space_title_empty
 msgid "Your Space title is empty"
-msgstr ""
+msgstr "Дайте название своему чату"
 
 #: [spacesmenu]space_created
 #, fuzzy
 msgid "Space created"
-msgstr "Чат-комната создана"
+msgstr "Чат создан"
 
 #: [spacesmenu]loading_space_info
 #, fuzzy
 msgid "Loading the space"
-msgstr "Закачка момента"
+msgstr "Загрузка чата"
 
 #: [spacesmenu]subscribed
 #, fuzzy
 msgid "Subscribed to the space"
-msgstr "Подписные сообщества"
+msgstr "Вы подписались к чату"
 
 #: [spacesmenu]invitation_key
 #, fuzzy
 msgid "Use an invitation key"
-msgstr "Нет новых приглашений"
+msgstr "Вставьте ключ приглашения"
 
 #: [spacesmenu]key_required
 #, fuzzy
 msgid "A valid key is required"
-msgstr "Требуется пароль"
+msgstr "Неверный ключ"
 
 #: [spacesmenu]locked_title
 msgid "Locked space"
-msgstr ""
+msgstr "Закрытый чат"
 
 #: [spacesmenu]locked_text
 #, fuzzy
@@ -2779,39 +2784,39 @@ msgstr "Вам не разрешено публиковать тут"
 
 #: [spacesmenu]locked_try_again
 msgid "Try again"
-msgstr ""
+msgstr "Попробуйте заново"
 
 #: [spacesmenu]leave_text
 #, fuzzy
 msgid "Are you sure that you want to leave the space?"
-msgstr "Вы уверены что хотите удалить этот комментарий?"
+msgstr "Вы уверены, что хотите покинуть чат?"
 
 #: [spacesmenu]pending_subscription_title
 msgid "A request has been send to a moderator."
-msgstr ""
+msgstr "Запрос отправлен модератору."
 
 #: [spacesmenu]pending_subscription_text
 msgid "You will be able to join the space once its accepted."
-msgstr ""
+msgstr "Вы подключитесь к чату, как только запрос согласуют."
 
 #: [spacesmenu]pending_subscription_add_title
 #, fuzzy
 msgid "Add %s to the space"
-msgstr "Удалить эту чат-комнату"
+msgstr "Добавить %s в чат"
 
 #: [spacesmenu]pending_subscription_refuse_title
 msgid "Deny the access"
-msgstr ""
+msgstr "Отказать в доступе"
 
 #: [spacesmenu]contact_added
 #, fuzzy
 msgid "Contact added in the space"
-msgstr "Контакт добавлен"
+msgstr "Контакт добавлен в чат"
 
 #: [spacesmenu]contact_denied
 #, fuzzy
 msgid "Contact denied in the space"
-msgstr "Контакт удалён"
+msgstr "Контакт отклонён"
 
 #: [sticker]title
 msgid "Stickers"
@@ -2819,7 +2824,7 @@ msgstr "Стикеры"
 
 #: [sticker]sent
 msgid "A sticker has been sent using Movim"
-msgstr "Стикер был отправлен из Movim"
+msgstr "Стикер был отправлен через Movim"
 
 #: [sticker]keyword
 msgid "Type a keyword"
@@ -2831,7 +2836,7 @@ msgstr "Подобрать GIF"
 
 #: [sticker]gif_text
 msgid "Powered by Tenor"
-msgstr "Сделано от Tenor"
+msgstr "Через Tenor"
 
 #: [stories]publish
 msgid "New Story"
@@ -2847,19 +2852,19 @@ msgstr "Новый момент от %s"
 
 #: [stories]forbidden
 msgid "You don't have access to this story, send an invitation to the author to access it"
-msgstr "У вас нет доступа к этому моменту, отправьте приглашение автору, чтобы получить к нему доступ."
+msgstr "У Вас нет доступа к этому моменту, отправьте запрос на просмотр автору."
 
 #: [stories]share_title
 msgid "Some of your contacts might not have access to this story"
-msgstr "Если у вас нет доступа к этому моменту, отправьте приглашение автору, чтобы получить доступ."
+msgstr "Некоторым контактам заблокирован доступ к Вашему моменту"
 
 #: [stories]share_text
 msgid "They might have to subscribe to the publisher account"
-msgstr "Возможно, им придётся оформить подписку на профиль издателя."
+msgstr "Возможно, им придётся подписаться на профиль редактора"
 
 #: [stories]comment
 msgid "Send a comment to %s"
-msgstr "Откомментировать для %s"
+msgstr "Отправить коммент для %s"
 
 #: [stories]delete_title
 msgid "Story deletion"
@@ -2883,7 +2888,7 @@ msgstr "Лента от %s"
 
 #: [feed]nope
 msgid "No public feed for this contact"
-msgstr "Нет публичной ленты для этого контакта"
+msgstr "У этого контакта нет публичной ленты"
 
 #: [feed]nope_contact
 msgid "No contact specified"
@@ -2903,7 +2908,7 @@ msgstr "Большие изображения будут сжаты"
 
 #: [upload]error_filesize
 msgid "File too large"
-msgstr "Файл слишком велик"
+msgstr "Файл слишком большой"
 
 #: [upload]error_failed
 msgid "Upload failed"
@@ -2927,7 +2932,7 @@ msgstr "Максимальный размер файла %s"
 
 #: [upload]upload_xmpp
 msgid "Uploading to your account"
-msgstr "Закачивается на ваш профиль"
+msgstr "Закачиваем в Ваш профиль"
 
 #: [vcard]title [page]profile
 msgid "Profile"
@@ -2943,7 +2948,7 @@ msgstr "Профиль не обновлён"
 
 #: [vcard]nickname_info
 msgid "This will also be used as your default nickname when joining a chatroom"
-msgstr "Это имя также будет использоваться в качестве вашего псевдонима по умолчанию при присоединении к чат-комнате"
+msgstr "Этот псевдоним также будет использоваться по умолчанию при подключении к чату"
 
 #: [profile]public
 msgid "Your profile is now public"
@@ -2955,11 +2960,11 @@ msgstr "Ваш профиль теперь скрыт"
 
 #: [profile]info
 msgid "Configure your instance nickname"
-msgstr "Настроить псевдоним сервера"
+msgstr "Настроить свой псевдоним на сервере"
 
 #: [profile]privacy_question
 msgid "Is this account public on this Movim instance?"
-msgstr "Является-ли этот профиль публичным на этом сервере Movim?"
+msgstr "Является ли этот профиль публичным на этом сервере Movim?"
 
 #: [profile]privacy_info
 msgid "Movim will create a public page to host your blog and your account will be searchable by the other Movim users."
@@ -3107,15 +3112,15 @@ msgstr "Изменена камера по умолчанию"
 
 #: [visiolobby]no_mic_sound
 msgid "No sound detected from your microphone"
-msgstr "Звук из вашего микрофона не обнаружен."
+msgstr "Не слышим Ваш микрофон"
 
 #: [visiolobby]no_mic_sound2
 msgid "Try make some noise, select another source or check your system settings"
-msgstr "Попробуйте создать какой-нибудь шум, выберите другой источник или проверьте настройки системы."
+msgstr "Попробуйте быть громче, выберите другой микрофон или проверьте настройки системы"
 
 #: [muji]call_audio_invite
 msgid "You are invited in an audio conference call"
-msgstr "Вы приглашены на звонок аудиоконференции."
+msgstr "Вы приглашены на звонок аудиоконференции"
 
 #: [muji]call_video_invite
 msgid "You are invited in a video conference call"
@@ -3123,15 +3128,15 @@ msgstr "Вы приглашены на звонок видеоконференц
 
 #: [muji]cannot_create
 msgid "Cannot create a conference call on your server"
-msgstr "Не удаётся создать конференц-звонок на вашем сервере"
+msgstr "Не удаётся создать конференцию на Вашем сервере"
 
 #: [global]no_js
 msgid "Movim requires Javascript to be enabled to work properly."
-msgstr "Для правильной работы Movim необходимо разрешить Javascript."
+msgstr "Для правильной работы Movim необходим Javascript."
 
 #: [global]description
 msgid "Movim is a kickass distributed social networking platform that protects your privacy and comes with a set of awesome features."
-msgstr "Movim — это потрясающая распределенная социальная сеть, которая защищает вашу конфиденциальность и обладает набором замечательных возможностей."
+msgstr "Movim — это потрясающая распределённая социальная сеть, которая конфиденциальна и обладает множеством плюшек!"
 
 #: [global]loading
 msgid "Loading…"
@@ -3143,11 +3148,11 @@ msgstr "Или"
 
 #: [global]change_pod
 msgid "Switch to another pod"
-msgstr "Переключится на другой сервер"
+msgstr "Переключиться на другой сервер"
 
 #: [page]about
 msgid "About"
-msgstr "О"
+msgstr "О нас"
 
 #: [page]account_creation
 msgid "Account Creation"
@@ -3155,7 +3160,7 @@ msgstr "Создание учётной записи"
 
 #: [page]avatar
 msgid "Profile Picture"
-msgstr "Фото профиля"
+msgstr "Аватарка профиля"
 
 #: [page]blog
 msgid "Blog"
@@ -3236,11 +3241,11 @@ msgstr "Запрашиваемое событие '%s' не зарегистри
 
 #: [error]whoops
 msgid "Whoops!"
-msgstr "Ой-ой!"
+msgstr "Ой!"
 
 #: [error]websocket
 msgid "Movim cannot talk with the server, please try again later"
-msgstr "Movim не может установить связь с сервером, зайдите позже"
+msgstr "Клиент Movim не может связаться с сервером, попробуйте позже"
 
 #: [error]websocket_connect
 msgid "Reconnection to the server…"
@@ -3260,7 +3265,7 @@ msgstr "Добавить"
 
 #: [button]audio_call
 msgid "Audio Call"
-msgstr "Аудио звонок"
+msgstr "Аудиозвонок"
 
 #: [button]bool_no
 msgid "No"
@@ -3292,11 +3297,11 @@ msgstr "Закрыть"
 
 #: [button]connecting
 msgid "Connecting"
-msgstr "Идет подключение"
+msgstr "Идёт подключение"
 
 #: [button]copy_link
 msgid "Copy Link"
-msgstr "Копировать ссылку"
+msgstr "Скопировать ссылку"
 
 #: [button]create
 msgid "Create"
@@ -3312,7 +3317,7 @@ msgstr "Удалить"
 
 #: [button]discover
 msgid "Discover"
-msgstr "Открывай"
+msgstr "Исследовать"
 
 #: [button]enable
 msgid "Enable"
@@ -3320,7 +3325,7 @@ msgstr "Включить"
 
 #: [button]join
 msgid "Join"
-msgstr "Присоединится "
+msgstr "Присоединиться"
 
 #: [button]leave
 #, fuzzy
@@ -3333,7 +3338,7 @@ msgstr "Нравится"
 
 #: [button]more
 msgid "More"
-msgstr "Более"
+msgstr "Ещё"
 
 #: [button]new
 msgid "New conversation"
@@ -3357,7 +3362,7 @@ msgstr "Предыдущий"
 
 #: [button]quote
 msgid "Quote"
-msgstr "Цитировать"
+msgstr "Процитировать"
 
 #: [button]refresh
 msgid "Refresh"
@@ -3373,7 +3378,7 @@ msgstr "Зарегистрировать"
 
 #: [button]remove
 msgid "Remove"
-msgstr ""
+msgstr "Убрать"
 
 #: [button]reply
 msgid "Reply"
@@ -3393,7 +3398,7 @@ msgstr "Поиск"
 
 #: [button]send_to
 msgid "Send to"
-msgstr "Отправить к"
+msgstr "Получатель"
 
 #: [button]share
 msgctxt "[button]share"
@@ -3402,7 +3407,7 @@ msgstr "Поделиться"
 
 #: [button]sign_up
 msgid "Sign Up"
-msgstr "Регистрация"
+msgstr "Зарегистрироваться"
 
 #: [button]submitting
 msgid "Submitting"
@@ -3426,7 +3431,7 @@ msgstr "Проверить"
 
 #: [button]video_call
 msgid "Video Call"
-msgstr "Видео звонок"
+msgstr "Видеозвонок"
 
 #: [input]optional
 msgid "Optional"
@@ -3434,11 +3439,11 @@ msgstr "Необязательно"
 
 #: [input]muc_pubsub_node
 msgid "Associated Community"
-msgstr "Сопутствующее сообщество"
+msgstr "Дружественное сообщество"
 
 #: [input]open_me_using
 msgid "Open me using"
-msgstr "Открывать меня исользуя"
+msgstr "Можно открыть через"
 
 #: [day]title
 msgid "Day"
@@ -3482,7 +3487,7 @@ msgstr "Консоль"
 
 #: [client]desktop
 msgid "Desktop"
-msgstr "Настольный компьютер"
+msgstr "Компьютер"
 
 #: [client]phone
 msgid "Phone"
@@ -3506,7 +3511,7 @@ msgstr "В сети"
 
 #: [presence]away
 msgid "Away"
-msgstr "В отсутствии"
+msgstr "Не на месте"
 
 #: [presence]dnd
 msgid "Do Not Disturb"
@@ -3526,15 +3531,15 @@ msgstr "Ошибка"
 
 #: [mood]afraid
 msgid "afraid"
-msgstr "боятся"
+msgstr "испугался"
 
 #: [mood]amazed
 msgid "amazed"
-msgstr "пораженный"
+msgstr "поражён"
 
 #: [mood]amorous
 msgid "amorous"
-msgstr "влюбчивый"
+msgstr "влюбился"
 
 #: [mood]angry
 msgid "angry"
@@ -3542,7 +3547,7 @@ msgstr "злой"
 
 #: [mood]annoyed
 msgid "annoyed"
-msgstr "раздраженный"
+msgstr "раздражённый"
 
 #: [mood]anxious
 msgid "anxious"
@@ -3550,59 +3555,59 @@ msgstr "тревожный"
 
 #: [mood]aroused
 msgid "aroused"
-msgstr "вызвал"
+msgstr "возбуждён"
 
 #: [mood]ashamed
 msgid "ashamed"
-msgstr "стыдно"
+msgstr "стыдится"
 
 #: [mood]bored
 msgid "bored"
-msgstr "скучающий"
+msgstr "скучает"
 
 #: [mood]brave
 msgid "brave"
-msgstr "храбрый"
+msgstr "охрабревший"
 
 #: [mood]calm
 msgid "calm"
-msgstr "спокойно"
+msgstr "спокоен"
 
 #: [mood]cautious
 msgid "cautious"
-msgstr "осторожный"
+msgstr "подозрителен"
 
 #: [mood]cold
 msgid "cold"
-msgstr "холод"
+msgstr "знобит"
 
 #: [mood]confident
 msgid "confident"
-msgstr "уверенный"
+msgstr "уверен"
 
 #: [mood]confused
 msgid "confused"
-msgstr "смущен"
+msgstr "смущён"
 
 #: [mood]contemplative
 msgid "contemplative"
-msgstr "созерцательный"
+msgstr "задумался"
 
 #: [mood]contented
 msgid "contented"
-msgstr "довольный"
+msgstr "доволен"
 
 #: [mood]cranky
 msgid "cranky"
-msgstr "капризный"
+msgstr "капризен"
 
 #: [mood]crazy
 msgid "crazy"
-msgstr "сумасшедший"
+msgstr "сошёл с ума"
 
 #: [mood]creative
 msgid "creative"
-msgstr "творческий"
+msgstr "вдохновлён"
 
 #: [mood]curious
 msgid "curious"
@@ -3610,39 +3615,39 @@ msgstr "любопытный"
 
 #: [mood]dejected
 msgid "dejected"
-msgstr "удрученный"
+msgstr "удручённый"
 
 #: [mood]depressed
 msgid "depressed"
-msgstr "подавленный"
+msgstr "подавлен"
 
 #: [mood]disappointed
 msgid "disappointed"
-msgstr "разочарованный"
+msgstr "разочарован"
 
 #: [mood]disgusted
 msgid "disgusted"
-msgstr "отвращение"
+msgstr "испытывает отвращение"
 
 #: [mood]dismayed
 msgid "dismayed"
-msgstr "встревоженный"
+msgstr "встревожен"
 
 #: [mood]distracted
 msgid "distracted"
-msgstr "рассеянный"
+msgstr "отвлечён"
 
 #: [mood]embarrassed
 msgid "embarrassed"
-msgstr "смущенный"
+msgstr "смущён"
 
 #: [mood]envious
 msgid "envious"
-msgstr "завистливый"
+msgstr "испытывает зависть"
 
 #: [mood]excited
 msgid "excited"
-msgstr "возбужденный"
+msgstr "взволнован"
 
 #: [mood]flirtatious
 msgid "flirtatious"
@@ -3650,7 +3655,7 @@ msgstr "кокетливый"
 
 #: [mood]frustrated
 msgid "frustrated"
-msgstr "не состоялось"
+msgstr "расстроен"
 
 #: [mood]grateful
 msgid "grateful"
@@ -3658,35 +3663,35 @@ msgstr "благодарный"
 
 #: [mood]grieving
 msgid "grieving"
-msgstr "горевать"
+msgstr "горюет"
 
 #: [mood]grumpy
 msgid "grumpy"
-msgstr "раздражительный"
+msgstr "раздражён"
 
 #: [mood]guilty
 msgid "guilty"
-msgstr "виновный"
+msgstr "испытывает вину"
 
 #: [mood]happy
 msgid "happy"
-msgstr "счастливый"
+msgstr "счастлив"
 
 #: [mood]hopeful
 msgid "hopeful"
-msgstr "многообещающий"
+msgstr "чего-то ждёт"
 
 #: [mood]hot
 msgid "hot"
-msgstr "горячий"
+msgstr "горяч"
 
 #: [mood]humbled
 msgid "humbled"
-msgstr "приниженный"
+msgstr "принижен"
 
 #: [mood]humiliated
 msgid "humiliated"
-msgstr "униженный"
+msgstr "унижен"
 
 #: [mood]hungry
 msgid "hungry"
@@ -3694,19 +3699,19 @@ msgstr "голодный"
 
 #: [mood]hurt
 msgid "hurt"
-msgstr "больной"
+msgstr "испытывает боль"
 
 #: [mood]impressed
 msgid "impressed"
-msgstr "впечатленный"
+msgstr "впечатлённый"
 
 #: [mood]in_awe
 msgid "in awe"
-msgstr "в страхе"
+msgstr "благоговеет"
 
 #: [mood]in_love
 msgid "in love"
-msgstr "влюбленный"
+msgstr "влюблён"
 
 #: [mood]indignant
 msgid "indignant"
@@ -3714,7 +3719,7 @@ msgstr "негодует"
 
 #: [mood]interested
 msgid "interested"
-msgstr "заинтересованный"
+msgstr "заинтересован"
 
 #: [mood]intoxicated
 msgid "intoxicated"
@@ -3722,27 +3727,27 @@ msgstr "пьяный"
 
 #: [mood]invincible
 msgid "invincible"
-msgstr "непобедимый"
+msgstr "непобедим"
 
 #: [mood]jealous
 msgid "jealous"
-msgstr "ревнивый"
+msgstr "ревнив"
 
 #: [mood]lonely
 msgid "lonely"
-msgstr "одинокий"
+msgstr "в одиночестве"
 
 #: [mood]lost
 msgid "lost"
-msgstr "потерян"
+msgstr "растерян"
 
 #: [mood]lucky
 msgid "lucky"
-msgstr "счастливый"
+msgstr "удачлив"
 
 #: [mood]mean
 msgid "mean"
-msgstr "имею в виду"
+msgstr "грубый"
 
 #: [mood]moody
 msgid "moody"
@@ -3754,15 +3759,15 @@ msgstr "нервный"
 
 #: [mood]neutral
 msgid "neutral"
-msgstr "нейтрален"
+msgstr "в норме"
 
 #: [mood]offended
 msgid "offended"
-msgstr "обидел"
+msgstr "обижен"
 
 #: [mood]outraged
 msgid "outraged"
-msgstr "возмущен"
+msgstr "возмущён"
 
 #: [mood]playful
 msgid "playful"
@@ -3770,43 +3775,43 @@ msgstr "игривый"
 
 #: [mood]proud
 msgid "proud"
-msgstr "гордый"
+msgstr "горд"
 
 #: [mood]relaxed
 msgid "relaxed"
-msgstr "расслабленный"
+msgstr "расслаблен"
 
 #: [mood]relieved
 msgid "relieved"
-msgstr "уволен"
+msgstr "спокоен"
 
 #: [mood]remorseful
 msgid "remorseful"
-msgstr "раскаявшийся"
+msgstr "раскаивается"
 
 #: [mood]restless
 msgid "restless"
-msgstr "беспокойный"
+msgstr "не находит места"
 
 #: [mood]sad
 msgid "sad"
-msgstr "печальный"
+msgstr "грустный"
 
 #: [mood]sarcastic
 msgid "sarcastic"
-msgstr "саркастический"
+msgstr "саркастичный"
 
 #: [mood]satisfied
 msgid "satisfied"
-msgstr "удовлетворенный"
+msgstr "удовлетворён"
 
 #: [mood]serious
 msgid "serious"
-msgstr "серьезный"
+msgstr "серьёзен"
 
 #: [mood]shocked
 msgid "shocked"
-msgstr "потрясенный"
+msgstr "потрясён"
 
 #: [mood]shy
 msgid "shy"
@@ -3814,7 +3819,7 @@ msgstr "застенчивый"
 
 #: [mood]sick
 msgid "sick"
-msgstr "больной"
+msgstr "заболел"
 
 #: [mood]sleepy
 msgid "sleepy"
@@ -3826,19 +3831,19 @@ msgstr "спонтанный"
 
 #: [mood]stressed
 msgid "stressed"
-msgstr "подчеркнул"
+msgstr "на нервах"
 
 #: [mood]strong
 msgid "strong"
-msgstr "сильный"
+msgstr "идёт уверенно"
 
 #: [mood]surprised
 msgid "surprised"
-msgstr "удивленный"
+msgstr "удивлён"
 
 #: [mood]thankful
 msgid "thankful"
-msgstr "благодарный"
+msgstr "благодарен"
 
 #: [mood]thirsty
 msgid "thirsty"
@@ -3850,15 +3855,15 @@ msgstr "устал"
 
 #: [mood]undefined
 msgid "undefined"
-msgstr "не определено"
+msgstr "без настроения"
 
 #: [mood]weak
 msgid "weak"
-msgstr "слаб"
+msgstr "испытывает слабость"
 
 #: [mood]worried
 msgid "worried"
-msgstr "тревожный"
+msgstr "встревожен"
 
 #: [month]title
 msgid "Month"
@@ -3942,11 +3947,11 @@ msgstr "Название"
 
 #: [post]place
 msgid "Place"
-msgstr "Место"
+msgstr "Локация"
 
 #: [post]by
 msgid "by"
-msgstr "по"
+msgstr "от"
 
 #: [post]geolocalisation
 msgid "Geolocalisation"
@@ -3958,7 +3963,7 @@ msgstr "электронная почта"
 
 #: [post]empty
 msgid "No content"
-msgstr "Нет данных"
+msgstr "Без содержания"
 
 #: [post]no_comments
 msgid "No comments yet"
@@ -3974,7 +3979,7 @@ msgstr "%s новых записей"
 
 #: [post]comment_error
 msgid "Comment publication error"
-msgstr "Ошибка добавления комментария"
+msgstr "Ошибка публикации комментария"
 
 #: [post]comments_get
 msgid "Get the comments"
@@ -3986,11 +3991,11 @@ msgstr "Добавить комментарий"
 
 #: [post]share
 msgid "Share with"
-msgstr "Поделиться с"
+msgstr "Поделиться с..."
 
 #: [post]share_everyone
 msgid "Everyone"
-msgstr "Все"
+msgstr "Каждым"
 
 #: [post]updated
 msgid "Updated"
@@ -4010,11 +4015,11 @@ msgstr "Комментарии"
 
 #: [post]original_deleted
 msgid "Original post deleted"
-msgstr "Первичный пост удален"
+msgstr "Изначальный пост удалён"
 
 #: [filesize]byte
 msgid "B"
-msgstr "Б"
+msgstr "байт"
 
 #: [filesize]kilobyte
 msgid "KB"
@@ -4038,7 +4043,7 @@ msgstr "Владелец"
 
 #: [affiliation]admin
 msgid "Admin"
-msgstr "Админ"
+msgstr "Администратор"
 
 #: [affiliation]publisher
 msgid "Publisher"
@@ -4046,7 +4051,7 @@ msgstr "Автор"
 
 #: [affiliation]publish-only
 msgid "Publish only"
-msgstr "Только публикация"
+msgstr "Опубликовать"
 
 #: [affiliation]member
 msgid "Member"
@@ -4058,19 +4063,19 @@ msgstr "Изгой"
 
 #: [affiliation]no_aff
 msgid "No affiliation"
-msgstr "Не принадлежит"
+msgstr "Не связан"
 
 #: [affiliation]owner_changed
 msgid "User granted as owner"
-msgstr "Пользователь назначен владельцем"
+msgstr "Пользователь стал владельцем"
 
 #: [affiliation]admin_changed
 msgid "User granted as admin"
-msgstr "Пользователь назначен админом"
+msgstr "Пользователь стал администратором"
 
 #: [affiliation]member_changed
 msgid "User granted as member"
-msgstr "Пользователь назначен членом"
+msgstr "Пользователь стал участником"
 
 #: [affiliation]outcast_changed
 msgid "User banned"
@@ -4078,7 +4083,7 @@ msgstr "Пользователь заблокирован"
 
 #: [affiliation]none_changed
 msgid "Affiliation removed for the user"
-msgstr "Участие удалено для этого пользователя"
+msgstr "Пользователь убран из связей"
 
 #: [api]error
 msgid "The API is not reachable, try again later"
