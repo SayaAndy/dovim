@@ -11,7 +11,7 @@
             <li onclick="MovimUtils.reload('{$c->route('chat', [$related->server,'room'])}')"
                 class="block large active">
                 <span class="primary icon bubble gray">
-                    {$c->svgIcon("Conversation-Question-Warning-3--Streamline-Freehand")}
+                    {autoescape="off"}{$c->svg('Conversation-Question-Warning-3--Streamline-Freehand')}{/autoescape}
                 </span>
 
                 <span class="control icon gray">
@@ -40,7 +40,7 @@
 
         <li class="block large">
             <span class="primary icon gray">
-                {$c->svgIcon("Worldwide-Web-Network-Www--Streamline-Freehand")}
+                {autoescape="off"}{$c->svg('Worldwide-Web-Network-Www--Streamline-Freehand')}{/autoescape}
             </span>
             <span class="control icon active" onclick="Preview.copyToClipboard('{$c->route('community', [$info->server, $info->node])}')">
                 <i class="material-symbols">content_copy</i>
@@ -52,7 +52,7 @@
         </li>
         <li class="block large">
             <span class="primary icon orange">
-                {$c->svgIcon("Wireless-Signal-Rss-Feed--Streamline-Freehand")}
+                {autoescape="off"}{$c->svg('Wireless-Signal-Rss-Feed--Streamline-Freehand')}{/autoescape}
             </span>
             <span class="control icon active" onclick="Preview.copyToClipboard('{$c->route('feed', [$info->server, $info->node])}')">
                 <i class="material-symbols">content_copy</i>

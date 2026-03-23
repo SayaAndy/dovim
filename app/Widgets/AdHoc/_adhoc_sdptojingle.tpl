@@ -4,7 +4,7 @@
             <ul class="list">
                 <li>
                     <span class="primary icon gray">
-                        {$c->svgIcon("Messages-Bubble-Menu--Streamline-Freehand")}
+                        {autoescape="off"}{$c->svg('Messages-Bubble-Menu--Streamline-Freehand')}{/autoescape}
                     </span>
                     <div>
                         <textarea dir="auto" name="sdp" id="sdp" placeholder="v=0

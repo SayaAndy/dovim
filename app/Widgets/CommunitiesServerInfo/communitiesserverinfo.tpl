@@ -12,7 +12,7 @@
                 {if="$parsed['scheme'] == 'xmpp'"}
                     {if="isset($parsed['query']) && $parsed['query'] == 'join'"}
                     <span class="primary icon gray">
-                        {$c->svgIcon("Messages-Bubble-Square-Text--Streamline-Freehand")}
+                        {autoescape="off"}{$c->svg('Messages-Bubble-Square-Text--Streamline-Freehand')}{/autoescape}
                     </span>
                     <div>
                         <p>

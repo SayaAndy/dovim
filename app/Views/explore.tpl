@@ -17,7 +17,7 @@
 
 <main>
     <a class="button action color" onclick="Search_ajaxRequest(false, true)" title="{$c->__('button.search')}">
-        {$c->svgIcon("Search-Magnifier--Streamline-Freehand")}
+        <?php echo svg('Search-Magnifier--Streamline-Freehand'); ?>
     </a>
     <div class="large">
         <?php if (!empty($_GET['s']) && $_GET['s'] == 'servers') { ?>
@@ -30,7 +30,7 @@
 
                         <?php if (!$this->user->isRestricted()) { ?>
                             <span class="control icon active divided" onclick="CommunitiesServers_ajaxDiscoverServer()">
-                                {$c->svgIcon("Search-Magnifier--Streamline-Freehand")}
+                                <?php echo svg('Search-Magnifier--Streamline-Freehand'); ?>
                             </span>
                         <?php } ?>
 

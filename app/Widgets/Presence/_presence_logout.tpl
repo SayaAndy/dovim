@@ -1,6 +1,6 @@
 <section>
     <div class="placeholder">
-        {$c->svgIcon("Safety-Exit-Door--Streamline-Freehand")}
+        {autoescape="off"}{$c->svg('Safety-Exit-Door--Streamline-Freehand')}{/autoescape}
         <h4>{$c->__('status.logout_confirm')}</h4>
     </div>
 </section>

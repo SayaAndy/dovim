@@ -57,7 +57,7 @@
             </li>
             <li>
                 <span class="primary icon gray">
-                    {$c->svgIcon("Messages-Bubble-Menu--Streamline-Freehand")}
+                    {autoescape="off"}{$c->svg('Messages-Bubble-Menu--Streamline-Freehand')}{/autoescape}
                 </span>
                 <div>
                     <textarea dir="auto" name="desc" id="desctext" placeholder="{$c->__('general.about')}" style="min-height: 3rem;" data-autoheight="true">{$desc ?? ''}</textarea>

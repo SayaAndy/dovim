@@ -19,7 +19,7 @@
                 </p>
         {else}
             <span class="primary icon bubble color {$post->server|stringToColor}">
-                {$c->svgIcon("Composition-Man--Streamline-Freehand")}
+                {autoescape="off"}{$c->svg('Composition-Man--Streamline-Freehand')}{/autoescape}
             </span>
             <div>
                 <p class="line">

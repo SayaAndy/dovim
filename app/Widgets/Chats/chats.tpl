@@ -24,5 +24,5 @@
 <div class="placeholder">
     <i class="material-symbols fill">chat_dashed</i>
     <h1>{$c->__('chats.empty_title')}</h1>
-    <h4>{$c->__('chats.empty', '{$c->svgIcon("Messages-Bubble-Square-Search--Streamline-Freehand")}')}</h4>
+    <h4>{$c->__('chats.empty', '{autoescape="off"}{$c->svg("Messages-Bubble-Square-Search--Streamline-Freehand")}{/autoescape}'</h4>
 </div>

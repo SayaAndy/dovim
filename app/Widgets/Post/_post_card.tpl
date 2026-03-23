@@ -12,7 +12,7 @@
                     </span>
                 {else}
                     <span class="primary icon bubble color {$post->aid|stringToColor}">
-                        {$c->svgIcon("Composition-Man--Streamline-Freehand")}
+                        {autoescape="off"}{$c->svg('Composition-Man--Streamline-Freehand')}{/autoescape}
                     </span>
                 {/if}
             {else}
@@ -84,7 +84,7 @@
                     {/if}
                     {$count = $post->user_views_count}
                     {if="$count > 2"}
-                        • {$count} {$c->svgIcon("View-Eye-1--Streamline-Freehand")}
+                        • {$count} {autoescape="off"}{$c->svg('View-Eye-1--Streamline-Freehand')}{/autoescape}
                     {/if}
                 </p>
                 {if="$post->isBrief()"}
@@ -103,7 +103,7 @@
         {/if}
         <section dir="{if="$post->isRTL()"}rtl{else}ltr{/if}">
             <label class="spoiler" for="spoiler_{$post->nodeid|cleanupId}">
-                {$c->svgIcon("View-Eye-1--Streamline-Freehand")}
+                {autoescape="off"}{$c->svg('View-Eye-1--Streamline-Freehand')}{/autoescape}
             </label>
             <div>
                 {if="$post->embeds->count() > 0"}
@@ -132,7 +132,7 @@
         {/if}
         <section {if="!$post->isShort()"}class="limited"{/if} dir="{if="$post->isRTL()"}rtl{else}ltr{/if}">
             <label class="spoiler" for="spoiler_{$post->nodeid|cleanupId}">
-                {$c->svgIcon("View-Eye-1--Streamline-Freehand")}
+                {autoescape="off"}{$c->svg('View-Eye-1--Streamline-Freehand')}{/autoescape}
             </label>
             <div>
                 {if="$post->embeds->count() > 0"}
@@ -211,14 +211,14 @@
                             class="button narrow icon flat gray"
                             onclick="SendTo.shareArticle('{$post->getRef()}')"
                             href="#">
-                            {$c->svgIcon("Share-Circles--Streamline-Freehand")}
+                            {autoescape="off"}{$c->svg('Share-Circles--Streamline-Freehand')}{/autoescape}
                         </a>
                         <a
                             title="{$c->__('button.send_to')}"
                             class="button narrow icon flat gray"
                             onclick="SendTo_ajaxSendContact('{$post->getRef()}')"
                             href="#">
-                            {$c->svgIcon("Send-Email-Fly--Streamline-Freehand")}
+                            {autoescape="off"}{$c->svg('Send-Email-Fly--Streamline-Freehand')}{/autoescape}
                         </a>
                         {if="$post->openlink"}
                             <a  title="{$c->__('post.public_url')}"

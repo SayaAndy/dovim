@@ -19,10 +19,10 @@
     <ul class="list thick active">
         <li onclick="MovimWebsocket.init()">
             <span class="primary icon gray spin">
-                {$c->svgIcon("Loading-Spinning-Star--Streamline-Freehand")}
+                <?php echo svg('Loading-Spinning-Star--Streamline-Freehand'); ?>
             </span>
             <span class="primary icon gray">
-                {$c->svgIcon("Cloud-Loading-1--Streamline-Freehand")}
+                <?php echo svg('Cloud-Loading-1--Streamline-Freehand'); ?>
             </span>
             <div>
                 <p class="line two">

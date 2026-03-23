@@ -25,7 +25,7 @@
         </li>
         <li class="block">
             <span class="primary icon gray">
-                {$c->svgIcon("Conversation-Question-Warning-3--Streamline-Freehand")}
+                {autoescape="off"}{$c->svg('Conversation-Question-Warning-3--Streamline-Freehand')}{/autoescape}
             </span>
             <div>
                 <p>{$c->__('faq.chatrooms_title')}</p>
@@ -36,7 +36,7 @@
         </li>
         <li class="block">
             <span class="primary icon gray">
-                {$c->svgIcon("Search-Magnifier--Streamline-Freehand")}
+                {autoescape="off"}{$c->svg('Search-Magnifier--Streamline-Freehand')}{/autoescape}
             </span>
             <div>
                 <p>{$c->__('faq.find_contacts_title')}</p>

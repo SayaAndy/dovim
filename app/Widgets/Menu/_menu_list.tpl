@@ -64,13 +64,13 @@
 
     <ul class="thick active divided spaced" id="menu_wrapper">
         <div class="placeholder">
-            {$c->svgIcon("Newspaper-Fold--Streamline-Freehand")}
+            {autoescape="off"}{$c->svg('Newspaper-Fold--Streamline-Freehand')}{/autoescape}
             <h1>{$c->__('menu.empty_title')}</h1>
             <h4>{$c->__('menu.empty')}</h4>
             <h4>
                 <br />
                 <a class="button color green" href="{$c->route('explore')}">
-                    {$c->svgIcon("View-Binocular--Streamline-Freehand")}
+                    {autoescape="off"}{$c->svg('View-Binocular--Streamline-Freehand')}{/autoescape}
                     {$c->__('button.discover')}
                 </a>
             </h4>

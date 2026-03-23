@@ -53,7 +53,7 @@
                 <ul class="list">
                     <li>
                         <span class="control icon divided gray active" >
-                            {$c->svgIcon("Search-Magnifier--Streamline-Freehand")}
+                            {autoescape="off"}{$c->svg('Search-Magnifier--Streamline-Freehand')}{/autoescape}
                         </span>
                         <div>
                             <input

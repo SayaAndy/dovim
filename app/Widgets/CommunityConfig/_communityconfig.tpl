@@ -81,7 +81,7 @@
                 </li>
                 <li>
                     <span class="primary icon gray">
-                        {$c->svgIcon("Network--Streamline-Freehand")}
+                        {autoescape="off"}{$c->svg('Network--Streamline-Freehand')}{/autoescape}
                     </span>
                     <span class="control">
                         <div class="radio">

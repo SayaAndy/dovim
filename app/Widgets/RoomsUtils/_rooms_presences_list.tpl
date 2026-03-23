@@ -43,7 +43,7 @@
                 <span class="control icon active gray divided" onclick="
                     RoomsUtils_ajaxConfigureUser('{$conference->conference|echapJS}', '{$value->mucjid|echapJS}');
                     Drawer.clear();">
-                    {$c->svgIcon("Settings-Cog--Streamline-Freehand")}
+                    {autoescape="off"}{$c->svg('Settings-Cog--Streamline-Freehand')}{/autoescape}
                 </span>
             {/if}
         {/if}

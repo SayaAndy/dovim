@@ -13,7 +13,7 @@
             title="{$c->__('page.news')}"
         >
             <span class="primary icon">
-                {$c->svgIcon("Newspaper-Fold--Streamline-Freehand")}
+                {autoescape="off"}{$c->svg('Newspaper-Fold--Streamline-Freehand')}{/autoescape}
                 <span data-key="news" class="counter"></span>
             </span>
         </li>
@@ -21,14 +21,14 @@
             onclick="MovimUtils.reload('{$c->route('explore')}')"
             title="{$c->__('page.explore')}"
         >
-            <span class="primary icon">{$c->svgIcon("View-Binocular--Streamline-Freehand")}</span>
+            <span class="primary icon">{autoescape="off"}{$c->svg('View-Binocular--Streamline-Freehand')}{/autoescape}</span>
         </li>
     {/if}
     <li onclick="Notifications_ajaxRequest()"
         title="{$c->__('notifs.title')}"
     >
         <span class="primary icon">
-            {$c->svgIcon("Alert-Alarm-Bell--Streamline-Freehand")}
+            {autoescape="off"}{$c->svg('Alert-Alarm-Bell--Streamline-Freehand')}{/autoescape}
             <span class="counter notifications"></span>
         </span>
     </li>

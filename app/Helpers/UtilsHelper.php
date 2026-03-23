@@ -1001,6 +1001,19 @@ function __()
 }
 
 /*
+ * @desc Get an SVG
+ */
+function svg()
+{
+    $args = func_get_args();
+    $svg = Movim\SVG::start();
+
+    $id = array_shift($args);
+
+    return $svg->get($id, ...$args);
+}
+
+/*
  * @desc Get the browser name from a user agent
  */
 function getBrowser(string $userAgent): ?string

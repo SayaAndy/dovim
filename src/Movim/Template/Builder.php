@@ -365,4 +365,8 @@ class Builder
             view: $this->_view
         );
     }
+
+    public function svg(string $i, string ...$classes) {
+        echo svg($i, ...$classes);
+    }
 }

@@ -91,7 +91,7 @@
     </li>
     <li>
         <span class="primary icon color bubble blue">
-            {$c->svgIcon("Help-Question-Circle--Streamline-Freehand")}
+            {autoescape="off"}{$c->svg('Help-Question-Circle--Streamline-Freehand')}{/autoescape}
         </span>
         <span class="control icon gray">
             <i class="material-symbols">chevron_right</i>

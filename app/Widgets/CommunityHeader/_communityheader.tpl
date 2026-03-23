@@ -59,7 +59,7 @@
                 </a>
                 •
                 {if="$num > 0"}
-                    {$c->svgIcon("Newspaper-Fold--Streamline-Freehand")} {$num}
+                    {autoescape="off"}{$c->svg('Newspaper-Fold--Streamline-Freehand')}{/autoescape} {$num}
                 {/if}
                 {if="$info != null"}
                     • <i class="material-symbols">people</i> {$info->occupants}

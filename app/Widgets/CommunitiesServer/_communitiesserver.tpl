@@ -44,5 +44,5 @@
 {/if}
 <button onclick="CommunitiesServer_ajaxTestAdd('{$server}')" class="button action color"
     title="{$c->__('communitiesserver.add', $server)}">
-    {$c->svgIcon("Add-Sign-Bold--Streamline-Freehand")}
+    {autoescape="off"}{$c->svg('Add-Sign-Bold--Streamline-Freehand')}{/autoescape}
 </button>

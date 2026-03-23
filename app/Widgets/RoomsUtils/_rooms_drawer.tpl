@@ -87,7 +87,7 @@
         {if="$conference->info->description"}
             <li>
                 <span class="primary icon gray">
-                    {$c->svgIcon("Messages-Bubble-Menu--Streamline-Freehand")}
+                    {autoescape="off"}{$c->svg('Messages-Bubble-Menu--Streamline-Freehand')}{/autoescape}
                 </span>
                 <div>
                     <p class="line">
@@ -105,7 +105,7 @@
         {if="$conference->info && $conference->info->mucpublic"}
             <li>
                 <span class="primary icon gray">
-                    {$c->svgIcon("View-Binocular--Streamline-Freehand")}
+                    {autoescape="off"}{$c->svg('View-Binocular--Streamline-Freehand')}{/autoescape}
                 </span>
                 <div>
                     <p class="line">{$c->__('room.public_muc')}</p>
@@ -195,7 +195,7 @@
         {else}
             <li>
                 <span class="primary icon gray">
-                    {$c->svgIcon("Alert-Alarm-Bell--Streamline-Freehand")}
+                    {autoescape="off"}{$c->svg('Alert-Alarm-Bell--Streamline-Freehand')}{/autoescape}
                 </span>
                 <span class="control icon gray active"
                       onclick="RoomsUtils_ajaxAdd('{$room|echapJS}'); Drawer.clear()">
@@ -264,7 +264,7 @@
                             <span class="control icon active gray divided" onclick="
                                 RoomsUtils_ajaxConfigureUser('{$conference->conference|echapJS}', '{$value->jid|echapJS}');
                                 Drawer.clear();">
-                                {$c->svgIcon("Settings-Cog--Streamline-Freehand")}
+                                {autoescape="off"}{$c->svg('Settings-Cog--Streamline-Freehand')}{/autoescape}
                             </span>
                         {/if}
                         <div>

@@ -6,7 +6,7 @@
     <ul class="list thick">
         <li>
             <span class="primary icon gray">
-                {$c->svgIcon("Share-Circles--Streamline-Freehand")}
+                {autoescape="off"}{$c->svg('Share-Circles--Streamline-Freehand')}{/autoescape}
             </span>
             <div>
                 <p>

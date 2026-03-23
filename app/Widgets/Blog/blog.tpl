@@ -14,7 +14,7 @@
                 <ul class="list thick">
                     <li>
                         <span class="primary icon on_desktop active" onclick="MovimUtils.redirect('{$contact->getBlogUrl()}')">
-                            {$c->svgIcon("Composition-Man--Streamline-Freehand")}
+                            {autoescape="off"}{$c->svg('Composition-Man--Streamline-Freehand')}{/autoescape}
                         </span>
                         <span class="primary icon bubble on_mobile">
                             <img src="{$contact->getPicture(\Movim\ImageSize::M)}">
@@ -25,7 +25,7 @@
                                 target="_blank"
                                 title="Atom"
                             >
-                                {$c->svgIcon("Wireless-Signal-Rss-Feed--Streamline-Freehand")}
+                                {autoescape="off"}{$c->svg('Wireless-Signal-Rss-Feed--Streamline-Freehand')}{/autoescape}
                             </a>
                         </span>
                         <div>
@@ -84,13 +84,13 @@
                             target="_blank"
                             title="Atom"
                         >
-                            {$c->svgIcon("Wireless-Signal-Rss-Feed--Streamline-Freehand")}
+                            {autoescape="off"}{$c->svg('Wireless-Signal-Rss-Feed--Streamline-Freehand')}{/autoescape}
                         </a>
                     </span>
                     <div>
                         <a class="button oppose color gray" title="{$c->__('communityheader.follow')}"
                             href="xmpp:{$server}?pubsub;action=subscribe;node={$node}">
-                            {$c->svgIcon("Add-Sign-Bold--Streamline-Freehand")} <span class="on_desktop">{$c->__('communityheader.follow')}</span>
+                            {autoescape="off"}{$c->svg('Add-Sign-Bold--Streamline-Freehand')}{/autoescape} <span class="on_desktop">{$c->__('communityheader.follow')}</span>
                         </a>
                         <p>
                             <a href="{$c->route('community', [$server, $node])}">

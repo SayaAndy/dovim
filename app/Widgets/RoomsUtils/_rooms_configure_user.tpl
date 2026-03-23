@@ -17,7 +17,7 @@
             <ul class="list">
                 <li>
                     <span class="primary icon gray">
-                        {$c->svgIcon("Messages-People-Person-Bubble-Square-2--Streamline-Freehand")}
+                        {autoescape="off"}{$c->svg('Messages-People-Person-Bubble-Square-2--Streamline-Freehand')}{/autoescape}
                     </span>
                     <div>
                         <div class="select">

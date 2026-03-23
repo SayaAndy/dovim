@@ -16,7 +16,7 @@
     {if="isset($post)"}
         <li  class="block" onclick="SendTo.shareArticle('{$post->getRef()}')">
             <span class="primary icon gray">
-                {$c->svgIcon("Share-Circles--Streamline-Freehand")}
+                {autoescape="off"}{$c->svg('Share-Circles--Streamline-Freehand')}{/autoescape}
             </span>
             <div>
                 <p>
@@ -26,7 +26,7 @@
         </li>
         <li  class="block" onclick="SendTo_ajaxSendContact('{$post->getRef()}')">
             <span class="primary icon gray">
-                {$c->svgIcon("Send-Email-Fly--Streamline-Freehand")}
+                {autoescape="off"}{$c->svg('Send-Email-Fly--Streamline-Freehand')}{/autoescape}
             </span>
             <div>
                 <p>
@@ -37,7 +37,7 @@
     {else}
         <li class="block" onclick="Post.share()">
             <span class="primary icon gray">
-                {$c->svgIcon("Share-Circles--Streamline-Freehand")}
+                {autoescape="off"}{$c->svg('Share-Circles--Streamline-Freehand')}{/autoescape}
             </span>
             <div>
                 <p>

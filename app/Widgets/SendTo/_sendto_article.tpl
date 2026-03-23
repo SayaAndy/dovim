@@ -16,7 +16,7 @@
         <ul class="list middle">
             <li>
                 <span class="primary icon bubble gray">
-                    {$c->svgIcon("Share-Circles--Streamline-Freehand")}
+                    {autoescape="off"}{$c->svg('Share-Circles--Streamline-Freehand')}{/autoescape}
                 </span>
                 <span class="control icon active gray divided" onclick="SendTo_ajaxOsShare({$post->id})">
                     <i class="material-symbols">ios_share</i>
@@ -41,7 +41,7 @@
                 </span>
                 <span class="control icon active gray divided"
                     onclick="MovimUtils.reload('{$c->route('publish', [$c->me->id, 'urn:xmpp:microblog:0', '', $post->server, $post->node, $post->nodeid])}'); Drawer.clear()">
-                    {$c->svgIcon("Send-Email-Pop-Up--Streamline-Freehand")}
+                    {autoescape="off"}{$c->svg('Send-Email-Pop-Up--Streamline-Freehand')}{/autoescape}
                 </span>
                 <div>
                     <p class="line">{$me->truename}</p>
@@ -59,7 +59,7 @@
         {if="$subscriptions->isEmpty()"}
             <ul class="thick">
                 <div class="placeholder">
-                    {$c->svgIcon("Book-Library-Shelf-1--Streamline-Freehand")}
+                    {autoescape="off"}{$c->svg('Book-Library-Shelf-1--Streamline-Freehand')}{/autoescape}
                 </li>
             </ul>
         {else}
@@ -78,7 +78,7 @@
                         </span>
                     {/if}
                     <span class="control icon active gray divided" onclick="MovimUtils.reload('{$c->route('publish', [$value->server, $value->node, '', $post->server, $post->node, $post->nodeid])}'); Drawer.clear()">
-                        {$c->svgIcon("Send-Email-Pop-Up--Streamline-Freehand")}
+                        {autoescape="off"}{$c->svg('Send-Email-Pop-Up--Streamline-Freehand')}{/autoescape}
                     </span>
                     <div>
                         <p class="line">

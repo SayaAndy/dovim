@@ -1,6 +1,6 @@
 {if="$contact->isContact($c->me->id)"}
     <a href="{$c->route('publish')}" class="button action color" title="{$c->__('menu.add_post')}">
-        {$c->svgIcon("Send-Email-Pop-Up--Streamline-Freehand")}
+        {autoescape="off"}{$c->svg('Send-Email-Pop-Up--Streamline-Freehand')}{/autoescape}
     </a>
 {/if}
 
@@ -30,7 +30,7 @@
             {if="$contact->isContact($c->me->id)"}
                 <span class="control icon active white divided" onclick="MovimUtils.reload('{$c->route('configuration')}')"
                     title="{$c->__('button.edit')}">
-                    {$c->svgIcon("Controls-Sliders-Vertical--Streamline-Freehand")}
+                    {autoescape="off"}{$c->svg('Controls-Sliders-Vertical--Streamline-Freehand')}{/autoescape}
                 </span>
             {else}
                 <span class="control icon active white divided" onclick="Notifications_ajaxAddAsk('{$contact->id|echapJS}')"

@@ -48,7 +48,7 @@
                     </span>
                 {else}
                     <span class="control icon gray active" title="{$c->__('button.add')}" onclick="Notifications_ajaxAddAsk('{$value->jid|echapJS}'); Drawer.clear();">
-                        {$c->svgIcon("Add-Sign-Bold--Streamline-Freehand")}
+                        {autoescape="off"}{$c->svg('Add-Sign-Bold--Streamline-Freehand')}{/autoescape}
                     </span>
                 {/if}
                 <span class="control icon gray active" title="{$c->__('button.delete')}" onclick="Notifications_ajaxDeleteContact('{$value->jid|echapJS}'); Drawer.clear();">

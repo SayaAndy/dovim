@@ -9,7 +9,7 @@
     <ul class="list">
         <li class="block large">
             <span class="primary icon gray">
-                {$c->svgIcon("Composition-Man--Streamline-Freehand")}
+                {autoescape="off"}{$c->svg('Composition-Man--Streamline-Freehand')}{/autoescape}
             </span>
             <div>
                 <p class="line">

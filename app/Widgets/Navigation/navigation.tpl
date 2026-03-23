@@ -5,7 +5,7 @@
             title="{$c->__('page.news')}"
         >
             <span class="primary icon">
-                {$c->svgIcon("Newspaper-Fold--Streamline-Freehand")}
+                {autoescape="off"}{$c->svg('Newspaper-Fold--Streamline-Freehand')}{/autoescape}
                 <span data-key="news" class="counter"></span>
             </span>
             <div>
@@ -17,7 +17,7 @@
             class="on_desktop {if="$page == 'explore' || $page == 'community'"}active{/if}"
             title="{$c->__('page.explore')}"
         >
-            <span class="primary icon">{$c->svgIcon("View-Binocular--Streamline-Freehand")}</span>
+            <span class="primary icon">{autoescape="off"}{$c->svg('View-Binocular--Streamline-Freehand')}{/autoescape}</span>
             <div>
                 <p>{$c->__('page.explore')}</p>
             </div>
@@ -28,7 +28,7 @@
             class="on_desktop publish_something"
             title="{$c->__('post.publish_something')}"
         >
-            <span class="primary icon">{$c->svgIcon("Notes-Hand--Streamline-Freehand")}</span>
+            <span class="primary icon">{autoescape="off"}{$c->svg('Notes-Hand--Streamline-Freehand')}{/autoescape}</span>
             <div>
                 <p>{$c->__('post.publish_something')}</p>
             </div>
@@ -41,7 +41,7 @@
         title="{$c->__('button.search')}"
     >
         <span class="primary icon">
-            {$c->svgIcon("Search-Magnifier--Streamline-Freehand")}
+            {autoescape="off"}{$c->svg('Search-Magnifier--Streamline-Freehand')}{/autoescape}
         </span>
         <div>
             <p>{$c->__('button.search')}</p>
@@ -52,7 +52,7 @@
         title="{$c->__('notifs.title')}"
     >
         <span class="primary icon">
-            {$c->svgIcon("Alert-Alarm-Bell--Streamline-Freehand")}
+            {autoescape="off"}{$c->svg('Alert-Alarm-Bell--Streamline-Freehand')}{/autoescape}
             <span class="counter notifications"></span>
         </span>
         <div>

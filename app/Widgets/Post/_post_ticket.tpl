@@ -80,7 +80,7 @@
 
                 {$count = $post->user_views_count}
                 {if="$count > 2"}
-                    {$count} {$c->svgIcon("View-Eye-1--Streamline-Freehand")}
+                    {$count} {autoescape="off"}{$c->svg('View-Eye-1--Streamline-Freehand')}{/autoescape}
                 {/if}
 
                 {$count = $post->likes->count()}

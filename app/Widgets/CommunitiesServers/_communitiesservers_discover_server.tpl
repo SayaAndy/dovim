@@ -4,7 +4,7 @@
     <ul class="list thick">
         <li class="block large">
             <span class="primary icon">
-                {$c->svgIcon("Search-Magnifier--Streamline-Freehand")}
+                {autoescape="off"}{$c->svg('Search-Magnifier--Streamline-Freehand')}{/autoescape}
             </span>
             <form name="communitiesservers_discover_server">
                 <div>

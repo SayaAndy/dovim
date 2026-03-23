@@ -8,7 +8,7 @@
                 <i class="material-symbols">play_arrow</i>
             </span>
             <span id="audio_upload" class="control icon active">
-                {$c->svgIcon("Send-Email-Fly--Streamline-Freehand")}
+                {autoescape="off"}{$c->svg('Send-Email-Fly--Streamline-Freehand')}{/autoescape}
             </span>
             <div>
                 <p class="rec icon red"></p>

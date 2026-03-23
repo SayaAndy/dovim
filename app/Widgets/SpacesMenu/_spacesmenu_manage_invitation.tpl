@@ -5,7 +5,7 @@
                 {if="$info"}
                     <img src="{$info->getPicture(placeholder: $info->name)}">
                 {else}
-                    {$c->svgIcon("Share-Circles--Streamline-Freehand")}
+                    {autoescape="off"}{$c->svg('Share-Circles--Streamline-Freehand')}{/autoescape}
                 {/if}
             </span>
             <span class="primary icon bubble">

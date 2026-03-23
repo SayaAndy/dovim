@@ -5,7 +5,7 @@
         title="{$c->__('page.chats')}"
     >
         <span class="primary icon" id="chatcounter" {if="$chatCounter > 0"}data-counter="{$chatCounter}"{/if}>
-            {$c->svgIcon("Conversation-Chat--Streamline-Freehand")}
+            {autoescape="off"}{$c->svg('Conversation-Chat--Streamline-Freehand')}{/autoescape}
         </span>
         <div>
             <p>{$c->__('page.chats')}</p>

@@ -18,7 +18,7 @@
             <ul class="list middle">
                 <li>
                     <span id="menu" class="primary icon gray" >
-                        {$c->svgIcon("Settings-Cog--Streamline-Freehand")}
+                        <?php echo svg('Settings-Cog--Streamline-Freehand'); ?>
                     </span>
                     <div>
                         <p><?php echo __('page.administration'); ?></p>

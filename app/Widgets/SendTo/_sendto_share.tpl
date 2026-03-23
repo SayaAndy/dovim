@@ -33,7 +33,7 @@
                 <i class="material-symbols">group</i>
             </span>
             <span class="control icon gray active divided disabled" id="sendto_button"onclick="SendTo.sendToContacts('{$uri}')">
-                {$c->svgIcon("Send-Email-Fly--Streamline-Freehand")}
+                {autoescape="off"}{$c->svg('Send-Email-Fly--Streamline-Freehand')}{/autoescape}
             </span>
             <div>
                 <p>{$c->__('sendto.pick')}</p>
@@ -51,7 +51,7 @@
                     </span>
 
                     <!--<span class="control icon active gray" onclick="SendTo_ajaxSend('{$value->conference|echapJS}', true, '{$uri}');">
-                        {$c->svgIcon("Send-Email-Fly--Streamline-Freehand")}
+                        {autoescape="off"}{$c->svg('Send-Email-Fly--Streamline-Freehand')}{/autoescape}
                     </span>-->
                     <span class="control icon active gray divided share" onclick="SendTo.toggleSend(this)" data-jid="{$value->conference|echapJS}" data-muc="true">
                         <i class="material-symbols"></i>

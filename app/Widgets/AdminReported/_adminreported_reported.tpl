@@ -15,7 +15,7 @@
             {loop="$reported"}
                 <li id="reported-{$value->id|cleanupId}">
                     <span class="primary icon gray">
-                        {$c->svgIcon("Composition-Man--Streamline-Freehand")}
+                        {autoescape="off"}{$c->svg('Composition-Man--Streamline-Freehand')}{/autoescape}
                     </span>
                     <span class="control">
                         <div class="checkbox">

@@ -41,7 +41,7 @@
                     <p class="desc line center"></p>
                 </div>
                 <span class="primary active bubble color icon green">
-                    {$c->svgIcon("Design-Process-Draw-Pen--Streamline-Freehand")}
+                    {autoescape="off"}{$c->svg('Design-Process-Draw-Pen--Streamline-Freehand')}{/autoescape}
                 </span>
             </li>
         </div>

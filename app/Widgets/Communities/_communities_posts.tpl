@@ -3,7 +3,7 @@
         <li class="block color" onclick="MovimUtils.reload('{$c->route('explore', 'servers')}')">
             <i class="material-symbols main">view_cozy</i>
             <span class="primary icon bubble color transparent">
-                {$c->svgIcon("Network--Streamline-Freehand")}
+                {autoescape="off"}{$c->svg('Network--Streamline-Freehand')}{/autoescape}
             </span>
             <div>
                 <p>{$c->__('communities.servers')}</p>

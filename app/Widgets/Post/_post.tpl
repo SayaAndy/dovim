@@ -52,7 +52,7 @@
                 {else}
                     <span class="icon primary bubble color {$post->color}">
                         <a href="#" onclick="Post_ajaxGetContact('{$post->aid}')">
-                            {$c->svgIcon("Composition-Man--Streamline-Freehand")}
+                            {autoescape="off"}{$c->svg('Composition-Man--Streamline-Freehand')}{/autoescape}
                         </a>
                     </span>
                 {/if}
@@ -126,7 +126,7 @@
                     {/if}
                     {$count = $post->user_views_count}
                     {if="$count > 2"}
-                         • {$count} {$c->svgIcon("View-Eye-1--Streamline-Freehand")}
+                         • {$count} {autoescape="off"}{$c->svg('View-Eye-1--Streamline-Freehand')}{/autoescape}
                     {/if}
                 </p>
                 {if="$post->isBrief()"}
@@ -261,7 +261,7 @@
                     {/if}
                     onclick="Preview_ajaxHttpShow('{$value->href}')"
                 >
-                    {$c->svgIcon("View-Eye-1--Streamline-Freehand")}
+                    {autoescape="off"}{$c->svg('View-Eye-1--Streamline-Freehand')}{/autoescape}
                 </li>
             {/loop}
         </ul>

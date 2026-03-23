@@ -138,7 +138,7 @@
                                 </span>
                             {else}
                                 <span class="primary icon bubble small color {$value->id|stringToColor}">
-                                    {$c->svgIcon("Composition-Man--Streamline-Freehand")}
+                                    {autoescape="off"}{$c->svg('Composition-Man--Streamline-Freehand')}{/autoescape}
                                 </span>
                             {/if}
                             <div>

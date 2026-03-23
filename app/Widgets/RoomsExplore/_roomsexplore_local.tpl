@@ -22,7 +22,7 @@
             {else}
                 <span class="control icon gray active divided"
                     onclick="Drawer.clear(); RoomsUtils_ajaxAdd('{$value->server}', '{$value->name}')">
-                    {$c->svgIcon("Add-Sign-Bold--Streamline-Freehand")}
+                    {autoescape="off"}{$c->svg('Add-Sign-Bold--Streamline-Freehand')}{/autoescape}
                 </span>
             {/if}
             <div>
@@ -46,7 +46,7 @@
     {/loop}
 {else}
     <div class="placeholder">
-        {$c->svgIcon("View-Binocular--Streamline-Freehand")}
+        {autoescape="off"}{$c->svg('View-Binocular--Streamline-Freehand')}{/autoescape}
         <h1>{$c->__('roomsexplore.no_local')}</h1>
     </div>
 {/if}

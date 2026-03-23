@@ -54,7 +54,7 @@
                         onclick="SendTo.shareArticle('{$post->getRef()}')"
                         href="#"
                     >
-                        {$c->svgIcon("Share-Circles--Streamline-Freehand")}
+                        {autoescape="off"}{$c->svg('Share-Circles--Streamline-Freehand')}{/autoescape}
                     </a>
                     <a
                         title="{$c->__('button.send_to')}"
@@ -62,7 +62,7 @@
                         onclick="SendTo_ajaxSendContact('{$post->getRef()}')"
                         href="#"
                     >
-                        {$c->svgIcon("Send-Email-Fly--Streamline-Freehand")}
+                        {autoescape="off"}{$c->svg('Send-Email-Fly--Streamline-Freehand')}{/autoescape}
                     </a>
                 </p>
             </div>
@@ -74,7 +74,7 @@
                 <i class="material-symbols">add_comment</i>
             </span>
             <span class="control icon gray active" onclick="Post_ajaxPublishComment(MovimUtils.formToJson('comment'),'{$post->server}', '{$post->node}', '{$post->nodeid}'); this.classList.add('disabled');">
-                {$c->svgIcon("Send-Email-Fly--Streamline-Freehand")}
+                {autoescape="off"}{$c->svg('Send-Email-Fly--Streamline-Freehand')}{/autoescape}
             </span>
             <form name="comment">
                 <div>
@@ -125,10 +125,10 @@
             {else}
                 <span class="primary icon bubble {if="$value->aid"}color {$value->aid|stringToColor}{/if} small">
                     {if="$public"}
-                        {$c->svgIcon("Composition-Man--Streamline-Freehand")}
+                        {autoescape="off"}{$c->svg('Composition-Man--Streamline-Freehand')}{/autoescape}
                     {else}
                         <a href="{$c->route('contact', $value->aid)}">
-                            {$c->svgIcon("Composition-Man--Streamline-Freehand")}
+                            {autoescape="off"}{$c->svg('Composition-Man--Streamline-Freehand')}{/autoescape}
                         </a>
                     {/if}
                 </span>

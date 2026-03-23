@@ -7,7 +7,7 @@
             title="{$c->__('post.new_blog')}"
         >
             <span class="primary icon gray">
-                {$c->svgIcon("Send-Email-Pop-Up--Streamline-Freehand")}
+                {autoescape="off"}{$c->svg('Send-Email-Pop-Up--Streamline-Freehand')}{/autoescape}
             </span>
             <span class="control icon gray">
                 <i class="material-symbols">chevron_forward</i>

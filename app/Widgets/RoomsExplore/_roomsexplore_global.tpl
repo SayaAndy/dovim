@@ -22,7 +22,7 @@
             {else}
                 <span class="control icon gray active divided"
                     onclick="Drawer.clear(); RoomsUtils_ajaxAdd('{$value.jid}', '{$value.name}')">
-                    {$c->svgIcon("Add-Sign-Bold--Streamline-Freehand")}
+                    {autoescape="off"}{$c->svg('Add-Sign-Bold--Streamline-Freehand')}{/autoescape}
                 </span>
             {/if}
 

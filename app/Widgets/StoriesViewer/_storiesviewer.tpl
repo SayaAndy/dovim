@@ -21,7 +21,7 @@
             </span>
             {/if}
             <span class="control icon active" onclick="StoriesViewer.pause(); SendTo_ajaxSendContact('{$story->getRef()}')">
-                {$c->svgIcon("Share-Circles--Streamline-Freehand")}
+                {autoescape="off"}{$c->svg('Share-Circles--Streamline-Freehand')}{/autoescape}
             </span>
             <span class="control icon pause toggleable" onclick="StoriesViewer.start()">
                 <i class="material-symbols fill">play_arrow</i>
@@ -42,7 +42,7 @@
                 <p>
                     {$count = $story->user_views_count}
                     {if="$count > 2"}
-                        {$count} {$c->svgIcon("View-Eye-1--Streamline-Freehand")} •
+                        {$count} {autoescape="off"}{$c->svg('View-Eye-1--Streamline-Freehand')}{/autoescape} •
                     {/if}
 
                     {$c->prepareDate($story->published, true)}
@@ -59,7 +59,7 @@
         {if="!$story->isMine($c->me) && $story->contact"}
         <li class="comment">
             <span class="control icon active" onclick="StoriesViewer.sendComment({$story->id})">
-                {$c->svgIcon("Send-Email-Fly--Streamline-Freehand")}
+                {autoescape="off"}{$c->svg('Send-Email-Fly--Streamline-Freehand')}{/autoescape}
             </span>
             <form name="storycomment" onsubmit="return false;">
                 <div>

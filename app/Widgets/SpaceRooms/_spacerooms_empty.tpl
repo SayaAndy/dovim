@@ -1,5 +1,5 @@
 <div class="placeholder">
-    {$c->svgIcon("Share-Circles--Streamline-Freehand")}
+    {autoescape="off"}{$c->svg('Share-Circles--Streamline-Freehand')}{/autoescape}
 
     {if="$subscription && $subscription->info"}
         <h1>

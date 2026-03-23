@@ -36,6 +36,9 @@ RUN addgroup -S www-data 2>/dev/null || true \
 USER www-data
 WORKDIR /usr/local/share/movim
 
+COPY ./composer.json ./composer.lock /usr/local/share/movim/
+RUN composer install --no-cache
+
 FROM base AS movim
 
 ARG STREAMLINEHQ_API_KEY
@@ -48,8 +51,7 @@ RUN chown -R www-data:www-data /usr/local/share/movim \
     && chmod 1777 /tmp
 USER www-data
 
-RUN composer install --no-cache \
-    && mkdir -p cache log public/cache \
+RUN mkdir -p cache log public/cache \
     && rm -rf assets/
 
 USER root

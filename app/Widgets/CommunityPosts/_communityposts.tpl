@@ -34,7 +34,7 @@
     </ul>
 {else}
     <div class="placeholder">
-        {$c->svgIcon("Newspaper-Fold--Streamline-Freehand")}
+        {autoescape="off"}{$c->svg('Newspaper-Fold--Streamline-Freehand')}{/autoescape}
         <h4>{$c->__('post.empty')}</h4>
     </div>
 {/if}

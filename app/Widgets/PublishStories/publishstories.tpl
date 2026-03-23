@@ -63,7 +63,7 @@
             </li>
             <li>
                 <span class="primary icon spin">
-                    {$c->svgIcon("Loading-Spinning-Star--Streamline-Freehand")}
+                    {autoescape="off"}{$c->svg('Loading-Spinning-Star--Streamline-Freehand')}{/autoescape}
                 </span>
                 <div>
                     <p class="line">{$c->__('story.uploading')}</p>

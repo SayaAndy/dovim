@@ -22,7 +22,7 @@
             </li>
             <li>
                 <span class="primary icon gray">
-                    {$c->svgIcon("Conversation-Question-Warning-3--Streamline-Freehand")}
+                    {autoescape="off"}{$c->svg('Conversation-Question-Warning-3--Streamline-Freehand')}{/autoescape}
                 </span>
                 <span class="control">
                     <div class="checkbox">
@@ -83,7 +83,7 @@
         <ul class="list middle">
             <li>
                 <span class="primary icon gray">
-                    {$c->svgIcon("Conversation-Question-Warning-3--Streamline-Freehand")}
+                    {autoescape="off"}{$c->svg('Conversation-Question-Warning-3--Streamline-Freehand')}{/autoescape}
                 </span>
                 <span class="control">
                     <div class="checkbox">

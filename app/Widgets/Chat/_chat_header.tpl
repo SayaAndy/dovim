@@ -212,7 +212,7 @@
             {if="$conference->presence->mucrole == 'moderator'"}
                 <li onclick="RoomsUtils_ajaxGetSubject('{$jid|echapJS}')">
                     <span class="primary icon gray">
-                        {$c->svgIcon("Messages-Bubble-Menu--Streamline-Freehand")}
+                        {autoescape="off"}{$c->svg('Messages-Bubble-Menu--Streamline-Freehand')}{/autoescape}
                     </span>
                     <div>
                         <p>{$c->__('chatroom.subject')}</p>
@@ -372,7 +372,7 @@
         {if="!$contact->isFromMuc()"}
             <li onclick="MovimUtils.reload('{$c->route('contact', $contact->id)}')">
                 <span class="primary icon gray">
-                    {$c->svgIcon("Composition-Man--Streamline-Freehand")}
+                    {autoescape="off"}{$c->svg('Composition-Man--Streamline-Freehand')}{/autoescape}
                 </span>
                 <div>
                     <p class="line">{$c->__('chat.profile')}</p>

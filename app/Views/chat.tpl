@@ -21,7 +21,7 @@
     <?php $this->widget('ChatActions');?>
     <div id="scroll_block">
         <a class="button action color" onclick="Search_ajaxRequest(true)">
-            {$c->svgIcon("Messages-Bubble-Square-Search--Streamline-Freehand")}
+            <?php echo svg('Messages-Bubble-Square-Search--Streamline-Freehand'); ?>
         </a>
         <?php if ($this->user?->hasPubsub() && $this->user?->hasUpload()) { ?>
             <?php $this->widget('Stories');?>

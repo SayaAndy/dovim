@@ -118,7 +118,7 @@
             </li>
             <li>
                 <span class="primary icon gray">
-                    {$c->svgIcon("Messages-Bubble-Square-Text--Streamline-Freehand")}
+                    {autoescape="off"}{$c->svg('Messages-Bubble-Square-Text--Streamline-Freehand')}{/autoescape}
                 </span>
                 <span class="control">
                     <div class="checkbox">
@@ -198,7 +198,7 @@
             </li>
             <li>
                 <span class="primary icon gray">
-                    {$c->svgIcon("Help-Question-Circle--Streamline-Freehand")}
+                    {autoescape="off"}{$c->svg('Help-Question-Circle--Streamline-Freehand')}{/autoescape}
                 </span>
                 <div>
                     <textarea type="text" name="info" id="info"

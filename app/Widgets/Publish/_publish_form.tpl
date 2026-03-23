@@ -40,12 +40,12 @@
     <ul class="tabs wide two">
         <li {if="$type == 'brief'"}class="active"{/if}>
             <a href="#" onclick="Publish.get('brief')" title="{$c->__('publish.brief_title')}">
-                {$c->svgIcon("Messages-Bubble-Menu--Streamline-Freehand")} &nbsp; {$c->__('publish.brief_title')}
+                {autoescape="off"}{$c->svg('Messages-Bubble-Menu--Streamline-Freehand')}{/autoescape} &nbsp; {$c->__('publish.brief_title')}
             </a>
         </li>
         <li {if="$type == 'article'"}class="active"{/if}>
             <a href="#" onclick="Publish.get('article')" title="{$c->__('publish.post_title')}">
-                {$c->svgIcon("Paragraphs-Image-Right--Streamline-Freehand")} &nbsp; {$c->__('publish.post_title')}
+                {autoescape="off"}{$c->svg('Paragraphs-Image-Right--Streamline-Freehand')}{/autoescape} &nbsp; {$c->__('publish.post_title')}
             </a>
         </li>
     </ul>
@@ -115,39 +115,39 @@
                     class="button narrow flat icon gray"
                     title="{$c->__('publish.add_link')}"
                     onclick="Publish_ajaxLink()">
-                    {$c->svgIcon("Office-Business-Card--Streamline-Freehand")}
+                    {autoescape="off"}{$c->svg('Office-Business-Card--Streamline-Freehand')}{/autoescape}
                 </button>
                 {if="$c->me->hasUpload()"}
                     <button
                         class="button narrow flat icon gray"
                         title="{$c->__('publish.attach')}"
                         onclick="Upload_ajaxGetPanel()">
-                        {$c->svgIcon("Form-Edition-Image-Attach--Streamline-Freehand")}
+                        {autoescape="off"}{$c->svg('Form-Edition-Image-Attach--Streamline-Freehand')}{/autoescape}
                     </button>
                     <button
                         class="button narrow flat icon gray"
                         title="{$c->__('publish.add_snap')}"
                         onclick="Snap.init()">
-                        {$c->svgIcon("Camera-Mode-Photo--Streamline-Freehand")}
+                        {autoescape="off"}{$c->svg('Camera-Mode-Photo--Streamline-Freehand')}{/autoescape}
                     </button>
                     <button
                         class="button narrow flat icon gray"
                         title="{$c->__('draw.title')}"
                         onclick="Draw_ajaxHttpGet()">
-                        {$c->svgIcon("Design-Process-Draw-Pen--Streamline-Freehand")}
+                        {autoescape="off"}{$c->svg('Design-Process-Draw-Pen--Streamline-Freehand')}{/autoescape}
                     </button>
                 {/if}
 
                 <button class="button send oppose color" onclick="Publish.publish()">
-                    {$c->svgIcon("Send-Email-Fly--Streamline-Freehand")}
+                    {autoescape="off"}{$c->svg('Send-Email-Fly--Streamline-Freehand')}{/autoescape}
                     <span class="on_desktop">{$c->__('page.publish')}</span>
                 </button>
                 <button class="button flat oppose gray" onclick="Publish.preview()">
-                    {$c->svgIcon("View-Eye-1--Streamline-Freehand")}
+                    {autoescape="off"}{$c->svg('View-Eye-1--Streamline-Freehand')}{/autoescape}
                     <span class="on_desktop">{$c->__('publish.preview')}</span>
                 </button>
                 <button class="button flat oppose gray on_mobile" onclick="PublishHelp_ajaxDrawer()">
-                    {$c->svgIcon("Help-Question-Circle--Streamline-Freehand")}
+                    {autoescape="off"}{$c->svg('Help-Question-Circle--Streamline-Freehand')}{/autoescape}
                 </button>
             </div>
         </li>
