@@ -25,8 +25,9 @@ class AvatarPlaceholder extends \Movim\Widget\Base
         $svg->appendChild($defs);
 
         $style = $dom->createElement('style', '@import url(\'//theme/fonts/Roboto/font.css\');
+        @import url(\'//theme/fonts/Philosopher/font.css\');
         #avatar {
-          font-family: "Roboto", sans-serif;
+          font-family: "Philosopher", "Roboto", sans-serif;
           fill: white;
         }');
         $style->setAttribute('type', 'text/css');

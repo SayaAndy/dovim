@@ -348,6 +348,7 @@ input[type=button] {
     transition: background 0.3s ease, box-shadow 0.3s ease;
     background-image: none;
     user-select: none;
+    vertical-align: bottom;
 }
 
 .button.color {
@@ -469,7 +470,8 @@ li.action div.action .button {
 }
 
 .button:not(.action) svg {
-    width: 2.5rem;
+    width: 4.5rem;
+    padding: 0.25rem;
 }
 
 .snackbar#status_websocket:not(.hide) ~ main > aside ~ * .button.action {

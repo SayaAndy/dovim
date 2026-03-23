@@ -24,7 +24,7 @@ var MovimFavicon = {
             }
 
             ctx.textAlign = 'center';
-            ctx.font = 'bold 18px Roboto';
+            ctx.font = 'bold 18px Philosopher';
 
             radius = 5;
             x = large ? 4 : 12;
