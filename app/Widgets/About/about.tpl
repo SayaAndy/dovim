@@ -8,7 +8,7 @@
             </div>
         </li>
         <li>
-            <span class="primary icon bubble color teal"><i class="material-symbols">code</i></span>
+            <span class="primary icon bubble color teal">{autoescape="off"}{$c->svg('File-Code--Streamline-Freehand')}{/autoescape}</span>
             <div>
                 <p>{$c->__('about.sourcecode_title')}</p>
                 <p class="all"><a href="https://github.com/movim/movim" target="_blank">{$c->__('about.sourcecode_text')}</a></p>

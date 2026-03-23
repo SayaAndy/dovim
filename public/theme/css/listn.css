@@ -246,6 +246,7 @@ ul.list li>div>p.line {
     text-overflow: ellipsis;
     white-space: nowrap;
     max-width: 100%;
+    display: flex;
 }
 
 ul.list li>div>p.line.two {

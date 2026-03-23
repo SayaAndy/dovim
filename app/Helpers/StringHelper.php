@@ -355,13 +355,13 @@ function palette(bool $withBlack = false): array
         'dorange'   => '#C40909',
         'orange'    => '#D75F5F',
         'amber'     => '#ED9337',
-        'yellow'    => '#F3E430',
-        'lime'      => '#A2F298',
+        'yellow'    => '#C6B716',
+        'lime'      => '#9FE484',
         'lgreen'    => '#5FD7A7',
         'green'     => '#10A778',
         'teal'      => '#20A5BA',
         'cyan'      => '#4FB8CC',
-        'lblue'     => '#B6D6FD',
+        'lblue'     => '#A0CBFF',
         'blue'      => '#20BBFC',
         'indigo'    => '#5067E8',
         'dpurple'   => '#523C79',
@@ -372,7 +372,7 @@ function palette(bool $withBlack = false): array
 
     if ($withBlack) return $palette + [
         'black'     => '#212121',
-        'gray'      => '#C8C8C8',
+        'gray'      => '#A8A8A8',
     ];
 
     return $palette;

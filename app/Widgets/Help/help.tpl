@@ -98,13 +98,13 @@
         </li>
         <li class="block">
             <span class="primary icon green">
-                <i class="material-symbols">android</i>
+                {autoescape="off"}{$c->svg('Android-Logo--Streamline-Freehand')}{/autoescape}
             </span>
             <div>
                 <p class="line">
                     Conversations
                     <a class="button flat" href="https://play.google.com/store/apps/details?id=eu.siacs.conversations" target="_blank">
-                        <i class="material-symbols">android</i> Play Store
+                        {autoescape="off"}{$c->svg('Android-Logo--Streamline-Freehand')}{/autoescape} Play Store
                     </a>
                     <a class="button flat" href="https://f-droid.org/packages/eu.siacs.conversations/" target="_blank">
                         <i class="material-symbols">adb</i> F-Droid

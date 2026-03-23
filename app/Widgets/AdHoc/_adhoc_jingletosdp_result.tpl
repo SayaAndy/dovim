@@ -4,7 +4,7 @@
             <ul class="list">
                 <li>
                     <span class="primary icon gray">
-                        <i class="material-symbols">code</i>
+                        {autoescape="off"}{$c->svg('File-Code--Streamline-Freehand')}{/autoescape}
                     </span>
                     <div>
                         <textarea dir="auto" name="sdp" id="sdp" placeholder="" style="min-height: 60rem;" data-autoheight="true">{$sdp}</textarea>

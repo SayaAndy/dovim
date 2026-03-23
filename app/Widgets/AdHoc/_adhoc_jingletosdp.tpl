@@ -4,7 +4,7 @@
             <ul class="list">
                 <li>
                     <span class="primary icon gray">
-                        <i class="material-symbols">code</i>
+                        {autoescape="off"}{$c->svg('File-Code--Streamline-Freehand')}{/autoescape}
                     </span>
                     <div>
                         <textarea dir="auto" name="jingle" id="jingle" placeholder="<jingle xmlns='urn:xmpp:jingle:1'

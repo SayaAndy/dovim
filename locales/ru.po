@@ -515,7 +515,7 @@ msgstr "Пока без баннера"
 
 #: [blocked]title
 msgid "Blocked"
-msgstr "Заблокирован"
+msgstr "Чёрный список"
 
 #: [blocked]block_account
 msgid "Block the account"
@@ -1863,7 +1863,7 @@ msgstr "Вы всегда можете выключить это в конфиг
 #: [post]publish_something
 #, fuzzy
 msgid "Publish something"
-msgstr "Только публикация"
+msgstr "Запостить"
 
 #: [post]news_feed
 msgid "News Feed"

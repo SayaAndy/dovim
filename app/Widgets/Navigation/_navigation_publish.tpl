@@ -23,7 +23,7 @@
                 title="{$c->__('stories.publish')}"
             >
                 <span class="primary icon gray">
-                    <i class="material-symbols">web_stories</i>
+                    {autoescape="off"}{$c->svg('Modern-Camera-Go-Pro--Streamline-Freehand')}{/autoescape}
                 </span>
                 <span class="control icon gray">
                     <i class="material-symbols">chevron_forward</i>
