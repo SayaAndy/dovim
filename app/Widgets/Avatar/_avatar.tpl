@@ -6,7 +6,7 @@
                 style="background-image: url({$me->getPicture()}); background-blend-mode: normal;">
             </span>
             <div>
-                <a class="button color transparent active" onclick="Avatar_ajaxGetForm()" title="{$c->__('avatar.change')}">
+                <a class="button color transparent oppose-left active" onclick="Avatar_ajaxGetForm()" title="{$c->__('avatar.change')}">
                     {autoescape="off"}{$c->svg('Edit-Pencil--Streamline-Freehand')}{/autoescape}
                 </a>
 

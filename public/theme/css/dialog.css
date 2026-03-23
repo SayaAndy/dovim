@@ -51,6 +51,8 @@
     padding: 0.75rem;
     padding-bottom: 0.5rem;
     padding-top: 0;
+    display: flex;
+    justify-content: end;
 }
 
 .dialog>section h3+h4 {

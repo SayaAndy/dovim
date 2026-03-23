@@ -58,6 +58,10 @@ p+p>.chip:last-child,
     float: right;
 }
 
+.chip.oppose-left {
+    float: left;
+}
+
 .chip.active:hover {
     background-color: rgba(var(--movim-element-action), 0.2);
     box-shadow: var(--elevation-1);

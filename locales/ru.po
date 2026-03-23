@@ -471,7 +471,7 @@ msgstr "Сеансы"
 
 #: [adminsessions]text
 msgid "Currently connected users on the pod"
-msgstr "Сейчас подключенных пользователи к этому серверу."
+msgstr "Сейчас подключенных пользователей к этому серверу"
 
 #: [avatar]file
 msgid "File"
@@ -479,15 +479,15 @@ msgstr "Файл"
 
 #: [avatar]updated
 msgid "Profile Picture Updated"
-msgstr "Фото профиля обновлено"
+msgstr "Аватарка обновлена"
 
 #: [avatar]not_updated
 msgid "Profile Picture Not Updated"
-msgstr "Фото профиля не обновлено"
+msgstr "Аватарка не обновлена"
 
 #: [avatar]change
 msgid "Change my profile picture"
-msgstr "Изменить моё фото профиля"
+msgstr "Сменить свою аватарку"
 
 #: [avatar]too_big
 msgid "Your picture is too big"
@@ -747,7 +747,7 @@ msgstr "Вы можете добавить его в качестве новог
 
 #: [chat]first_messages_add
 msgid "Add to my contacts"
-msgstr "Добавить в мои контакты"
+msgstr "Добавить в свои контакты"
 
 #: [chat]first_messages_block
 msgid "Block"
@@ -1408,7 +1408,7 @@ msgstr "Ссылки"
 
 #: [general]private_account_title
 msgid "Your account is private"
-msgstr "Ваш профиль является приватным."
+msgstr "Ваш профиль — приватный."
 
 #: [general]private_account_text
 msgid "Go to the Settings page to create a public blog and allow the other users to find you"
@@ -1592,7 +1592,7 @@ msgstr "Где я могу найти список групповых чатов
 
 #: [faq]find_contacts_title
 msgid "Where can I find my contacts?"
-msgstr "Где я могу найти мои контакты?"
+msgstr "Где я могу найти свои контакты?"
 
 #: [faq]find_contacts_text
 msgid "By opening the search panel."
@@ -2181,15 +2181,15 @@ msgstr "Новый момент"
 
 #: [story]new_edit
 msgid "Edit your story"
-msgstr "Изменить ваш момент"
+msgstr "Изменить свой момент"
 
 #: [story]new_publish
 msgid "Publish your story"
-msgstr "Опубликовать ваш момент"
+msgstr "Опубликовать свой момент"
 
 #: [story]to_roster
 msgid "Publish to my contacts"
-msgstr "Публиковать мои контакты"
+msgstr "Запостить своим контактам"
 
 #: [story]uploading
 msgid "Uploading the story"
@@ -3245,7 +3245,7 @@ msgstr "Ой!"
 
 #: [error]websocket
 msgid "Movim cannot talk with the server, please try again later"
-msgstr "Клиент Movim не может связаться с сервером, попробуйте позже"
+msgstr "Клиент Movim не может связаться с сервером, зайдите чуть позже"
 
 #: [error]websocket_connect
 msgid "Reconnection to the server…"

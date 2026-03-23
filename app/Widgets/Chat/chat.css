@@ -927,6 +927,11 @@ ul.list li>div.bubble.file div.file a span.size:after {
     grid-template-columns: none;
 }
 
+#chat_widget li.oppose-left .bubble ul.card.list {
+    float: left;
+    grid-template-columns: none;
+}
+
 #chat_widget li.oppose .bubble ul.card.list+* {
     clear: both;
     display: block;

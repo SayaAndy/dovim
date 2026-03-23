@@ -320,6 +320,10 @@ form > div textarea[readonly] {
     float: right;
 }
 
+.button.oppose-left {
+    float: left;
+}
+
 *[dir="rtl"] .button.oppose {
     float: left;
 }
