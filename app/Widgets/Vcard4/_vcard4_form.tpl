@@ -4,7 +4,7 @@
         <ul class="list">
             <li>
                 <span class="primary icon gray">
-                    <i class="material-symbols">face</i>
+                    {autoescape="off"}{$c->svg('Composition-Man--Streamline-Freehand')}{/autoescape}
                 </span>
                 <div>
                     <input dir="auto" type="text" name="fn" value="{$contact->fn ?? ''}" placeholder="{$c->__('general.name')}">
@@ -21,7 +21,7 @@
             </li>
             <li>
                 <span class="primary icon gray">
-                    <i class="material-symbols">id_card</i>
+                    {autoescape="off"}{$c->svg('Voice-Id-User--Streamline-Freehand')}{/autoescape}
                 </span>
                 <div>
                     <input type="pronouns" name="pronouns" value="{$contact->pronouns ?? ''}" placeholder="{$c->__('general.pronouns_example')}">
@@ -30,7 +30,7 @@
             </li>
             <li>
                 <span class="primary icon gray">
-                    <i class="material-symbols">email</i>
+                    {autoescape="off"}{$c->svg('Mailbox-Post-1--Streamline-Freehand')}{/autoescape}
                 </span>
                 <div>
                     <input type="email" name="email" value="{$contact->email ?? ''}" placeholder="{$c->__('general.email')}">
@@ -39,7 +39,7 @@
             </li>
             <li>
                 <span class="primary icon gray">
-                    <i class="material-symbols">cake</i>
+                    {autoescape="off"}{$c->svg('Calendar-Date--Streamline-Freehand')}{/autoescape}
                 </span>
                 <div>
                     <input type="date" name="date" value="{$contact->getDate() ?? ''}" placeholder="YYYY-M-MDD-MM">
@@ -48,7 +48,7 @@
             </li>
             <li>
                 <span class="primary icon gray">
-                    <i class="material-symbols">link</i>
+                    {autoescape="off"}{$c->svg('Share-Forward--Streamline-Freehand')}{/autoescape}
                 </span>
                 <div>
                     <input type="url" name ="url" value="{$contact->url ?? ''}" placeholder="https://mywebsite.com/">
@@ -66,7 +66,7 @@
             </li>
             <li>
                 <span class="primary icon gray">
-                    <i class="material-symbols">place</i>
+                    {autoescape="off"}{$c->svg('Gps-Location-Rectangle--Streamline-Freehand')}{/autoescape}
                 </span>
                 <div>
                     <input dir="auto" type="text" name ="locality" class="content" value="{$contact->adrlocality ?? ''}" placeholder="{$c->__('position.locality')}">

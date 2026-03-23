@@ -179,7 +179,7 @@
                     {else}
                         onclick="MovimUtils.reload('{$c->route('post', [$post->server, $post->node, $post->nodeid])}')"
                     {/if}>
-                        <i class="material-symbols on_desktop">add</i> {$c->__('post.more')}
+                        {autoescape="off"}{$c->svg('Add-Sign-Bold--Streamline-Freehand', 'on_desktop')}{/autoescape} {$c->__('post.more')}
                     </a>
                     {if="$post->hasCommentsNode()"}
                         {$liked = $post->isLiked($c->me)}
@@ -225,12 +225,12 @@
                                 class="button narrow icon flat gray oppose"
                                 target="_blank"
                                 href="{$post->openlink->href}">
-                                <i class="material-symbols">open_in_new</i>
+                                {autoescape="off"}{$c->svg('Share-Forward--Streamline-Freehand')}{/autoescape}
                             </a>
                         {else}
                             <a  class="button narrow icon flat gray on_desktop oppose"
                                 title="{$c->__('post.public_no')}">
-                                <i class="material-symbols">lock</i>
+                                {autoescape="off"}{$c->svg('Lock-Network--Streamline-Freehand')}{/autoescape}
                             </a>
                         {/if}
                     {/if}
@@ -247,7 +247,7 @@
                         href="#"
                         onclick="PostActions_ajaxDelete('{$post->server}', '{$post->node}', '{$post->nodeid}')"
                         title="{$c->__('button.delete')}">
-                            <i class="material-symbols">delete</i>
+                            {autoescape="off"}{$c->svg('Garbage-Throw--Streamline-Freehand')}{/autoescape}
                         </a>
                     {/if}
                 </p>

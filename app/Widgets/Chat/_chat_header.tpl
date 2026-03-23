@@ -60,7 +60,7 @@
 
             {if="$conference && !$conference->isFromSpace() && $conference->mujiCalls->isEmpty() && $conference->isGroupChat()"}
                 <span class="control icon active {if="$c->database('pgsql')"}divided{/if} {if="$incall"}disabled{/if}" onclick="Visio_ajaxGetMujiLobby('{$conference->conference}', true, false);">
-                    <i class="material-symbols">call</i>
+                    {autoescape="off"}{$c->svg('Phone-Actions-Ringing--Streamline-Freehand')}{/autoescape}
                 </span>
                 <span class="control icon active {if="$incall"}disabled{/if}" onclick="Visio_ajaxGetMujiLobby('{$conference->conference}', true, true);">
                     <i class="material-symbols">videocam</i>
@@ -87,7 +87,7 @@
                             <button class="button oppose color blue {if="$incall"}disabled{/if}"
                                     onclick="Visio_ajaxChooseMuji('{$conference->conference}')">
                                 {$conference->mujiCalls->count()}
-                                <i class="material-symbols blink">call</i>
+                                {autoescape="off"}{$c->svg('Phone-Actions-Ringing--Streamline-Freehand', 'blink')}{/autoescape}
                             </button>
                         {else}
                             {$muji = $conference->mujiCalls->first()}
@@ -114,7 +114,7 @@
                             </span>
                         {elseif="$conference->notify == 2"}
                             <span class="second" title="{$c->__('room.notify_always')}">
-                                <i class="material-symbols">notifications_active</i>
+                                {autoescape="off"}{$c->svg('Mobilephone-Action-Notification-Allowed--Streamline-Freehand')}{/autoescape}
                             </span>
                         {/if}
                     {else}
@@ -125,7 +125,7 @@
                         {if="$conference && $conference->isGroupChat()"}
                             <i class="material-symbols">people_alt</i>
                         {else}
-                            <i class="material-symbols">wifi_tethering</i>
+                            {autoescape="off"}{$c->svg('Podcast-Microphone-International-1--Streamline-Freehand')}{/autoescape}
                         {/if}
                     </span>
 
@@ -165,7 +165,7 @@
                                     <i class="material-symbols">people</i>
                                 </span>
                             {else}
-                                <i class="material-symbols icon blue blink">call</i>
+                                {autoescape="off"}{$c->svg('Phone-Actions-Ringing--Streamline-Freehand', 'icon blue blink')}{/autoescape}
                                 {$c->__('visio.in_call')}
                             {/if}
                             •

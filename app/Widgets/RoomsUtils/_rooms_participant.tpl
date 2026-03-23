@@ -58,12 +58,12 @@
                     <p class="all">
                         {if="$presence->mucaffiliation == 'owner'"}
                             <span class="chip thin" title="{$c->__('affiliation.owner')}">
-                                <i class="material-symbols icon fill yellow">star</i>
+                                {autoescape="off"}{$c->svg('Loading-Star-1--Streamline-Freehand', 'icon fill yellow')}{/autoescape}
                                     {$presence->affiliationTxt}
                             </span>
                         {elseif="$presence->mucaffiliation == 'admin'"}
                             <span class="chip thin" title="{$c->__('affiliation.owner')}">
-                                <i class="material-symbols icon fill gray">star</i>
+                                {autoescape="off"}{$c->svg('Loading-Star-1--Streamline-Freehand', 'icon fill gray')}{/autoescape}
                                 {$presence->affiliationTxt}
                             </span>
                         {/if}
@@ -91,7 +91,7 @@
         {if="$presence->mucjid != $c->me->id"}
             <li onclick="Chats_ajaxOpen('{$presence->mucjid|echapJS}', true); Dialog_ajaxClear();">
                 <span class="primary icon gray">
-                    <i class="material-symbols">comment</i>
+                    {autoescape="off"}{$c->svg('Messages-Bubble-Square-Text--Streamline-Freehand')}{/autoescape}
                 </span>
                 <div>
                     <p class="line">

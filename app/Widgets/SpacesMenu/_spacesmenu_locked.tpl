@@ -2,7 +2,7 @@
     <ul class="list thick">
         <li>
             <span class="primary icon gray">
-                <i class="material-symbols">lock</i>
+                {autoescape="off"}{$c->svg('Lock-Network--Streamline-Freehand')}{/autoescape}
             </span>
             <div>
                 <p>{$c->__('spacesmenu.locked_title')}</p>

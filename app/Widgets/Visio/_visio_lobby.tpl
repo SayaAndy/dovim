@@ -8,7 +8,7 @@
                 <div>
                     <p class="line">
                         {if="$calling"}
-                            <i class="material-symbols icon blue">call</i>
+                            {autoescape="off"}{$c->svg('Phone-Actions-Ringing--Streamline-Freehand', 'icon blue')}{/autoescape}
                             {$c->__('visiolobby.calling', $contact->truename)}
                         {else}
                             <i class="material-symbols icon blue">phone_callback</i>
@@ -24,7 +24,7 @@
                 <div>
                     <p class="line">
                         {if="$calling"}
-                            <i class="material-symbols icon blue">call</i>
+                            {autoescape="off"}{$c->svg('Phone-Actions-Ringing--Streamline-Freehand', 'icon blue')}{/autoescape}
                             {$c->__('visiolobby.muji_create', $conference->title)}
                         {else}
                             <i class="material-symbols icon blue">phone_callback</i>
@@ -106,7 +106,7 @@
                 {if="$withvideo"}
                     <i class="material-symbols">videocam</i>
                 {else}
-                    <i class="material-symbols">call</i>
+                    {autoescape="off"}{$c->svg('Phone-Actions-Ringing--Streamline-Freehand')}{/autoescape}
                 {/if}
                 {$c->__('button.call')}
             </button>
@@ -119,7 +119,7 @@
                 {if="$withvideo"}
                     <i class="material-symbols shake">videocam</i>
                 {else}
-                    <i class="material-symbols shake">call</i>
+                    {autoescape="off"}{$c->svg('Phone-Actions-Ringing--Streamline-Freehand', 'shake')}{/autoescape}
                 {/if}
                 {$c->__('button.reply')}
             </button>
@@ -133,7 +133,7 @@
                 {if="$withvideo"}
                     <i class="material-symbols">videocam</i>
                 {else}
-                    <i class="material-symbols">call</i>
+                    {autoescape="off"}{$c->svg('Phone-Actions-Ringing--Streamline-Freehand')}{/autoescape}
                 {/if}
                 {$c->__('button.create')}
             </button>
@@ -145,7 +145,7 @@
                 {if="$withvideo"}
                     <i class="material-symbols shake">videocam</i>
                 {else}
-                    <i class="material-symbols shake">call</i>
+                    {autoescape="off"}{$c->svg('Phone-Actions-Ringing--Streamline-Freehand', 'shake')}{/autoescape}
                 {/if}
                 {$c->__('button.join')}
             </button>

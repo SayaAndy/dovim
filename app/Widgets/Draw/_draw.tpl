@@ -7,7 +7,7 @@
     <ul class="list middle">
         <li id="draw-clear">
             <span class="primary active icon bubble color transparent">
-                <i class="material-symbols">delete</i>
+                {autoescape="off"}{$c->svg('Garbage-Throw--Streamline-Freehand')}{/autoescape}
             </span>
         </li>
     </ul>

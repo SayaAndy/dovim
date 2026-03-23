@@ -10,7 +10,7 @@
     <ul class="list thick divided">
         <li>
             <span class="primary icon bubble color green">
-                <i class="material-symbols">attach_file</i>
+                {autoescape="off"}{$c->svg('Form-Edition-Image-Attach--Streamline-Freehand')}{/autoescape}
             </span>
             <div>
                 <p>{$c->__('avatar.file')}</p>

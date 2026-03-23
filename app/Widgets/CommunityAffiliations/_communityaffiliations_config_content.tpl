@@ -52,7 +52,7 @@
             </li>
             <li>
                 <span class="primary icon">
-                    <i class="material-symbols">account_circle</i>
+                    {autoescape="off"}{$c->svg('Face-Id-Male-1--Streamline-Freehand')}{/autoescape}
                 </span>
                 <div>
                     <datalist id="jid_list" style="display: none;">

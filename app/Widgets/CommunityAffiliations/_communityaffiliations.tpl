@@ -34,7 +34,7 @@
         </li>
         <li onclick="CommunityAffiliations_ajaxDelete('{$info->server|echapJS}', '{$info->node|echapJS}')">
             <span class="primary icon gray">
-                <i class="material-symbols">delete</i>
+                {autoescape="off"}{$c->svg('Garbage-Throw--Streamline-Freehand')}{/autoescape}
             </span>
             <div>
                 <p>{$c->__('button.delete')}</p>

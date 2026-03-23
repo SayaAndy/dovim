@@ -36,13 +36,13 @@
                 {/if}
 
                 {if="$contact->pronouns"}
-                    <i class="material-symbols icon-text">id_card</i>
+                    {autoescape="off"}{$c->svg('Voice-Id-User--Streamline-Freehand', 'icon-text')}{/autoescape}
                     {$contact->pronouns}
                     <br />
                 {/if}
 
                 {if="$contact->adrlocality != null || $contact->adrcountry != null"}
-                    <i class="material-symbols icon-text">place</i>
+                    {autoescape="off"}{$c->svg('Gps-Location-Rectangle--Streamline-Freehand', 'icon-text')}{/autoescape}
                     {if="$contact->adrlocality != null"}
                         {$contact->adrlocality}
                     {/if}
@@ -53,7 +53,7 @@
                 {/if}
 
                 {if="$contact->email"}
-                    <i class="material-symbols icon-text">email</i>
+                    {autoescape="off"}{$c->svg('Mailbox-Post-1--Streamline-Freehand', 'icon-text')}{/autoescape}
                     <a href="mailto:{$contact->email}" rel="me">{$contact->email}</a>
                     <br />
                 {/if}
@@ -65,7 +65,7 @@
                 {/if}
 
                 {if="$contact->url != null"}
-                    <i class="material-symbols icon-text">link</i>
+                    {autoescape="off"}{$c->svg('Share-Forward--Streamline-Freehand', 'icon-text')}{/autoescape}
                     {if="parse_url($contact->url, PHP_URL_SCHEME) == 'xmpp'"}
 
                         <a href="{$contact->url}" onclick="MovimUtils.reload('{$c->route('contact', substr($contact->url, 5))}'); return false" rel="me">{$contact->url}</a>
@@ -78,7 +78,7 @@
                 {/if}
 
                 {if="$contact->hasLocation() && $contact->locationUrl != null"}
-                    <i class="material-symbols icon-text">place</i>
+                    {autoescape="off"}{$c->svg('Gps-Location-Rectangle--Streamline-Freehand', 'icon-text')}{/autoescape}
                     <a href="{$contact->locationUrl}" target="_blank">{$c->__('location.last_published')}</a> - {$c->prepareDate($contact->loctimestamp, true)}
                     <br />
                 {/if}

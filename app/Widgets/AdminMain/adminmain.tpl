@@ -10,7 +10,7 @@
                     <i class="material-symbols blue">linked_services</i>
                 </span>
                 <span class="control icon active" onclick="MovimUtils.redirect('https://join.movim.eu/')">
-                    <i class="material-symbols">open_in_new</i>
+                    {autoescape="off"}{$c->svg('Share-Forward--Streamline-Freehand')}{/autoescape}
                 </span>
                 <div>
                     <p>{$c->__('general.join_title')}</p>

@@ -14,7 +14,7 @@
 
     {if="$posts->count() == 0"}
         <div class="placeholder">
-            <i class="material-symbols fill">article</i>
+            {autoescape="off"}{$c->svg('Newspaper-Fold--Streamline-Freehand', 'fill')}{/autoescape}
             <h4>{$c->__('chat.new_title')}</h4>
         </div>
     {else}

@@ -28,7 +28,7 @@
         </div>
         <ul class="list spin conversation" id="{$jid|cleanupId}-conversation"></ul>
         <div class="placeholder empty">
-            <i class="material-symbols fill">chat</i>
+            {autoescape="off"}{$c->svg('Messages-Bubble-Square-Text--Streamline-Freehand', 'fill')}{/autoescape}
             <h1>{$c->__('chat.new_title')}</h1>
             <h4>{$c->__('chat.new_text')}</h4>
             <h4>{$c->__('message.edit_help')}</h4>
@@ -90,7 +90,7 @@
                     </li>
                     <li onclick="Chat.toggleAttach(); Upload_ajaxGetPanel()">
                         <span class="control icon gray">
-                            <i class="material-symbols">attach_file</i>
+                            {autoescape="off"}{$c->svg('Form-Edition-Image-Attach--Streamline-Freehand')}{/autoescape}
                         </span>
                         <div>
                             <p class="line">{$c->__('upload.title')}</p>
@@ -124,7 +124,7 @@
                     ></textarea>
                     <span class="control icon encrypted" title="{$c->__('omemo.encrypted')}"
                         onclick="ChatOmemo.disableContactState('{$jid}', {if="$muc"}true{else}false{/if})">
-                        <i class="material-symbols fill">lock</i>
+                        {autoescape="off"}{$c->svg('Lock-Network--Streamline-Freehand', 'fill')}{/autoescape}
                     </span>
                     <span class="control icon encrypted_disabled" title="{$c->__('omemo.encrypted_disabled')}"
                         onclick="ChatOmemo.enableContactState('{$jid}', {if="$muc"}true{else}false{/if})">

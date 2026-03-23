@@ -14,7 +14,7 @@
 {if="$resolvedLink == false"}
     <ul class="thick">
         <div class="placeholder">
-            <i class="material-symbols">link</i>
+            {autoescape="off"}{$c->svg('Share-Forward--Streamline-Freehand')}{/autoescape}
             <h1>{$c->__('general.links')}</h1>
         </li>
     </ul>

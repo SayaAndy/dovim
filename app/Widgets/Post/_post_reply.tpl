@@ -25,7 +25,7 @@
                     {if="$reply->isMicroblog() && $reply->contact"}
                         <i class="material-symbols">people</i> {$reply->contact->truename}
                     {else}
-                        <i class="material-symbols">group_work</i> {$reply->node}
+                        {autoescape="off"}{$c->svg('Worldwide-Web-Users--Streamline-Freehand')}{/autoescape} {$reply->node}
                     {/if}
                     <span class="info">
                         {$c->prepareDate($reply->published, true)}

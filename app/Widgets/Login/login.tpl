@@ -186,8 +186,8 @@
             <ul class="list middle hide" id="pwa">
                 <li class="block active">
                     <span class="primary icon bubble gray">
-                        <i class="material-symbols on_desktop">install_desktop</i>
-                        <i class="material-symbols on_mobile">install_mobile</i>
+                        {autoescape="off"}{$c->svg('Drawer-Download--Streamline-Freehand', 'on_desktop')}{/autoescape}
+                        {autoescape="off"}{$c->svg('Drawer-Download--Streamline-Freehand', 'on_mobile')}{/autoescape}
                     </span>
                     <div>
                         <p class="line">{$c->__('apps.install')}<p>

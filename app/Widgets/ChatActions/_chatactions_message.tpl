@@ -7,9 +7,9 @@
                 <span class="resource {$message->resolveColor()}">{$message->resource}</span>
             {/if}
             {if="$message->encrypted"}
-                <p class="encrypted">{if="$message->retracted"}{$c->__('message.retracted')}{else}{$c->__('message.encrypted')}{/if} <i class="material-symbols fill">lock</i></p>
+                <p class="encrypted">{if="$message->retracted"}{$c->__('message.retracted')}{else}{$c->__('message.encrypted')}{/if} {autoescape="off"}{$c->svg('Lock-Network--Streamline-Freehand', 'fill')}{/autoescape}</p>
             {elseif="$message->retracted"}
-                <p class="retracted">{$c->__('message.retracted')} <i class="material-symbols">delete</i></p>
+                <p class="retracted">{$c->__('message.retracted')} {autoescape="off"}{$c->svg('Garbage-Throw--Streamline-Freehand')}{/autoescape}</p>
             {elseif="$message->file && $message->file->isPicture"}
                 <div class="file" data-type="{$message->file->type}">
                     <img src="{$message->file->url|protectPicture}">

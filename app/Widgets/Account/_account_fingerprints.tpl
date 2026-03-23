@@ -14,7 +14,7 @@
                     </span>
                     {if="!$value->self"}
                         <span class="control active icon gray" onclick="Account.deleteBundle({$value->bundleid})">
-                            <i class="material-symbols">delete</i>
+                            {autoescape="off"}{$c->svg('Garbage-Throw--Streamline-Freehand')}{/autoescape}
                         </span>
                         <span class="control">
                             <div class="checkbox">

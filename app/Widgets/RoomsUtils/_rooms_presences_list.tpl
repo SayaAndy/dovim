@@ -4,11 +4,11 @@
         <li class="subheader sticky">
             {if="$value->mucaffiliation == 'owner'"}
                 <span class="control icon tiny yellow" title="{$c->__('affiliation.owner')}">
-                    <i class="material-symbols fill">star</i>
+                    {autoescape="off"}{$c->svg('Loading-Star-1--Streamline-Freehand', 'fill')}{/autoescape}
                 </span>
             {elseif="$value->mucaffiliation == 'admin'"}
                 <span class="control icon tiny gray" title="{$c->__('affiliation.owner')}">
-                    <i class="material-symbols fill">star</i>
+                    {autoescape="off"}{$c->svg('Loading-Star-1--Streamline-Freehand', 'fill')}{/autoescape}
                 </span>
             {/if}
             <div>
@@ -36,7 +36,7 @@
                 <span class="control icon active gray divided" onclick="
                     Chats_ajaxOpen('{$value->mucjid|echapJS}', true);
                     Drawer.clear();">
-                    <i class="material-symbols">comment</i>
+                    {autoescape="off"}{$c->svg('Messages-Bubble-Square-Text--Streamline-Freehand')}{/autoescape}
                 </span>
             {/if}
             {if="$conference->presence && ($conference->presence->mucrole == 'moderator' || $conference->presence->mucaffiliation == 'owner')"}

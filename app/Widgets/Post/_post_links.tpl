@@ -6,7 +6,7 @@
                 {if="$value->logo"}
                     <img src="{$value->logo|protectPicture}"/>
                 {else}
-                    <i class="material-symbols">link</i>
+                    {autoescape="off"}{$c->svg('Share-Forward--Streamline-Freehand')}{/autoescape}
                 {/if}
             </span>
             <div>

@@ -20,12 +20,6 @@ RUN mkdir -p /etc/php84/conf.d /etc/php84/php-fpm.d \
     && ln -sf /etc/php/pool.d/movim.conf /etc/php84/php-fpm.d/movim.conf
 COPY assets/movim-fpm.conf /etc/php/pool.d/movim.conf
 
-COPY assets/entrypoint.sh usr/local/bin/
-RUN chmod +x /usr/local/bin/entrypoint.sh
-
-COPY assets/download-streamlinehq-svg.bash assets/replace-material-with-streamlinehq.bash assets/streamlinehq-replace-map.csv /scripts/
-RUN chmod +x /scripts/download-streamlinehq-svg.bash /scripts/replace-material-with-streamlinehq.bash
-
 RUN addgroup -S www-data 2>/dev/null || true \
     && adduser -S -G www-data www-data 2>/dev/null || true \
     && mkdir -p /var/www \
@@ -54,6 +48,10 @@ USER www-data
 RUN mkdir -p cache log public/cache \
     && rm -rf assets/
 
+COPY assets/download-streamlinehq-svg.bash assets/replace-material-with-streamlinehq.bash assets/streamlinehq-replace-map.csv /scripts/
+COPY assets/entrypoint.sh /usr/local/bin/
+
 USER root
+RUN chmod +x /usr/local/bin/entrypoint.sh /scripts/download-streamlinehq-svg.bash /scripts/replace-material-with-streamlinehq.bash
 EXPOSE 8080
 ENTRYPOINT /usr/local/bin/entrypoint.sh

@@ -16,7 +16,7 @@
                 {$c->__('page.communities')}
             </a>
             <a href="#communities" class="on_mobile" onclick="Menu_ajaxHttpGetCommunities(); Menu.setLoad(this);" title="{$c->__('page.news')}">
-                <i class="material-symbols">group_work</i>
+                {autoescape="off"}{$c->svg('Worldwide-Web-Users--Streamline-Freehand')}{/autoescape}
             </a>
         </li>
     </ul>

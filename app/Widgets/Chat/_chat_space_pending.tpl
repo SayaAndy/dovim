@@ -1,5 +1,5 @@
 {$info = $message->resolveSpacePendingInvitation()}
-<i class="material-symbols icon gray">communities</i>
+{autoescape="off"}{$c->svg('Share-Circles--Streamline-Freehand', 'icon gray')}{/autoescape}
 <span class="icon bubble tiny">
     <img src="{$contact->getPicture(\Movim\ImageSize::M)}">
 </span>

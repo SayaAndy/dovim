@@ -15,7 +15,7 @@
             {$c->__('page.communities')}
         </a>
         <a href="#" class="on_mobile" onclick="Communities_ajaxHttpGetCommunities();" title="{$c->__('page.news')}">
-            <i class="material-symbols">group_work</i>
+            {autoescape="off"}{$c->svg('Worldwide-Web-Users--Streamline-Freehand')}{/autoescape}
         </a>
     </li>
 </ul>

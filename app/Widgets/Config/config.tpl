@@ -9,7 +9,7 @@
         </li>
         <li>
             <span class="primary icon gray">
-                <i class="material-symbols">public</i>
+                {autoescape="off"}{$c->svg('Podcast-Microphone-International-1--Streamline-Freehand')}{/autoescape}
             </span>
             <span class="control">
                 <form>
@@ -41,7 +41,7 @@
                 <i class="material-symbols">chevron_right</i>
             </span>
             <span class="primary icon gray">
-                <i class="material-symbols">account_circle</i>
+                {autoescape="off"}{$c->svg('Face-Id-Male-1--Streamline-Freehand')}{/autoescape}
             </span>
             <div>
                 <p>{$c->__('profile.info')}</p>

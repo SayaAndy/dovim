@@ -68,7 +68,7 @@
     </li>
     <li>
         <span class="primary icon">
-            <i class="material-symbols">link</i>
+            {autoescape="off"}{$c->svg('Share-Forward--Streamline-Freehand')}{/autoescape}
         </span>
         <div>
             <p class="line">[my text](http://my_url/)</p>

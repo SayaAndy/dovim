@@ -11,7 +11,7 @@
         {if="$c->me->hasRegister()"}
             <li onclick="Account_ajaxChangePassword()">
                 <span class="primary icon">
-                    <i class="material-symbols">vpn_key</i>
+                    {autoescape="off"}{$c->svg('Lock-Key-1--Streamline-Freehand')}{/autoescape}
                 </span>
                 <span class="control icon gray">
                     <i class="material-symbols">chevron_right</i>
@@ -23,7 +23,7 @@
         {/if}
         <li onclick="Account_ajaxClearAccount()">
             <span class="primary icon orange">
-                <i class="material-symbols">eject</i>
+                {autoescape="off"}{$c->svg('Keyboard-Eject-Button--Streamline-Freehand')}{/autoescape}
             </span>
             <span class="control icon gray">
                 <i class="material-symbols">chevron_right</i>
@@ -35,7 +35,7 @@
         {if="$c->me->hasRegister()"}
             <li onclick="Account_ajaxRemoveAccount()">
                 <span class="primary icon red">
-                    <i class="material-symbols">delete</i>
+                    {autoescape="off"}{$c->svg('Garbage-Throw--Streamline-Freehand')}{/autoescape}
                 </span>
                 <span class="control icon gray">
                     <i class="material-symbols">chevron_right</i>

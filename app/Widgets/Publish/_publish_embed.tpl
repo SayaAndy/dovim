@@ -38,7 +38,7 @@
             {if="$url->provider_icon"}
                 <img src="{$url->provider_icon}"/>
             {else}
-                <i class="material-symbols">link</i>
+                {autoescape="off"}{$c->svg('Share-Forward--Streamline-Freehand')}{/autoescape}
             {/if}
         </span>
     {/if}

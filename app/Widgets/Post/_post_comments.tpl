@@ -109,7 +109,7 @@
             {if="!$public && ($value->isMine($c->me) || $post->isMine($c->me))"}
                 <span class="control icon gray active"
                       onclick="PostActions_ajaxDelete('{$value->server}', '{$value->node}', '{$value->nodeid}')">
-                    <i class="material-symbols">delete</i>
+                    {autoescape="off"}{$c->svg('Garbage-Throw--Streamline-Freehand')}{/autoescape}
                 </span>
             {/if}
             {if="$value->contact"}

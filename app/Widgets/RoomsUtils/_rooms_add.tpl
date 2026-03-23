@@ -44,7 +44,7 @@
                     </li>
                     <li>
                         <span class="primary icon gray">
-                            <i class="material-symbols">wifi_tethering</i>
+                            {autoescape="off"}{$c->svg('Podcast-Microphone-International-1--Streamline-Freehand')}{/autoescape}
                         </span>
                         <span class="control">
                             <div class="radio">

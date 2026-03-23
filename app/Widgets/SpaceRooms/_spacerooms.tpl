@@ -13,7 +13,7 @@
                 <i class="material-symbols">edit</i>
             </span>
             <span class="control icon gray active" onclick="SpaceRooms_ajaxAskDestroy('{$value->space_server}', '{$value->space_node}', '{$value->conference}')">
-                <i class="material-symbols">delete</i>
+                {autoescape="off"}{$c->svg('Garbage-Throw--Streamline-Freehand')}{/autoescape}
             </span>
         {/if}
         <div>
@@ -31,7 +31,7 @@
 
 {if="$subscription->spaceRooms->isEmpty()"}
     <div class="placeholder">
-        <i class="material-symbols fill">chat_dashed</i>
+        {autoescape="off"}{$c->svg('Smiley-Crying-Rainbow--Streamline-Freehand', 'fill')}{/autoescape}
         <h1>{$c->__('chats.empty_title')}</h1>
     </div>
 {/if}

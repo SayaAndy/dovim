@@ -4,7 +4,7 @@
             <li class="subheader large block"><div><p>{$c->__('config.audio_title')}</p></div></li>
             <li>
                 <span class="primary icon gray">
-                    <i class="material-symbols">call</i>
+                    {autoescape="off"}{$c->svg('Phone-Actions-Ringing--Streamline-Freehand')}{/autoescape}
                 </span>
                 <span class="control">
                     <div class="checkbox">
@@ -49,7 +49,7 @@
         <ul class="list">
             <li>
                 <span class="primary icon gray">
-                    <i class="material-symbols">translate</i>
+                    {autoescape="off"}{$c->svg('Smartphone-App-Widget-Translator--Streamline-Freehand')}{/autoescape}
                 </span>
                 <div>
                     <div class="select">
@@ -103,7 +103,7 @@
 
             <li>
                 <span class="primary icon gray">
-                    <i class="material-symbols">lock</i>
+                    {autoescape="off"}{$c->svg('Lock-Network--Streamline-Freehand')}{/autoescape}
                 </span>
                 <span class="control">
                     <div class="checkbox">
@@ -124,7 +124,7 @@
 
             <li>
                 <span class="primary icon gray">
-                    <i class="material-symbols">explicit</i>
+                    {autoescape="off"}{$c->svg('Tag-Hot-Price--Streamline-Freehand')}{/autoescape}
                 </span>
                 <span class="control">
                     <div class="checkbox">
@@ -144,7 +144,7 @@
 
             <li>
                 <span class="primary icon gray">
-                    <i class="material-symbols">dark_mode</i>
+                    {autoescape="off"}{$c->svg('Light-Mode-Brightness-Half--Streamline-Freehand')}{/autoescape}
                 </span>
                 <span class="control">
                     <div class="checkbox">
@@ -170,7 +170,7 @@
             </li>
             <li id="accent_color">
                 <span class="primary icon gray">
-                    <i class="material-symbols">palette</i>
+                    {autoescape="off"}{$c->svg('Color-Palette-Sample-2--Streamline-Freehand')}{/autoescape}
                 </span>
                 <div>
                     <p>{$c->__('config.accent_color')}</p>

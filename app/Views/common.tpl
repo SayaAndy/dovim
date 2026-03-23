@@ -4,7 +4,7 @@
     <ul class="list thick">
         <li>
             <span class="primary icon red">
-                <i class="material-symbols">info</i>
+                <?php echo svg('Keyboard-Asterisk-1--Streamline-Freehand'); ?>
             </span>
             <div>
                 <p><?php echo __('global.no_js'); ?></p>

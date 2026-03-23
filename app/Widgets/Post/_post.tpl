@@ -18,7 +18,7 @@
                     <span class="control icon active gray"
                           onclick="PostActions_ajaxDelete('{$post->server}', '{$post->node}', '{$post->nodeid}')"
                           title="{$c->__('button.delete')}">
-                        <i class="material-symbols">delete</i>
+                        {autoescape="off"}{$c->svg('Garbage-Throw--Streamline-Freehand')}{/autoescape}
                     </span>
                 {/if}
 
@@ -214,13 +214,13 @@
         <ul class="list middle flex">
             <li class="block large">
                 <span class="primary icon gray">
-                    <i class="material-symbols">wifi_tethering</i>
+                    {autoescape="off"}{$c->svg('Podcast-Microphone-International-1--Streamline-Freehand')}{/autoescape}
                 </span>
                 <span class="control icon gray active" onclick="Preview.copyToClipboard('{$post->openlink->href}')">
                     <i class="material-symbols">content_copy</i>
                 </span>
                 <span class="control icon gray active" onclick="MovimUtils.openInNew('{$post->openlink->href}')">
-                    <i class="material-symbols">open_in_new</i>
+                    {autoescape="off"}{$c->svg('Share-Forward--Streamline-Freehand')}{/autoescape}
                 </span>
                 <div>
                     <p class="line">

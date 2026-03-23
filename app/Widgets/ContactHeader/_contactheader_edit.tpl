@@ -3,7 +3,7 @@
         <li>
             <span class="control icon active white" onclick="Notifications_ajaxDeleteContact('{$jid|echapJS}')"
                 title="{$c->__('button.delete')}">
-                <i class="material-symbols">delete</i>
+                {autoescape="off"}{$c->svg('Garbage-Throw--Streamline-Freehand')}{/autoescape}
             </span>
             <div>
                 <p>{$c->__('edit.title')}</p>

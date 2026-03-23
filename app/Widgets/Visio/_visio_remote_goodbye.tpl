@@ -6,7 +6,7 @@
             </span>
             <div>
                 <p class="line">
-                    <i class="material-symbols icon blue">call</i>
+                    {autoescape="off"}{$c->svg('Phone-Actions-Ringing--Streamline-Freehand', 'icon blue')}{/autoescape}
                     {$c->__('visiolobby.calling', $contact->truename)}
                 </p>
                 <p>{$c->__('visio.hang_up')}</p>

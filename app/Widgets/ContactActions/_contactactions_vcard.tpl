@@ -28,13 +28,13 @@
                 {/if}
 
                 {if="$contact->pronouns"}
-                    <i class="material-symbols icon-text">id_card</i>
+                    {autoescape="off"}{$c->svg('Voice-Id-User--Streamline-Freehand', 'icon-text')}{/autoescape}
                     {$contact->pronouns}
                     <br />
                 {/if}
 
                 {if="$contact->adrlocality != null || $contact->adrcountry != null"}
-                    <i class="material-symbols icon-text">place</i>
+                    {autoescape="off"}{$c->svg('Gps-Location-Rectangle--Streamline-Freehand', 'icon-text')}{/autoescape}
                     {if="$contact->adrlocality != null"}
                         {$contact->adrlocality}
                     {/if}
@@ -45,13 +45,13 @@
                 {/if}
 
                 {if="$contact->date && strtotime($contact->date) != 0"}
-                    <i class="material-symbols icon-text">cake</i>
+                    {autoescape="off"}{$c->svg('Calendar-Date--Streamline-Freehand', 'icon-text')}{/autoescape}
                     {$c->prepareDate($contact->date, true,false)}
                     <br />
                 {/if}
 
                 {if="$contact->email"}
-                    <i class="material-symbols icon-text">email</i>
+                    {autoescape="off"}{$c->svg('Mailbox-Post-1--Streamline-Freehand', 'icon-text')}{/autoescape}
                     <a href="mailto:{$contact->email}">{$contact->email}</a>
                     <br />
                 {/if}
@@ -63,7 +63,7 @@
                 {/if}
 
                 {if="$contact->url != null"}
-                    <i class="material-symbols icon-text">link</i>
+                    {autoescape="off"}{$c->svg('Share-Forward--Streamline-Freehand', 'icon-text')}{/autoescape}
                     {if="filter_var($contact->url, FILTER_VALIDATE_URL)"}
                         <a href="{$contact->url}" target="_blank">{$contact->url}</a>
                     {else}

@@ -1,7 +1,7 @@
 <div class="tabelem" title="{$c->__('page.about')}" id="about">
     <ul class="list thick divided">
         <li>
-            <span class="primary icon bubble color green"><i class="material-symbols">info</i></span>
+            <span class="primary icon bubble color green">{autoescape="off"}{$c->svg('Keyboard-Asterisk-1--Streamline-Freehand')}{/autoescape}</span>
             <div>
                 <p>Movim {$version} - {$c->__('page.about')}</p>
                 <p class="all">{$c->__('about.info')} <a href="http://www.gnu.org/licenses/agpl-3.0.html" target="_blank">GNU Affero General Public License v3</a>.</p>

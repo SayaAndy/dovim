@@ -75,7 +75,7 @@
                         </span>
                     {else}
                         <span class="primary icon gray">
-                            <i class="material-symbols">group_work</i>
+                            {autoescape="off"}{$c->svg('Worldwide-Web-Users--Streamline-Freehand')}{/autoescape}
                         </span>
                     {/if}
                     <span class="control icon active">
@@ -138,7 +138,7 @@
             <ul class="list simple thick">
                 <li>
                     <span class="primary icon gray">
-                        <i class="material-symbols">comment</i>
+                        {autoescape="off"}{$c->svg('Messages-Bubble-Square-Text--Streamline-Freehand')}{/autoescape}
                     </span>
                     <div>
                         <p>{$c->__('post.empty')}</p>

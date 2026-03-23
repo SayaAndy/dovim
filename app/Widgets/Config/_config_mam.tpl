@@ -3,7 +3,7 @@
         <ul class="list">
             <li>
                 <span class="primary icon gray">
-                    <i class="material-symbols">inventory</i>
+                    {autoescape="off"}{$c->svg('Office-Folder--Streamline-Freehand')}{/autoescape}
                 </span>
                 <div>
                     <div class="select">

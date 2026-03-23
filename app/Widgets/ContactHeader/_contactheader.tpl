@@ -18,7 +18,7 @@
         {if="!$contact->isContact($c->me->id)"}
             <span class="control icon active white" onclick="ContactActions_ajaxChat('{$contact->id|echapJS}')"
                 title="{$c->__('button.chat')}">
-                <i class="material-symbols">comment</i>
+                {autoescape="off"}{$c->svg('Messages-Bubble-Square-Text--Streamline-Freehand')}{/autoescape}
             </span>
         {/if}
         {if="$roster"}

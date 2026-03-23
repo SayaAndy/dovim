@@ -52,7 +52,7 @@
         {if="$message->isMine()"}
             <li onclick="ChatActions_ajaxHttpDaemonRetract({$message->mid})">
                 <span class="primary icon gray">
-                    <i class="material-symbols">delete</i>
+                    {autoescape="off"}{$c->svg('Garbage-Throw--Streamline-Freehand')}{/autoescape}
                 </span>
                 <div>
                     <p>{$c->__('message.retract')}</p>
@@ -68,7 +68,7 @@
             </li>
             <li onclick="ChatActions_ajaxHttpDaemonModerate({$message->mid})">
                 <span class="primary icon gray">
-                    <i class="material-symbols">delete</i>
+                    {autoescape="off"}{$c->svg('Garbage-Throw--Streamline-Freehand')}{/autoescape}
                 </span>
                 <div>
                     <p>{$c->__('message.retract')}</p>

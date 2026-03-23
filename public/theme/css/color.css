@@ -150,6 +150,9 @@ ul li div > p > span.moderator,
     background-size: 128px;
     background-blend-mode: multiply;
 }
+.color > svg {
+    --movim-accent: currentColor;
+}
 .color.gray     { color: white; background-color: var(--p-gray); border-color: var(--p-gray) }
 .color.dorange  { color: white; background-color: var(--p-dorange); border-color: var(--p-dorange) }
 .color.orange   { color: white; background-color: var(--p-orange); border-color: var(--p-orange) }

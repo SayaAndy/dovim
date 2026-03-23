@@ -24,22 +24,32 @@ gnused () { [ "$(uname)" = "Linux" ] && sed $@ || gsed $@ ; }
 for rootdir in $RAINTPL_GLOB_BASES; do
     IFS=
     find "$rootdir" -name "*.tpl" -type f -print0 | while read -r -d $'\0' file; do
-        (gnugrep -Po '(?<=<i class="material-symbols">)\S+?(?=<\/i>)' "$file" || true) | while read -r iicon; do
-            if [[ -z $iicon ]]; then
+        (gnugrep -Po '<i class="material-symbols[^"]*">\S+?<\/i>' "$file" || true) | while read -r imatch; do
+            if [[ -z $imatch ]]; then
                 continue
             fi
+            iicon=$(echo "$imatch" | gnugrep -Po '(?<=>)\S+?(?=<\/i>)')
+            extra_classes=$(echo "$imatch" | gnugrep -Po '(?<=material-symbols)[^"]*' | gnused 's/^ *//')
             if [[ ! -v streamlinehq_replace_map["${iicon}"] ]]; then
                 echo "$(date +'%Y-%m-%dT%H:%M:%S%z'):INFO:iicon=$iicon:missing streamlinehq alternative for this icon"
                 continue
             fi
             sicon="${streamlinehq_replace_map["${iicon}"]}"
-            echo "$(date +'%Y-%m-%dT%H:%M:%S%z'):DEBUG:file=$file:iicon=$iicon:sicon=$sicon:replacing"
+            svg_args="'${sicon}'"
+            class_suffix=""
+            if [[ -n "$extra_classes" ]]; then
+                class_suffix=" ${extra_classes}"
+                for cls in $extra_classes; do
+                    svg_args="${svg_args}, '${cls}'"
+                done
+            fi
+            echo "$(date +'%Y-%m-%dT%H:%M:%S%z'):DEBUG:file=$file:iicon=$iicon:extra_classes=$extra_classes:sicon=$sicon:replacing"
             gnused -i -e "\
 0,\
-/<i class=\"material-symbols\">${iicon}<\/i>\
+/<i class=\"material-symbols${class_suffix}\">${iicon}<\/i>\
 /s\
-/<i class=\"material-symbols\">${iicon}<\/i>\
-/{autoescape=\"off\"}{\$c->svg('${sicon}')}{\/autoescape}\
+/<i class=\"material-symbols${class_suffix}\">${iicon}<\/i>\
+/{autoescape=\"off\"}{\$c->svg(${svg_args})}{\/autoescape}\
 /" "$file"
         done
         echo "$(date +'%Y-%m-%dT%H:%M:%S%z'):DEBUG:file=$file:finished processing file"
@@ -49,22 +59,32 @@ done
 for rootdir in $PHP_GLOB_BASES; do
     IFS=
     find "$rootdir" -name "*.tpl" -type f -print0 | while read -r -d $'\0' file; do
-        (gnugrep -Po '(?<=<i class="material-symbols">)\S+?(?=<\/i>)' "$file" || true) | while read -r iicon; do
-            if [[ -z $iicon ]]; then
+        (gnugrep -Po '<i class="material-symbols[^"]*">\S+?<\/i>' "$file" || true) | while read -r imatch; do
+            if [[ -z $imatch ]]; then
                 continue
             fi
+            iicon=$(echo "$imatch" | gnugrep -Po '(?<=>)\S+?(?=<\/i>)')
+            extra_classes=$(echo "$imatch" | gnugrep -Po '(?<=material-symbols)[^"]*' | gnused 's/^ *//')
             if [[ ! -v streamlinehq_replace_map["${iicon}"] ]]; then
                 echo "$(date +'%Y-%m-%dT%H:%M:%S%z'):INFO:iicon=$iicon:missing streamlinehq alternative for this icon"
                 continue
             fi
             sicon="${streamlinehq_replace_map["${iicon}"]}"
-            echo "$(date +'%Y-%m-%dT%H:%M:%S%z'):DEBUG:file=$file:iicon=$iicon:sicon=$sicon:replacing"
+            svg_args="'${sicon}'"
+            class_suffix=""
+            if [[ -n "$extra_classes" ]]; then
+                class_suffix=" ${extra_classes}"
+                for cls in $extra_classes; do
+                    svg_args="${svg_args}, '${cls}'"
+                done
+            fi
+            echo "$(date +'%Y-%m-%dT%H:%M:%S%z'):DEBUG:file=$file:iicon=$iicon:extra_classes=$extra_classes:sicon=$sicon:replacing"
             gnused -i -e "\
 0,\
-/<i class=\"material-symbols\">${iicon}<\/i>\
+/<i class=\"material-symbols${class_suffix}\">${iicon}<\/i>\
 /s\
-/<i class=\"material-symbols\">${iicon}<\/i>\
-/<?php echo svg('${sicon}'); ?>\
+/<i class=\"material-symbols${class_suffix}\">${iicon}<\/i>\
+/<?php echo svg(${svg_args}); ?>\
 /" "$file"
         done
         echo "$(date +'%Y-%m-%dT%H:%M:%S%z'):DEBUG:file=$file:finished processing file"

@@ -19,7 +19,7 @@
                 {/if}
                 {if="!$contact->isContact($c->me->id)"}
                     <span class="control icon active divided" onclick="Search.chat('{$contact->id|echapJS}', false); Drawer.clear();">
-                        <i class="material-symbols">comment</i>
+                        {autoescape="off"}{$c->svg('Messages-Bubble-Square-Text--Streamline-Freehand')}{/autoescape}
                     </span>
                     {if="$roster && $roster->presences->count() > 0 && !$incall"}
                         {loop="$roster->presences"}

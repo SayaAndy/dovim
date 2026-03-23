@@ -52,7 +52,7 @@
                     </span>
                 {/if}
                 <span class="control icon gray active" title="{$c->__('button.delete')}" onclick="Notifications_ajaxDeleteContact('{$value->jid|echapJS}'); Drawer.clear();">
-                    <i class="material-symbols">delete</i>
+                    {autoescape="off"}{$c->svg('Garbage-Throw--Streamline-Freehand')}{/autoescape}
                 </span>
                 <div>
                     <p class="line">
@@ -103,7 +103,7 @@
                         </span>
                     {else}
                         <span class="control icon gray">
-                            <i class="material-symbols">comment</i>
+                            {autoescape="off"}{$c->svg('Messages-Bubble-Square-Text--Streamline-Freehand')}{/autoescape}
                         </span>
                     {/if}
 

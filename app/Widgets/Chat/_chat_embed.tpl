@@ -26,7 +26,7 @@
             {if="$url->provider_icon"}
                 <img src="{$url->provider_icon|protectPicture}"/>
             {else}
-                <i class="material-symbols">link</i>
+                {autoescape="off"}{$c->svg('Share-Forward--Streamline-Freehand')}{/autoescape}
             {/if}
         </span>
     {/if}
@@ -41,7 +41,7 @@
             <i class="material-symbols">content_copy</i>
         </span>
         <span class="control icon gray active" onclick="MovimUtils.openInNew('{$url->url}')">
-            <i class="material-symbols">open_in_new</i>
+            {autoescape="off"}{$c->svg('Share-Forward--Streamline-Freehand')}{/autoescape}
         </span>
     {/if}
 

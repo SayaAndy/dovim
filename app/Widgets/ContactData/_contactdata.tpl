@@ -33,7 +33,7 @@
         {/if}
         <li onclick="ContactHeader_ajaxChat('{$contact->id|echapJS}')">
             <span class="primary icon gray">
-                <i class="material-symbols">comment</i>
+                {autoescape="off"}{$c->svg('Messages-Bubble-Square-Text--Streamline-Freehand')}{/autoescape}
             </span>
             <div>
                 <p>
@@ -46,9 +46,9 @@
                 </p>
                 {if="isset($message)"}
                     {if="$message->encrypted"}
-                        <p><i class="material-symbols fill">lock</i> {if="$message->retracted"}{$c->__('message.retracted')}{else}{$c->__('message.encrypted')}{/if}</p>
+                        <p>{autoescape="off"}{$c->svg('Lock-Network--Streamline-Freehand', 'fill')}{/autoescape} {if="$message->retracted"}{$c->__('message.retracted')}{else}{$c->__('message.encrypted')}{/if}</p>
                     {elseif="$message->retracted"}
-                        <p><i class="material-symbols">delete</i> {$c->__('message.retracted')}</p>
+                        <p>{autoescape="off"}{$c->svg('Garbage-Throw--Streamline-Freehand')}{/autoescape} {$c->__('message.retracted')}</p>
                     {elseif="$message->file"}
                         <p>
                             {if="$message->jidfrom == $message->user_id"}

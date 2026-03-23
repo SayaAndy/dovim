@@ -33,7 +33,7 @@
                 {/if}
 
                 <br />
-                <i class="material-symbols icon-text">article</i>
+                {autoescape="off"}{$c->svg('Newspaper-Fold--Streamline-Freehand', 'icon-text')}{/autoescape}
                 {$c->__('communitydata.num', $num)}
                 •
                 <i class="material-symbols icon-text">people</i>
@@ -41,7 +41,7 @@
 
                 {if="$info->pubsubpublishmodel == 'publishers'"}
                     <br />
-                    <i class="material-symbols icon-text">assignment_ind</i>
+                    {autoescape="off"}{$c->svg('Messages-People-Person-Bubble-Square-2--Streamline-Freehand', 'icon-text')}{/autoescape}
                     {$c->__('communitydata.publishmodel_publishers')}
                 {/if}
                 {if="$info->pubsubpublishmodel == 'subscribers'"}

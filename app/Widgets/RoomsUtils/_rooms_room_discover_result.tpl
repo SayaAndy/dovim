@@ -11,7 +11,7 @@
                         {if="$info->isGroupChat()"}
                             <i class="material-symbols">people_alt</i> {$c->__('room.group_chat')}
                         {else}
-                            <i class="material-symbols">wifi_tethering</i> {$c->__('room.channel')}
+                            {autoescape="off"}{$c->svg('Podcast-Microphone-International-1--Streamline-Freehand')}{/autoescape} {$c->__('room.channel')}
                         {/if}
                     </span>
                 </p>
@@ -25,7 +25,7 @@
         <ul class="list middle">
             <li>
                 <span class="primary icon blue">
-                    <i class="material-symbols">info</i>
+                    {autoescape="off"}{$c->svg('Keyboard-Asterisk-1--Streamline-Freehand')}{/autoescape}
                 </span>
                 <div>
                     <p></p>

@@ -15,7 +15,7 @@
                 <span title="{$c->__('button.delete')}"
                       class="control icon active"
                       onclick="RoomsUtils_ajaxRemove('{$room|echapJS}'); Drawer.clear()">
-                    <i class="material-symbols">delete</i>
+                    {autoescape="off"}{$c->svg('Garbage-Throw--Streamline-Freehand')}{/autoescape}
                 </span>
 
                 <div>
@@ -52,7 +52,7 @@
         {else}
             <li>
                 <span class="primary icon gray">
-                    <i class="material-symbols">wifi_tethering</i>
+                    {autoescape="off"}{$c->svg('Podcast-Microphone-International-1--Streamline-Freehand')}{/autoescape}
                 </span>
                 <div>
                     <p class="line">{$c->__('room.channel')}</p>
@@ -127,7 +127,7 @@
         {if="!$conference->isGroupChat() && $conference->info && !$conference->info->mucsemianonymous"}
             <li>
                 <span class="primary icon gray">
-                    <i class="material-symbols">face</i>
+                    {autoescape="off"}{$c->svg('Composition-Man--Streamline-Freehand')}{/autoescape}
                 </span>
                 <div>
                     <p class="line">{$c->__('room.nonanonymous_muc')}</p>
@@ -181,7 +181,7 @@
         {elseif="$conference->notify == 2"}
             <li>
                 <span class="primary icon gray">
-                    <i class="material-symbols">notifications_active</i>
+                    {autoescape="off"}{$c->svg('Mobilephone-Action-Notification-Allowed--Streamline-Freehand')}{/autoescape}
                 </span>
                 <span class="control icon gray active"
                       onclick="RoomsUtils_ajaxAdd('{$room|echapJS}'); Drawer.clear()">
@@ -246,18 +246,18 @@
                         {/if}
                         {if="$value->affiliation == 'owner'"}
                             <span class="control icon yellow" title="{$c->__('affiliation.owner')}">
-                                <i class="material-symbols fill">star</i>
+                                {autoescape="off"}{$c->svg('Loading-Star-1--Streamline-Freehand', 'fill')}{/autoescape}
                             </span>
                         {elseif="$value->affiliation == 'admin'"}
                             <span class="control icon gray" title="{$c->__('affiliation.admin')}">
-                                <i class="material-symbols fill">star</i>
+                                {autoescape="off"}{$c->svg('Loading-Star-1--Streamline-Freehand', 'fill')}{/autoescape}
                             </span>
                         {/if}
                         {if="$value->jid != $me"}
                             <span class="control icon active gray divided" onclick="
                                 Chats_ajaxOpen('{$value->jid|echapJS}', true);
                                 Drawer.clear();">
-                                <i class="material-symbols">comment</i>
+                                {autoescape="off"}{$c->svg('Messages-Bubble-Square-Text--Streamline-Freehand')}{/autoescape}
                             </span>
                         {/if}
                         {if="$conference->presence && ($conference->presence->mucrole == 'moderator' || $conference->presence->mucaffiliation == 'owner')"}
@@ -341,7 +341,7 @@
                             <span class="control icon active gray divided" onclick="
                                 Chats_ajaxOpen('{$value->jid|echapJS}', true);
                                 Drawer.clear();">
-                                <i class="material-symbols">comment</i>
+                                {autoescape="off"}{$c->svg('Messages-Bubble-Square-Text--Streamline-Freehand')}{/autoescape}
                             </span>
                             <div>
                                 <p class="line">

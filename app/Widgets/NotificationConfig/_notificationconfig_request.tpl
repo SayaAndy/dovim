@@ -1,7 +1,7 @@
 <ul class="list thick">
     <li>
         <span class="primary icon gray">
-            <i class="material-symbols">notifications_active</i>
+            {autoescape="off"}{$c->svg('Mobilephone-Action-Notification-Allowed--Streamline-Freehand')}{/autoescape}
         </span>
         <div>
             <button

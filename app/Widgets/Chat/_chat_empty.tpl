@@ -1,5 +1,5 @@
 <div class="placeholder">
-    <i class="material-symbols fill">forum</i>
+    {autoescape="off"}{$c->svg('Conversation-Question-Warning-3--Streamline-Freehand', 'fill')}{/autoescape}
 </div>
 
 <div id="chat_frequent">

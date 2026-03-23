@@ -17,7 +17,7 @@
             {/if}
             {if="$story->isMine($c->me)"}
             <span class="control icon active" onclick="StoriesViewer.pause(); StoriesViewer_ajaxDelete('{$story->id}')">
-                <i class="material-symbols fill">delete</i>
+                {autoescape="off"}{$c->svg('Garbage-Throw--Streamline-Freehand', 'fill')}{/autoescape}
             </span>
             {/if}
             <span class="control icon active" onclick="StoriesViewer.pause(); SendTo_ajaxSendContact('{$story->getRef()}')">

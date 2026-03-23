@@ -7,7 +7,7 @@
         </li>
         <li class="block">
             <span class="primary icon gray">
-                <i class="material-symbols">wifi_tethering</i>
+                {autoescape="off"}{$c->svg('Podcast-Microphone-International-1--Streamline-Freehand')}{/autoescape}
             </span>
             <div>
                 <p>{$c->__('faq.permission_title')}</p>
@@ -16,7 +16,7 @@
         </li>
         <li class="block">
             <span class="primary icon gray">
-                <i class="material-symbols">group_work</i>
+                {autoescape="off"}{$c->svg('Worldwide-Web-Users--Streamline-Freehand')}{/autoescape}
             </span>
             <div>
                 <p>{$c->__('faq.permission_community_title')}</p>
@@ -54,7 +54,7 @@
         </li>
         <li class="block">
             <span class="primary icon gray">
-                <i class="material-symbols">comment</i>
+                {autoescape="off"}{$c->svg('Messages-Bubble-Square-Text--Streamline-Freehand')}{/autoescape}
             </span>
             <div>
                 <p>{$c->__('chatroom.question')}</p>
@@ -76,8 +76,8 @@
         </li>
         <li class="block active">
             <span class="primary icon gray">
-                <i class="material-symbols on_desktop">install_desktop</i>
-                <i class="material-symbols on_mobile">install_mobile</i>
+                {autoescape="off"}{$c->svg('Drawer-Download--Streamline-Freehand', 'on_desktop')}{/autoescape}
+                {autoescape="off"}{$c->svg('Drawer-Download--Streamline-Freehand', 'on_mobile')}{/autoescape}
             </span>
             <span class="control icon gray">
                 <i class="material-symbols">chevron_right</i>
@@ -114,26 +114,26 @@
         </li>
         <li class="block">
             <span class="primary icon purple">
-                <i class="material-symbols">computer</i>
+                {autoescape="off"}{$c->svg('Desktop-Monitor--Streamline-Freehand')}{/autoescape}
             </span>
             <div>
                 <p class="line">
                     Dino
                     <a class="button flat" href="https://dino.im/" target="_blank">
-                        <i class="material-symbols">open_in_new</i> Website
+                        {autoescape="off"}{$c->svg('Share-Forward--Streamline-Freehand')}{/autoescape} Website
                     </a>
                 </p>
             </div>
         </li>
         <li class="block">
             <span class="primary icon blue">
-                <i class="material-symbols">computer</i>
+                {autoescape="off"}{$c->svg('Desktop-Monitor--Streamline-Freehand')}{/autoescape}
             </span>
             <div>
                 <p class="line">
                     Gajim
                     <a class="button flat" href="https://gajim.org/" target="_blank">
-                        <i class="material-symbols">open_in_new</i> Website
+                        {autoescape="off"}{$c->svg('Share-Forward--Streamline-Freehand')}{/autoescape} Website
                     </a>
                 </p>
             </div>
@@ -165,7 +165,7 @@
                         </div>
                         {else}
                         <span class="primary icon gray">
-                            <i class="material-symbols">comment</i>
+                            {autoescape="off"}{$c->svg('Messages-Bubble-Square-Text--Streamline-Freehand')}{/autoescape}
                         </span>
                         <div>
                             <p>
@@ -177,7 +177,7 @@
                         {/if}
                     {else}
                         <span class="primary icon gray">
-                            <i class="material-symbols">email</i>
+                            {autoescape="off"}{$c->svg('Mailbox-Post-1--Streamline-Freehand')}{/autoescape}
                         </span>
                         <div>
                             <p>

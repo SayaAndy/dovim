@@ -17,7 +17,7 @@
                 <ul class="list thick active">
                     <li onclick="MovimUtils.reload('{$c->route('configuration')}')">
                         <span class="primary icon yellow">
-                            <i class="material-symbols">family_star</i>
+                            {autoescape="off"}{$c->svg('Smiley-Shine-Big-Eyes--Streamline-Freehand')}{/autoescape}
                         </span>
                         <span class="control icon gray">
                             <i class="material-symbols">chevron_right</i>

@@ -2,7 +2,7 @@
     <ul class="list thick">
         <li>
             <span class="primary icon yellow">
-                <i class="material-symbols">family_star</i>
+                {autoescape="off"}{$c->svg('Smiley-Shine-Big-Eyes--Streamline-Freehand')}{/autoescape}
             </span>
             <div>
                 <p>{$c->__('emojisconfig.favorites_title')}</p>

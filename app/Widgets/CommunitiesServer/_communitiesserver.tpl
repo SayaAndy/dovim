@@ -28,7 +28,7 @@
 {if="$nodes->isEmpty()"}
     <ul class="thick">
         <div class="placeholder">
-            <i class="material-symbols">group_work</i>
+            {autoescape="off"}{$c->svg('Worldwide-Web-Users--Streamline-Freehand')}{/autoescape}
             <h1>{$c->__('error.oops')}</h1>
             <h4>{$c->__('communitiesserver.empty_server')}</h4>
         </li>

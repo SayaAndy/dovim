@@ -31,7 +31,7 @@
                         {/if}
                     </p>
                 {elseif="$message->encrypted"}
-                    <p class="line"><i class="material-symbols">lock</i> {$c->__('message.encrypted')}</p>
+                    <p class="line">{autoescape="off"}{$c->svg('Lock-Network--Streamline-Freehand')}{/autoescape} {$c->__('message.encrypted')}</p>
                 {else}
                     <p class="line">{$message->body}</p>
                 {/if}

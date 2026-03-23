@@ -1,1 +1,1 @@
-<i class="material-symbols icon gray">person</i> {$c->__('chat.muc_member', $message->thread)}
+{autoescape="off"}{$c->svg('Composition-Man--Streamline-Freehand', 'icon gray')}{/autoescape} {$c->__('chat.muc_member', $message->thread)}

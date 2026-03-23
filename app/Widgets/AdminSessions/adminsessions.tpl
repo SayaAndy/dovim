@@ -10,7 +10,7 @@
             <li class="block" onclick="MovimUtils.redirect('{$c->route('contact', $user->id)}')">
                 {if="$value->user->admin"}
                     <span class="control yellow icon">
-                        <i class="material-symbols fill">star</i>
+                        {autoescape="off"}{$c->svg('Loading-Star-1--Streamline-Freehand', 'fill')}{/autoescape}
                     </span>
                 {/if}
                 <span class="primary icon bubble status {if="$value->presence"}{$value->presence->presencekey}{/if}">

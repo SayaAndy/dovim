@@ -1,1 +1,1 @@
-<i class="material-symbols icon blue">call</i> {$c->__('chat.jingle_outgoing')}
+{autoescape="off"}{$c->svg('Phone-Actions-Ringing--Streamline-Freehand', 'icon blue')}{/autoescape} {$c->__('chat.jingle_outgoing')}

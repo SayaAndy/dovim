@@ -41,7 +41,7 @@
 
             {if="$value->jid != $c->me->id"}
                 <span class="control icon active gray divided" onclick="Search.chat('{$value->jid|echapJS}', false)">
-                    <i class="material-symbols">comment</i>
+                    {autoescape="off"}{$c->svg('Messages-Bubble-Square-Text--Streamline-Freehand')}{/autoescape}
                 </span>
             {/if}
             <div>

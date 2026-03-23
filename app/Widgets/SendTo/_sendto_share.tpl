@@ -13,7 +13,7 @@
             {if="$post->isStory()"}
                 <li>
                     <span class="primary icon blue">
-                        <i class="material-symbols">info</i>
+                        {autoescape="off"}{$c->svg('Keyboard-Asterisk-1--Streamline-Freehand')}{/autoescape}
                     </span>
                     <div>
                         <p>{$c->__('stories.share_title')}</p>

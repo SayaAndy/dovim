@@ -22,7 +22,7 @@
                         </p>
                         {else}
                         <span class="primary icon gray">
-                            <i class="material-symbols">comment</i>
+                            {autoescape="off"}{$c->svg('Messages-Bubble-Square-Text--Streamline-Freehand')}{/autoescape}
                         </span>
                         <p>
                             <a href="{$c->route('chat', $parsed['path'])}">
@@ -33,7 +33,7 @@
                     {/if}
                 {else}
                     <span class="primary icon gray">
-                        <i class="material-symbols">email</i>
+                        {autoescape="off"}{$c->svg('Mailbox-Post-1--Streamline-Freehand')}{/autoescape}
                     </span>
                     <div>
                         <p>

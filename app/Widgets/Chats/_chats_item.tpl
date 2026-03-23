@@ -82,15 +82,15 @@
                 {$c->__('visio.in_call')} •
             {/if}
             {if="$message->encrypted"}
-                <i class="material-symbols fill">lock</i> {if="$message->retracted"}{$c->__('message.retracted')}{else}{$c->__('message.encrypted')}{/if}
+                {autoescape="off"}{$c->svg('Lock-Network--Streamline-Freehand', 'fill')}{/autoescape} {if="$message->retracted"}{$c->__('message.retracted')}{else}{$c->__('message.encrypted')}{/if}
             {elseif="$message->retracted"}
-                <i class="material-symbols">delete</i> {$c->__('message.retracted')}
+                {autoescape="off"}{$c->svg('Garbage-Throw--Streamline-Freehand')}{/autoescape} {$c->__('message.retracted')}
             {elseif="$message->type == 'space_pending'"}
-                <i class="material-symbols icon gray">communities</i> {$c->__('spaceinfo.pending_request', $message->subject)}
+                {autoescape="off"}{$c->svg('Share-Circles--Streamline-Freehand', 'icon gray')}{/autoescape} {$c->__('spaceinfo.pending_request', $message->subject)}
             {elseif="$message->type == 'invitation'"}
                 <i class="material-symbols icon gray">outgoing_mail</i> {$c->__('message.invitation')}
             {elseif="$message->type == 'jingle_incoming'"}
-                <i class="material-symbols icon green">call</i> {$c->__('chat.jingle_incoming')}
+                {autoescape="off"}{$c->svg('Phone-Actions-Ringing--Streamline-Freehand', 'icon green')}{/autoescape} {$c->__('chat.jingle_incoming')}
             {elseif="$message->type == 'jingle_retract'"}
                 <i class="material-symbols icon gray">phone_missed</i> {$c->__('chat.jingle_retract')}
             {elseif="$message->type == 'jingle_reject'"}
@@ -98,7 +98,7 @@
             {elseif="$message->type == 'jingle_finish'"}
                 <i class="material-symbols icon red">phone_disabled</i> {$c->__('chat.jingle_end')}
             {elseif="$message->type == 'jingle_outgoing'"}
-                <i class="material-symbols icon blue">call</i> {$c->__('chat.jingle_outgoing')}
+                {autoescape="off"}{$c->svg('Phone-Actions-Ringing--Streamline-Freehand', 'icon blue')}{/autoescape} {$c->__('chat.jingle_outgoing')}
             {elseif="$message->type == 'jingle_end'"}
                 <i class="material-symbols icon red">call_end</i> {$c->__('chat.jingle_end')}
             {elseif="$message->file"}
@@ -124,14 +124,14 @@
                     <span class="moderator">{$c->__('chats.me')}:</span>
                 {/if}
                 {if="$message->postid"}
-                    <i class="material-symbols icon">article</i>
+                    {autoescape="off"}{$c->svg('Newspaper-Fold--Streamline-Freehand', 'icon')}{/autoescape}
                     {$message->post->title}
                 {/if}
                 {if="$message->resolvedUrl"}
                     {if="$message->resolvedUrl->provider_icon"}
                         <img  class="tinythumb" src="{$message->resolvedUrl->provider_icon|protectPicture}"/>
                     {else}
-                        <i class="material-symbols">link</i>
+                        {autoescape="off"}{$c->svg('Share-Forward--Streamline-Freehand')}{/autoescape}
                     {/if}
                     {if="$message->resolvedUrl->provider_name"}
                         {$message->resolvedUrl->provider_name}

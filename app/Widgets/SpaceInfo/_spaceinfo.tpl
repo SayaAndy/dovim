@@ -36,7 +36,7 @@
     <li class="subheader">
         {if="$edit"}
             <span class="control icon gray active" onclick="SpaceInfo_ajaxEditMember('{$subscription->server}', '{$subscription->node}')">
-                <i class="material-symbols">person_edit</i>
+                {autoescape="off"}{$c->svg('Edit-Pencil--Streamline-Freehand')}{/autoescape}
             </span>
             <span title="{$c->__('spaceinfo.add_room_title')}" class="control icon gray active" onclick="SpaceRooms_ajaxAdd('{$subscription->server}', '{$subscription->node}')">
                 {autoescape="off"}{$c->svg('Add-Sign-Bold--Streamline-Freehand')}{/autoescape}
@@ -69,7 +69,7 @@
                         {$c->__('room.notify_mentioned')}
                     {elseif="$subscription->notify == 'always'"}
                         •
-                        <i class="material-symbols">notifications_active</i>
+                        {autoescape="off"}{$c->svg('Mobilephone-Action-Notification-Allowed--Streamline-Freehand')}{/autoescape}
                         {$c->__('room.notify_always')}
                     {/if}
                 </span>

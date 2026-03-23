@@ -10,7 +10,7 @@
             <li
                 class="block large color {$config->xmppdomain|stringToColor}"
                 onclick="MovimUtils.redirect('{$c->route('register', [$config->xmppdomain, false])}')">
-                <i class="material-symbols main">person</i>
+                {autoescape="off"}{$c->svg('Composition-Man--Streamline-Freehand', 'main')}{/autoescape}
                 <span class="primary icon bubble color transparent">
                     {$config->xmppdomain|firstLetterCapitalize}
                 </span>

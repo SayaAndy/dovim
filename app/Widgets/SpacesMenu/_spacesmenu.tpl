@@ -11,7 +11,7 @@
             {if="$value->info"}
                 <img src="{$value->info->getPicture(placeholder: $value->info->name)}">
             {else}
-                <i class="material-symbols spin">progress_activity</i>
+                {autoescape="off"}{$c->svg('Loading-Spinning-Star--Streamline-Freehand', 'spin')}{/autoescape}
             {/if}
             <span data-key="space{$value->server}{$value->node}" class="counter notifications"></span>
         </span>
